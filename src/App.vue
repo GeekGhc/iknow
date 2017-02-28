@@ -1,22 +1,16 @@
 <template>
-  <div id="app">
-    <router-view></router-view>
-  </div>
+    <div id="app">
+        <router-view></router-view>
+    </div>
 </template>
 
 <script>
+require('./assets/js/source/jquery.min.js');
 export default {
   name: 'app'
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style src="./assets/css/source/bootstrap.min.css"></style>
+<style src="./assets/css/source/font-awesome.min.css"></style>
+<style src="./assets/css/source/semantic.min.css"></style>
