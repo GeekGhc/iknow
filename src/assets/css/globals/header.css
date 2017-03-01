@@ -135,11 +135,13 @@ body {
     float: right;
     margin-right: 1.2rem;
 }
-.control-operator a{
+
+.control-operator a {
     cursor: pointer;
     color: #333;
 }
-.control-operator a:hover{
+
+.control-operator a:hover {
     color: #00b1b3;
 }
 
@@ -180,13 +182,121 @@ body {
     margin: 3px;
     float: left;
 }
-.feed-item-foot .feed-item-comment{
+
+.feed-item-foot .feed-item-comment {
     float: left;
     margin-left: 14px;
     color: #666;
     cursor: pointer;
 }
-.feed-item-thumbs i, .feed-item-comment i{
-    margin-right:5px;
+
+.feed-item-thumbs i, .feed-item-comment i {
+    margin-right: 5px;
     font-size: 1.2em;
 }
+
+.comments-list {
+    margin-top: -1.5rem;
+    padding: 0 24px;
+    background-color: #fafafa;
+    border: 1px solid #d1d5d8;
+}
+
+.comment-list .comment-wrapper {
+    width: 100%;
+    /*overflow: hidden;*/
+}
+
+.comment-wrapper .comment-list:last-child {
+    border-bottom: none;
+}
+
+.comment-wrapper .comment-list {
+    position: relative;
+    margin-top: 10px;
+    text-align: -webkit-match-parent;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.comment-list .comment-item-body {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.comment-item-body .comment-item-avatar {
+    display: block;
+    width: 36px;
+    height: 36px;
+    float: left;
+    margin: 10px 14px 10px 0;
+}
+
+.comment-item-body .comment-item-avatar img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.comment-item-main {
+    /*height: 100%;*/
+    margin-left: 50px;
+    padding: 2px 0 0;
+}
+
+.comment-item-main .comment-text {
+    width: 100%;
+    margin-top: 7px;
+    /*word-wrap: break-word;*/
+}
+
+.comment-item-main .comment-time {
+    width: 50%;
+    height: 22px;
+    line-height: 22px;
+    font-size: 14px;
+    color: #7a7a7a;
+    margin-bottom: 5px;
+    float: left;
+}
+
+.comment-item-main .reply-sub {
+    float: right;
+    font-size: 14px;
+    color: #444;
+    cursor: pointer;
+}
+
+.comment-list .reply.form textarea {
+    font-size: 14px;
+    /*width: 100%;*/
+    padding-top: 3px;
+    height: 28px;
+    resize: none;
+    line-height: 26px;
+    overflow: hidden;
+    height: 28px;
+    padding-left: 6px;
+    display: inline-block;
+}
+
+.comment-list .reply.form p {
+    position: absolute;
+    left: 5px;
+    top: 9px;
+}
+
+.comment-list .reply.form .field-text {
+    margin-left: 110px;
+}
+.comment-list .reply-form{
+    display: inherit;
+}
+
+/*
+.reply.form .field {
+    line-height: 12px;
+    margin-bottom: 10px;
+    position: relative;
+    border: 1px solid #16b998;
+    background: #fff;
+}*/
