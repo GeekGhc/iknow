@@ -38,63 +38,66 @@
                                 </li>
                                 <div class="comments-list">
                                     <div class="comment-wrapper">
-                                        <!--<div class="ui comments">
+                                        <div class="ui comments">
                                             <div class="comment">
                                                 <a class="avatar">
                                                     <img src="../assets/images/avatars/default/my-avatar.jpg">
                                                 </a>
                                                 <div class="content">
                                                     <a class="author">Steve Jobes</a>
-                                                    <div class="metadata">
-                                                        <div class="date">2 days ago</div>
-                                                    </div>
-                                                    <div class="text">Revolutionary! </div>
+                                                    <div class="text">Revolutionary!</div>
                                                     <div class="actions">
-                                                        <a class="reply active">Reply</a>
+                                                        <div class="metadata">
+                                                            <div class="date">2 days ago</div>
+                                                        </div>
+                                                        <a class="reply active pull-right">回复</a>
                                                     </div>
                                                     <form class="ui reply form">
                                                         <div class="field">
-                                                            <textarea></textarea>
+                                                            <el-input
+                                                                    type="textarea"
+                                                                    autosize
+                                                                    placeholder="回复JellyBean:"
+                                                                    v-model="textarea2">
+                                                            </el-input>
                                                         </div>
-                                                        <div class="ui primary submit labeled icon button"><i class="icon edit"></i> Add Reply </div>
+                                                        <div class="reply-button">
+                                                            <div class="ui primary button">回复</div>
+                                                        </div>
                                                     </form>
                                                 </div>
                                             </div>
-                                        </div>-->
 
-                                            <div class="comment-list">
-                                                <div class="comment-item-body">
-                                                    <div class="comment-item-avatar">
-                                                        <img src="../assets/images/avatars/default/my-avatar.jpg">
-                                                    </div>
-                                                    <div class="comment-item-main">
-                                                        <div class="comment-text">
-                                                            <p>这是一个好问题</p>
+
+                                            <div class="comment">
+                                                <a class="avatar">
+                                                    <img src="../assets/images/avatars/default/my-avatar.jpg">
+                                                </a>
+                                                <div class="content">
+                                                    <a class="author">Steve Jobes</a>
+                                                    <div class="text">Revolutionary!</div>
+                                                    <div class="actions">
+                                                        <div class="metadata">
+                                                            <div class="date">2 days ago</div>
                                                         </div>
-                                                        <div class="comment-time">
-                                                            3天前
+                                                        <a class="reply active pull-right">回复</a>
+                                                    </div>
+                                                    <form class="ui reply form">
+                                                        <div class="field">
+                                                            <el-input
+                                                                    type="textarea"
+                                                                    autosize
+                                                                    placeholder="回复JellyBean:"
+                                                                    v-model="textarea2">
+                                                            </el-input>
                                                         </div>
-                                                        <a class="reply-sub">
-                                                            回复
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="reply-form">
-                                                    <div class="field">
-                                                        <el-input
-                                                                type="textarea"
-                                                                autosize
-                                                                placeholder="回复JellyBean:"
-                                                                v-model="textarea2">
-                                                        </el-input>
-                                                        <!--<p>回复JellyBean设计师发布的好不撒大家:</p>
-                                                        <div class="field-text">
-                                                            <textarea></textarea>
-                                                        </div>-->
-                                                    </div>
-                                                    <div class="ui primary button pull-right"> 回复 </div>
+                                                        <div class="reply-button">
+                                                            <div class="ui primary button">回复</div>
+                                                        </div>
+                                                    </form>
                                                 </div>
                                             </div>
+                                        </div>
                                     </div>
                                 </div>
                             </ul>
@@ -106,9 +109,7 @@
         </div>
     </div>
 </template>
-<style>
-
-</style>
+<style src="../assets/css/globals/common.css"></style>
 <script>
     import SiteHeader from './common/SiteHeader'
     export default{
@@ -123,6 +124,4 @@
            SiteHeader
         }
     }
-
-
 </script>

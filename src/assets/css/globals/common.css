@@ -1,0 +1,8 @@
+.wrapper {
+    padding-top: 3.75rem;
+}
+.el-col {
+    background: #fff !important;
+    border: 1px solid #e5e5e5 !important;
+    padding:0 !important;
+}

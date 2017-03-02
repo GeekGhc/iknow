@@ -4,21 +4,21 @@
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
                     <div class="head-nav">
-                        <a href="#"><h1>IKnow</h1></a>
+                        <router-link :to="{ name: 'start'}"><h1>IKnow</h1></router-link>
+
                         <nav class="site-header-nav" role="navigation">
-                            <a class="site-header-nav-item active">首页</a>
-                            <a class="site-header-nav-item">帖子</a>
-                            <a class="site-header-nav-item">文章</a>
+                            <router-link :to="{ name: 'start'}" class="site-header-nav-item active">首页</router-link>
+                            <router-link :to="{ name: 'account'}" class="site-header-nav-item">帖子</router-link>
                         </nav>
                     </div>
-                    <div class="header-user-panel">
+                   <!-- <div class="header-user-panel">
                         <section>
                             <a class="message"><i class="fa fa-bell-o fa-header-bell"></i></a>
                             <a class="avatar"><img src="../../assets/images/avatars/default/my-avatar.jpg"></a>
                         </section>
-                    </div>
-                    <div class="header-user-login" style="display:none;">
-                        <a>登录</a>
+                    </div>-->
+                    <div class="header-user-login" style="display:block;">
+                        <a>登录</a>/
                         <a>注册</a>
                     </div>
                 </div>

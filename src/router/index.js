@@ -12,10 +12,10 @@ export default new Router({
     mode: 'history',
     history: true,
     routes: [
-        {path: '/', name: 'Start', component: Start},
-        {path: '/user/login', name: 'Login', component: Login},
-        {path: '/user/register', name: 'Register', component: Register},
-        {path: '/profile', name: 'Profile', component: Profile},
-        {path: '/account', name: 'Account', component: Account},
+        {path: '/', name: 'start', component: Start},
+        {path: '/user/login', name: 'login', component: Login},
+        {path: '/user/register', name: 'register', component: Register},
+        {path: '/profile', name: 'profile', component: Profile},
+        {path: '/account', name: 'account', component: Account},
     ]
 })
