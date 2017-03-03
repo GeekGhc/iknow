@@ -82,7 +82,7 @@
     export default{
         data(){
             return{
-                msg:'hello vue'
+                 textarea3: ''
             }
         },
         components:{
