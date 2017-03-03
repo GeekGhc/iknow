@@ -7,15 +7,23 @@
                     <el-col :span="10" :offset="7">
                         <div class="login-header">
                             <div class="login-register">
-                                <a class="active">登录</a>
-                                <a>注册</a>
+                                <router-link :to="{name: 'login'}" class="active">登录</router-link>
+                                <router-link :to="{ name: 'register'}">注册</router-link>
                             </div>
                         </div>
                         <div class="login-form">
-                            <div class="form-group">
-                                <label>用户名</label>
+                            <div class="control-group">
+                                <label class="control-label">邮箱</label>
                                 <el-input
-                                        icon="search"
+                                        placeholder="请输入你的邮箱"
+                                >
+                                </el-input>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label">密码</label>
+                                <el-input
+                                        placeholder="请输入你的用户密码"
+                                        type="password"
                                 >
                                 </el-input>
                             </div>

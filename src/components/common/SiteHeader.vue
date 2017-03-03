@@ -18,8 +18,8 @@
                         </section>
                     </div>-->
                     <div class="header-user-login" style="display:block;">
-                        <a>登录</a>/
-                        <a>注册</a>
+                        <router-link :to="{name: 'login'}">登录</router-link>/
+                        <router-link :to="{ name: 'register'}">注册</router-link>
                     </div>
                 </div>
             </div>

@@ -20,5 +20,23 @@
     color: #4A90E2;
 }
 .login-form{
-    padding: 3rem;
+    padding: 4rem;
+}
+.login-form .control-group{
+    min-height: 3rem;
+    margin-bottom: 1.2rem;
+    line-height: 3rem;
+    vertical-align: bottom;
+    padding-left: 2rem;
+    width: 100%;
+    display: flex;
+}
+.login-form .control-group .control-label{
+    line-height: 2rem;
+    color: #636363;
+    float: left;
+    width: 8rem;
+    padding-right: 1.6rem;
+    text-align: right;
+    font-size: 1.1rem;
 }
