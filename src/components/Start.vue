@@ -9,6 +9,9 @@
                             <!-- 加载编辑器的容器 -->
                             <ueditor></ueditor>
                         </div>
+                        <div class="edit-control">
+                            <button class="btn btn-primary btn-lg">发布</button>
+                        </div>
 
                         <div class="feed-list">
                             <ul>
@@ -124,6 +127,9 @@
           return {
              textarea:''
           }
+        },
+        mounted(){
+
         },
         components:{
            SiteHeader,

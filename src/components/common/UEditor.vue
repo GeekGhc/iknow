@@ -18,6 +18,8 @@
                 toolbars: [
                      ['bold', 'italic', 'underline', 'strikethrough', 'blockquote', 'insertunorderedlist', 'insertorderedlist', 'justifyleft','justifycenter', 'justifyright',  'link', 'insertimage', 'fullscreen']
                 ],
+                zIndex:1,
+                initialFrameHeight:250,
                 elementPathEnabled: false,
                 enableContextMenu: false,
                 autoClearEmptyNode:true,

@@ -5,6 +5,7 @@ body {
 }
 
 .site-header {
+    z-index: 1000;
     position: fixed;
     top: 0;
     width: 100%;
@@ -92,6 +93,10 @@ body {
 .index-publish-box{
     margin-top: 30px;
 }
+.edit-control{
+    width: 100%;
+    padding: 1.5rem 0;
+}
 .feed-list {
     margin-top: 2rem;
 }
@@ -117,9 +122,6 @@ body {
 }
 
 .feed-item-head .avatar {
-    /*position: absolute;
-    left: 1rem;
-    top: 1rem;*/
     margin-left: 1rem;
     display: inline-block;
 }

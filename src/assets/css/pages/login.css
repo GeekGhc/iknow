@@ -1,6 +1,9 @@
 .login-page{
     padding-top: 38px;
 }
+.login-page .el-col{
+    background: #fff !important;
+}
 .login-header{
     padding: 20px 10px 24px;
     border-bottom: 1px solid #E5E5E5;
@@ -39,4 +42,7 @@
     padding-right: 1.6rem;
     text-align: right;
     font-size: 1.1rem;
+}
+.btn-login-register{
+    padding: 0 2rem;
 }

@@ -27,6 +27,9 @@
                                 >
                                 </el-input>
                             </div>
+                            <div class="control-group">
+                                <button class="btn btn-primary btn-lg btn-block btn-login-register">立即登录</button>
+                            </div>
                         </div>
                     </el-col>
                 </el-row>

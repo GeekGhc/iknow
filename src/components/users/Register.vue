@@ -16,6 +16,7 @@
                                 <label class="control-label">用户名</label>
                                 <el-input
                                         placeholder="请输入你的用户名"
+                                        v-model="newUser.name"
                                 >
                                 </el-input>
                             </div>
@@ -23,6 +24,7 @@
                                 <label class="control-label">邮箱</label>
                                 <el-input
                                         placeholder="请输入你的邮箱"
+                                        v-model="newUser.email"
                                 >
                                 </el-input>
                             </div>
@@ -31,6 +33,7 @@
                                 <el-input
                                         placeholder="请输入你的用户密码"
                                         type="password"
+                                        v-model="newUser.password"
                                 >
                                 </el-input>
                             </div>
@@ -39,8 +42,15 @@
                                 <el-input
                                         placeholder="请确认用户密码"
                                         type="password"
+                                        v-model="newUser.confirm_pwd"
                                 >
                                 </el-input>
+                            </div>
+                            <div class="control-group">
+                                <button
+                                        class="btn btn-primary btn-lg btn-block btn-login-register"
+                                        @click="register()">立即注册
+                                </button>
                             </div>
                         </div>
                     </el-col>
@@ -54,7 +64,20 @@
     export default{
         data(){
             return{
-                msg:'hello vue'
+                newUser: {
+                    name:'',
+                    email:'',
+                    password:'',
+                    confirm_pwd:''
+                }
+            }
+        },
+        methods:{
+            register:function(){
+                console.log("name = "+this.newUser.name)
+                this.axios.post('http://localhost:8000/api/user/register',{user:this.newUser}).then(response => {
+                  console.log("data = "+response.data)
+                })
             }
         },
         components:{
