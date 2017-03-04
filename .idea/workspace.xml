@@ -2,24 +2,310 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0a25e4e-8a84-4a09-a81e-e66754972bf0" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/css/fonts/FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/css/fonts/fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/css/fonts/fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/css/fonts/fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/css/fonts/fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/css/fonts/fontawesome-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/css/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/css/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/css/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/css/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/css/fonts/iconfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/css/fonts/iconfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/css/globals/comment.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/css/globals/common.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/css/globals/header.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/css/pages/account.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/css/pages/login.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/css/pages/profile.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/css/source/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/css/source/font-awesome.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/css/source/semantic.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/css/source/themes/default/assets/fonts/icons.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/css/source/themes/default/assets/fonts/icons.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/css/source/themes/default/assets/fonts/icons.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/css/source/themes/default/assets/fonts/icons.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/css/source/themes/default/assets/fonts/icons.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/css/source/themes/default/assets/fonts/icons.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/css/source/themes/default/assets/images/flags.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/images/avatars/default/my-avatar.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/anchor/anchor.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/attachment/attachment.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/attachment/attachment.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/attachment/attachment.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/attachment/fileTypeImages/icon_chm.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/attachment/fileTypeImages/icon_default.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/attachment/fileTypeImages/icon_exe.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/attachment/fileTypeImages/icon_jpg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/attachment/fileTypeImages/icon_mp3.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/attachment/fileTypeImages/icon_mv.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/attachment/fileTypeImages/icon_pdf.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/attachment/fileTypeImages/icon_ppt.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/attachment/fileTypeImages/icon_psd.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/attachment/fileTypeImages/icon_rar.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/attachment/fileTypeImages/icon_txt.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/attachment/fileTypeImages/icon_xls.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/attachment/images/alignicon.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/attachment/images/alignicon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/attachment/images/bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/attachment/images/file-icons.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/attachment/images/file-icons.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/attachment/images/icons.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/attachment/images/icons.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/attachment/images/image.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/attachment/images/progress.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/attachment/images/success.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/attachment/images/success.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/background/background.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/background/background.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/background/background.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/background/images/bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/background/images/success.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/charts/chart.config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/charts/charts.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/charts/charts.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/charts/charts.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/charts/images/charts0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/charts/images/charts1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/charts/images/charts2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/charts/images/charts3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/charts/images/charts4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/charts/images/charts5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/emotion/emotion.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/emotion/emotion.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/emotion/emotion.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/emotion/images/0.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/emotion/images/bface.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/emotion/images/cface.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/emotion/images/fface.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/emotion/images/jxface2.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/emotion/images/neweditor-tab-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/emotion/images/tface.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/emotion/images/wface.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/emotion/images/yface.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/gmap/gmap.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/help/help.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/help/help.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/help/help.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/image/image.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/image/image.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/image/image.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/image/images/alignicon.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/image/images/bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/image/images/icons.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/image/images/icons.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/image/images/image.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/image/images/progress.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/image/images/success.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/image/images/success.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/insertframe/insertframe.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/internal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/link/link.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/map/map.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/map/show.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/music/music.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/music/music.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/music/music.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/preview/preview.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/scrawl/images/addimg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/scrawl/images/brush.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/scrawl/images/delimg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/scrawl/images/delimgH.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/scrawl/images/empty.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/scrawl/images/emptyH.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/scrawl/images/eraser.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/scrawl/images/redo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/scrawl/images/redoH.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/scrawl/images/scale.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/scrawl/images/scaleH.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/scrawl/images/size.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/scrawl/images/undo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/scrawl/images/undoH.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/scrawl/scrawl.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/scrawl/scrawl.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/scrawl/scrawl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/searchreplace/searchreplace.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/searchreplace/searchreplace.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/snapscreen/snapscreen.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/spechars/spechars.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/spechars/spechars.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/table/dragicon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/table/edittable.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/table/edittable.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/table/edittable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/table/edittd.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/table/edittip.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/template/config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/template/images/bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/template/images/pre0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/template/images/pre1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/template/images/pre2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/template/images/pre3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/template/images/pre4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/template/template.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/template/template.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/template/template.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/video/images/bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/video/images/center_focus.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/video/images/file-icons.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/video/images/file-icons.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/video/images/icons.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/video/images/icons.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/video/images/image.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/video/images/left_focus.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/video/images/none_focus.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/video/images/progress.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/video/images/right_focus.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/video/images/success.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/video/images/success.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/video/video.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/video/video.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/video/video.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/webapp/webapp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/wordimage/fClipboard_ueditor.swf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/wordimage/imageUploader.swf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/wordimage/tangram.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/wordimage/wordimage.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/wordimage/wordimage.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/lang/en/en.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/lang/en/images/addimage.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/lang/en/images/alldeletebtnhoverskin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/lang/en/images/alldeletebtnupskin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/lang/en/images/background.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/lang/en/images/button.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/lang/en/images/copy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/lang/en/images/deletedisable.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/lang/en/images/deleteenable.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/lang/en/images/listbackground.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/lang/en/images/localimage.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/lang/en/images/music.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/lang/en/images/rotateleftdisable.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/lang/en/images/rotateleftenable.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/lang/en/images/rotaterightdisable.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/lang/en/images/rotaterightenable.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/lang/en/images/upload.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/lang/zh-cn/images/copy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/lang/zh-cn/images/localimage.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/lang/zh-cn/images/music.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/lang/zh-cn/images/upload.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/lang/zh-cn/zh-cn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/themes/default/css/ueditor.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/themes/default/css/ueditor.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/themes/default/dialogbase.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/themes/default/images/anchor.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/themes/default/images/arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/themes/default/images/arrow_down.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/themes/default/images/arrow_up.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/themes/default/images/button-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/themes/default/images/cancelbutton.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/themes/default/images/charts.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/themes/default/images/cursor_h.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/themes/default/images/cursor_h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/themes/default/images/cursor_v.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/themes/default/images/cursor_v.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/themes/default/images/dialog-title-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/themes/default/images/filescan.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/themes/default/images/highlighted.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/themes/default/images/icons-all.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/themes/default/images/icons.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/themes/default/images/icons.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/themes/default/images/loaderror.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/themes/default/images/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/themes/default/images/lock.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/themes/default/images/neweditor-tab-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/themes/default/images/pagebreak.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/themes/default/images/scale.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/themes/default/images/sortable.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/themes/default/images/spacer.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/themes/default/images/sparator_v.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/themes/default/images/table-cell-align.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/themes/default/images/tangram-colorpicker.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/themes/default/images/toolbar_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/themes/default/images/unhighlighted.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/themes/default/images/upload.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/themes/default/images/videologo.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/themes/default/images/word.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/themes/default/images/wordpaste.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/themes/iframe.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/SyntaxHighlighter/shCore.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/SyntaxHighlighter/shCoreDefault.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/codemirror/codemirror.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/codemirror/codemirror.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/highcharts/adapters/mootools-adapter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/highcharts/adapters/mootools-adapter.src.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/highcharts/adapters/prototype-adapter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/highcharts/adapters/prototype-adapter.src.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/highcharts/adapters/standalone-framework.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/highcharts/adapters/standalone-framework.src.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/highcharts/highcharts-more.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/highcharts/highcharts-more.src.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/highcharts/highcharts.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/highcharts/highcharts.src.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/highcharts/modules/annotations.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/highcharts/modules/annotations.src.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/highcharts/modules/canvas-tools.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/highcharts/modules/canvas-tools.src.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/highcharts/modules/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/highcharts/modules/data.src.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/highcharts/modules/drilldown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/highcharts/modules/drilldown.src.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/highcharts/modules/exporting.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/highcharts/modules/exporting.src.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/highcharts/modules/funnel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/highcharts/modules/funnel.src.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/highcharts/modules/heatmap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/highcharts/modules/heatmap.src.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/highcharts/modules/map.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/highcharts/modules/map.src.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/highcharts/modules/no-data-to-display.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/highcharts/modules/no-data-to-display.src.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/highcharts/themes/dark-blue.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/highcharts/themes/dark-green.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/highcharts/themes/gray.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/highcharts/themes/grid.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/highcharts/themes/skies.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/jquery-1.10.2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/jquery-1.10.2.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/jquery-1.10.2.min.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/video-js/font/vjs.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/video-js/font/vjs.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/video-js/font/vjs.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/video-js/font/vjs.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/video-js/video-js.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/video-js/video-js.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/video-js/video-js.swf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/video-js/video.dev.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/video-js/video.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/webuploader/Uploader.swf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/webuploader/webuploader.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/webuploader/webuploader.custom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/webuploader/webuploader.custom.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/webuploader/webuploader.flashonly.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/webuploader/webuploader.flashonly.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/webuploader/webuploader.html5only.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/webuploader/webuploader.html5only.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/webuploader/webuploader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/webuploader/webuploader.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/webuploader/webuploader.withoutimage.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/webuploader/webuploader.withoutimage.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/xss.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/zeroclipboard/ZeroClipboard.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/zeroclipboard/ZeroClipboard.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/third-party/zeroclipboard/ZeroClipboard.swf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/ueditor.all.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/source/ueditor/ueditor.config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/js/test.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/webpack.base.conf.js" afterPath="$PROJECT_DIR$/build/webpack.base.conf.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.vue" afterPath="$PROJECT_DIR$/src/App.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/css/globals/common.css" afterPath="$PROJECT_DIR$/src/assets/css/globals/common.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/css/pages/account.css" afterPath="$PROJECT_DIR$/src/assets/css/pages/account.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Start.vue" afterPath="$PROJECT_DIR$/src/components/Start.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/common/SidebarRightIndex.vue" afterPath="$PROJECT_DIR$/src/components/common/SidebarRightIndex.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/common/SiteHeader.vue" afterPath="$PROJECT_DIR$/src/components/common/SiteHeader.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/posts/Comment.vue" afterPath="$PROJECT_DIR$/src/components/posts/Comment.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/posts/Create.vue" afterPath="$PROJECT_DIR$/src/components/posts/Create.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/posts/Like.vue" afterPath="$PROJECT_DIR$/src/components/posts/Like.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/posts/PostMain.vue" afterPath="$PROJECT_DIR$/src/components/posts/PostMain.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/posts/Share.vue" afterPath="$PROJECT_DIR$/src/components/posts/Share.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/users/Account.vue" afterPath="$PROJECT_DIR$/src/components/users/Account.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/users/Login.vue" afterPath="$PROJECT_DIR$/src/components/users/Login.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/users/Profile.vue" afterPath="$PROJECT_DIR$/src/components/users/Profile.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/users/Register.vue" afterPath="$PROJECT_DIR$/src/components/users/Register.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/router/index.js" afterPath="$PROJECT_DIR$/src/router/index.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,14 +320,12 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Start.vue" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/Start.vue">
+      <file leaf-file-name="ueditor.config.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/ueditor/ueditor.config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="571">
-              <caret line="133" column="31" lean-forward="true" selection-start-line="133" selection-start-column="31" selection-end-line="133" selection-end-column="31" />
-              <folding>
-                <marker date="1488605920459" expanded="true" signature="7489:7624" ph="{...}" />
-              </folding>
+            <state relative-caret-position="627">
+              <caret line="22" column="60" lean-forward="false" selection-start-line="22" selection-start-column="60" selection-end-line="22" selection-end-column="60" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -75,15 +359,11 @@
         <option value="$PROJECT_DIR$/src/components/users/Collection.vue" />
         <option value="$PROJECT_DIR$/src/components/users/Message.vue" />
         <option value="$PROJECT_DIR$/src/assets/css/pages/profile.css" />
-        <option value="$PROJECT_DIR$/src/router/index.js" />
-        <option value="$PROJECT_DIR$/src/assets/css/globals/header.css" />
         <option value="$PROJECT_DIR$/src/assets/css/pages/login.css" />
         <option value="$PROJECT_DIR$/src/assets/css/pages/account.css" />
         <option value="$PROJECT_DIR$/src/assets/css/globals/comment.css" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/components/users/Account.vue" />
         <option value="$PROJECT_DIR$/src/components/users/Login.vue" />
-        <option value="$PROJECT_DIR$/src/components/users/Register.vue" />
         <option value="$PROJECT_DIR$/src/components/users/Profile.vue" />
         <option value="$PROJECT_DIR$/src/components/posts/Comment.vue" />
         <option value="$PROJECT_DIR$/src/components/posts/Create.vue" />
@@ -92,11 +372,17 @@
         <option value="$PROJECT_DIR$/src/components/posts/Share.vue" />
         <option value="$PROJECT_DIR$/src/components/common/SidebarRightIndex.vue" />
         <option value="$PROJECT_DIR$/src/assets/css/globals/common.css" />
-        <option value="$PROJECT_DIR$/src/components/common/SiteHeader.vue" />
         <option value="$PROJECT_DIR$/build/webpack.base.conf.js" />
-        <option value="$PROJECT_DIR$/src/App.vue" />
         <option value="$PROJECT_DIR$/src/assets/js/test.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/components/common/SiteHeader.vue" />
+        <option value="$PROJECT_DIR$/src/router/index.js" />
+        <option value="$PROJECT_DIR$/src/App.vue" />
+        <option value="$PROJECT_DIR$/src/components/users/Register.vue" />
         <option value="$PROJECT_DIR$/src/components/Start.vue" />
+        <option value="$PROJECT_DIR$/src/assets/css/globals/header.css" />
+        <option value="$PROJECT_DIR$/src/components/common/UEditor.vue" />
+        <option value="$PROJECT_DIR$/static/ueditor/ueditor.config.js" />
       </list>
     </option>
   </component>
@@ -233,28 +519,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="users" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iknow-cli" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iknow-cli" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="posts" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -298,84 +562,6 @@
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iknow-cli" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iknow-cli" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="source" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iknow-cli" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iknow-cli" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="source" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ueditor" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iknow-cli" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iknow-cli" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -396,58 +582,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iknow-cli" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iknow-cli" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iknow-cli" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iknow-cli" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="globals" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -482,16 +616,17 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\PHPDev\iknow-cli\static" />
       <recent name="E:\PHPDev\iknow-cli\src\assets\css" />
       <recent name="E:\PHPDev\iknow-cli\src\assets" />
       <recent name="E:\PHPDev\iknow-cli\src\assets\css\source" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\PHPDev\iknow-cli\static" />
+      <recent name="E:\PHPDev\iknow-cli\static\ueditor" />
+      <recent name="E:\PHPDev\iknow-cli\src\assets" />
       <recent name="E:\PHPDev\iknow-cli\src\assets\js\source\ueditor" />
       <recent name="E:\PHPDev\iknow-cli" />
-      <recent name="E:\PHPDev\iknow-cli\src\assets\images\avatars\default" />
-      <recent name="E:\PHPDev\iknow-cli\src\assets\css\source" />
-      <recent name="E:\PHPDev\iknow-cli\src\assets\css" />
     </key>
   </component>
   <component name="RunManager">
@@ -566,18 +701,19 @@
       <option name="presentableId" value="Default" />
       <updated>1488010668009</updated>
       <workItem from="1488010669296" duration="85701000" />
-      <workItem from="1488590884078" duration="2939000" />
+      <workItem from="1488590884078" duration="9485000" />
+      <workItem from="1488614082497" duration="5210000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88640000" />
+    <option name="totallyTimeSpent" value="100396000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19010417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18958333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -608,66 +744,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/assets/js/source/bootstrap.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="165">
-            <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/source/semantic.min.css" />
-    <entry file="file://$PROJECT_DIR$/src/assets/css/source/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-447">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/prod.env.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/dev.env.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/css/source/font-awesome.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3597">
-          <caret line="3" column="10335" lean-forward="false" selection-start-line="3" selection-start-column="10335" selection-end-line="3" selection-end-column="10335" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/js/source/jquery.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build/check-versions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-678">
@@ -724,23 +800,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Hello.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="29" column="3" lean-forward="true" selection-start-line="25" selection-start-column="2" selection-end-line="29" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/favicon.ico">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.babelrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.js">
@@ -750,97 +812,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/css/pages/profile.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="48" column="20" lean-forward="true" selection-start-line="42" selection-start-column="3" selection-end-line="48" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/css/pages/account.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-69">
-          <caret line="91" column="46" lean-forward="false" selection-start-line="91" selection-start-column="46" selection-end-line="91" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/js/source/ueditor/ueditor.config.js">
+    <entry file="file://$PROJECT_DIR$/static/css/pages/profile.css" />
+    <entry file="file://$PROJECT_DIR$/static/css/pages/account.css" />
+    <entry file="file://$PROJECT_DIR$/static/css/globals/comment.css" />
+    <entry file="file://$PROJECT_DIR$/static/ueditor/lang/en/en.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/css/globals/comment.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/js/source/ueditor/lang/en/en.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="38" column="23" lean-forward="true" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
-          <folding>
-            <marker date="1488529413566" expanded="true" signature="0:1669" ph="{&quot;name&quot;: &quot;iknow-cli&quot;...}" />
-            <marker date="1488529413566" expanded="true" signature="159:238" ph="{&quot;dev&quot;: &quot;node build/dev-server.js&quot;...}" />
-            <marker date="1488529413566" expanded="true" signature="258:413" ph="{&quot;axios&quot;: &quot;^0.15.3&quot;...}" />
-            <marker date="1488529413566" expanded="true" signature="436:1601" ph="{&quot;autoprefixer&quot;: &quot;^6.7.2&quot;...}" />
-            <marker date="1488529413566" expanded="true" signature="1616:1667" ph="{&quot;node&quot;: &quot;&gt;= 4.0.0&quot;...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/css/globals/header.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/css/pages/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="37" column="12" lean-forward="false" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/users/Collection.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/users/Message.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/users/Account.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/globals/header.css" />
+    <entry file="file://$PROJECT_DIR$/static/css/pages/login.css" />
     <entry file="file://$PROJECT_DIR$/src/components/posts/Comment.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -862,54 +845,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/posts/Share.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <marker date="1488529946506" expanded="true" signature="9:138" ph="..." />
-            <marker date="1488529946506" expanded="true" signature="19:126" ph="..." />
-            <marker date="1488529946506" expanded="true" signature="148:497" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/common/SidebarRightIndex.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/css/globals/common.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/common/SiteHeader.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="769">
-          <caret line="37" column="9" lean-forward="false" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/router/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/js/source/ueditor/themes/default/css/ueditor.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/js/source/ueditor/dialogs/map/map.html">
+    <entry file="file://$PROJECT_DIR$/static/css/globals/common.css" />
+    <entry file="file://$PROJECT_DIR$/static/ueditor/themes/default/css/ueditor.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -923,11 +860,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/js/test.js">
+    <entry file="file://$PROJECT_DIR$/static/js/test.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/users/Login.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/ueditor/ueditor.parse.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
-          <folding />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.babelrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Hello.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="29" column="3" lean-forward="true" selection-start-line="25" selection-start-column="2" selection-end-line="29" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/index.html" />
+    <entry file="file://$PROJECT_DIR$/dist/static/css/app.36a5eeb997382e0a58f84c95e1da8794.css" />
+    <entry file="file://$PROJECT_DIR$/dist/static/css/app.36a5eeb997382e0a58f84c95e1da8794.css.map" />
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1165">
+          <caret line="40" column="20" lean-forward="false" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
+          <folding>
+            <marker date="1488607978403" expanded="true" signature="0:1698" ph="{&quot;name&quot;: &quot;iknow-cli&quot;...}" />
+            <marker date="1488607978403" expanded="true" signature="159:238" ph="{&quot;dev&quot;: &quot;node build/dev-server.js&quot;...}" />
+            <marker date="1488607978403" expanded="true" signature="258:442" ph="{&quot;axios&quot;: &quot;^0.15.3&quot;...}" />
+            <marker date="1488607978403" expanded="true" signature="465:1630" ph="{&quot;autoprefixer&quot;: &quot;^6.7.2&quot;...}" />
+            <marker date="1488607978403" expanded="true" signature="1645:1696" ph="{&quot;node&quot;: &quot;&gt;= 4.0.0&quot;...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -935,37 +917,62 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
           <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <marker date="1488529941212" expanded="true" signature="9:138" ph="..." />
-            <marker date="1488529941212" expanded="true" signature="19:126" ph="..." />
-            <marker date="1488529941212" expanded="true" signature="148:497" ph="..." />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/posts/Share.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="20" column="61" lean-forward="false" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="6" column="25" lean-forward="false" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/users/Register.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="49" column="10" lean-forward="true" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="10" />
+        <state relative-caret-position="1066">
+          <caret line="50" column="11" lean-forward="false" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/ueditor/dialogs/map/map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/ueditor/ueditor.all.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10890">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/users/Message.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
-            <marker date="1488529786260" expanded="true" signature="9:2278" ph="..." />
-            <marker date="1488529786260" expanded="true" signature="33:2266" ph="..." />
-            <marker date="1488529786260" expanded="true" signature="99:2255" ph="..." />
-            <marker date="1488529786260" expanded="true" signature="136:2240" ph="..." />
-            <marker date="1488529786260" expanded="true" signature="174:2221" ph="..." />
-            <marker date="1488529786260" expanded="true" signature="226:2195" ph="..." />
-            <marker date="1488529786260" expanded="true" signature="277:587" ph="..." />
-            <marker date="1488529786260" expanded="true" signature="334:556" ph="..." />
-            <marker date="1488529786260" expanded="true" signature="636:2165" ph="..." />
-            <marker date="1488529786260" expanded="true" signature="692:983" ph="..." />
-            <marker date="1488529786260" expanded="true" signature="808:948" ph="..." />
-            <marker date="1488529786260" expanded="true" signature="1039:1328" ph="..." />
-            <marker date="1488529786260" expanded="true" signature="1154:1293" ph="..." />
-            <marker date="1488529786260" expanded="true" signature="1384:1731" ph="..." />
-            <marker date="1488529786260" expanded="true" signature="1499:1696" ph="..." />
-            <marker date="1488529786260" expanded="true" signature="1787:2134" ph="..." />
-            <marker date="1488529786260" expanded="true" signature="1904:2099" ph="..." />
-            <marker date="1488529786260" expanded="true" signature="2342:2575" ph="..." />
+            <marker date="1488421204643" expanded="true" signature="9:43" ph="..." />
+            <marker date="1488421204643" expanded="true" signature="19:31" ph="..." />
+            <marker date="1488421204643" expanded="true" signature="51:61" ph="..." />
+            <marker date="1488421204643" expanded="true" signature="70:231" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1000,48 +1007,302 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/users/Login.vue">
+    <entry file="file://$PROJECT_DIR$/src/components/users/Collection.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        <state relative-caret-position="165">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
-            <marker date="1488529774078" expanded="true" signature="9:1525" ph="..." />
-            <marker date="1488529774078" expanded="true" signature="30:1513" ph="..." />
-            <marker date="1488529774078" expanded="true" signature="96:1502" ph="..." />
-            <marker date="1488529774078" expanded="true" signature="133:1487" ph="..." />
-            <marker date="1488529774078" expanded="true" signature="171:1468" ph="..." />
-            <marker date="1488529774078" expanded="true" signature="223:1442" ph="..." />
-            <marker date="1488529774078" expanded="true" signature="274:584" ph="..." />
-            <marker date="1488529774078" expanded="true" signature="331:553" ph="..." />
-            <marker date="1488529774078" expanded="true" signature="633:1412" ph="..." />
-            <marker date="1488529774078" expanded="true" signature="689:978" ph="..." />
-            <marker date="1488529774078" expanded="true" signature="804:943" ph="..." />
-            <marker date="1488529774078" expanded="true" signature="1034:1381" ph="..." />
-            <marker date="1488529774078" expanded="true" signature="1149:1346" ph="..." />
-            <marker date="1488529774078" expanded="true" signature="1589:1825" ph="..." />
+            <marker date="1488421204613" expanded="true" signature="9:42" ph="..." />
+            <marker date="1488421204613" expanded="true" signature="19:30" ph="..." />
+            <marker date="1488421204613" expanded="true" signature="50:60" ph="..." />
+            <marker date="1488421204613" expanded="true" signature="69:231" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.vue">
+    <entry file="file://$PROJECT_DIR$/src/components/users/Account.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="340">
+          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
           <folding>
-            <marker date="1488593873581" expanded="true" signature="9:87" ph="..." />
-            <marker date="1488593873581" expanded="true" signature="28:75" ph="..." />
-            <marker date="1488593873581" expanded="true" signature="160:390" ph="..." />
+            <marker date="1488529774085" expanded="true" signature="9:3246" ph="..." />
+            <marker date="1488529774085" expanded="true" signature="32:3234" ph="..." />
+            <marker date="1488529774085" expanded="true" signature="98:3223" ph="..." />
+            <marker date="1488529774085" expanded="true" signature="137:3208" ph="..." />
+            <marker date="1488529774085" expanded="true" signature="179:2706" ph="..." />
+            <marker date="1488529774085" expanded="true" signature="221:2683" ph="..." />
+            <marker date="1488529774085" expanded="true" signature="277:2653" ph="..." />
+            <marker date="1488529774085" expanded="true" signature="335:657" ph="..." />
+            <marker date="1488529774085" expanded="true" signature="716:2619" ph="..." />
+            <marker date="1488529774085" expanded="true" signature="779:916" ph="..." />
+            <marker date="1488529774085" expanded="true" signature="980:2584" ph="..." />
+            <marker date="1488529774085" expanded="true" signature="1150:2437" ph="..." />
+            <marker date="1488529774085" expanded="true" signature="1195:1461" ph="..." />
+            <marker date="1488529774085" expanded="true" signature="1252:1415" ph="..." />
+            <marker date="1488529774085" expanded="true" signature="1506:1773" ph="..." />
+            <marker date="1488529774085" expanded="true" signature="1563:1727" ph="..." />
+            <marker date="1488529774085" expanded="true" signature="1818:2084" ph="..." />
+            <marker date="1488529774085" expanded="true" signature="1875:2038" ph="..." />
+            <marker date="1488529774085" expanded="true" signature="2129:2395" ph="..." />
+            <marker date="1488529774085" expanded="true" signature="2186:2349" ph="..." />
+            <marker date="1488529774085" expanded="true" signature="2756:3189" ph="..." />
+            <marker date="1488529774085" expanded="true" signature="2798:3166" ph="..." />
+            <marker date="1488529774085" expanded="true" signature="2854:3136" ph="..." />
+            <marker date="1488529774085" expanded="true" signature="2909:3102" ph="..." />
+            <marker date="1488529774085" expanded="true" signature="3312:3546" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/common/SiteHeader.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="28" column="22" lean-forward="false" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+          <folding>
+            <marker date="1488611623645" expanded="true" signature="9:1350" ph="..." />
+            <marker date="1488611623645" expanded="true" signature="39:1338" ph="..." />
+            <marker date="1488611623645" expanded="true" signature="71:1327" ph="..." />
+            <marker date="1488611623645" expanded="true" signature="101:1312" ph="..." />
+            <marker date="1488611623645" expanded="true" signature="157:1293" ph="..." />
+            <marker date="1488611623645" expanded="true" signature="200:649" ph="..." />
+            <marker date="1488611623645" expanded="true" signature="362:622" ph="..." />
+            <marker date="1488611623645" expanded="true" signature="674:1009" ph="..." />
+            <marker date="1488611623645" expanded="true" signature="1086:1270" ph="..." />
+            <marker date="1488611623645" expanded="true" signature="1417:1545" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/common/SidebarRightIndex.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+          <folding>
+            <marker date="1488529954414" expanded="true" signature="9:54" ph="..." />
+            <marker date="1488529954414" expanded="true" signature="63:298" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/common/BackToTop.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1488618276496" expanded="true" signature="9:138" ph="..." />
+            <marker date="1488618276496" expanded="true" signature="19:126" ph="..." />
+            <marker date="1488618276496" expanded="true" signature="146:205" ph="..." />
+            <marker date="1488618276496" expanded="true" signature="214:563" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Start.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="571">
-          <caret line="133" column="31" lean-forward="true" selection-start-line="133" selection-start-column="31" selection-end-line="133" selection-end-column="31" />
+        <state relative-caret-position="109">
+          <caret line="7" column="53" lean-forward="true" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="53" />
           <folding>
-            <marker date="1488605920459" expanded="true" signature="7489:7624" ph="{...}" />
+            <marker date="1488618306432" expanded="true" signature="9:7065" ph="..." />
+            <marker date="1488618306432" expanded="true" signature="30:7053" ph="..." />
+            <marker date="1488618306432" expanded="true" signature="96:7042" ph="..." />
+            <marker date="1488618306432" expanded="true" signature="132:7027" ph="..." />
+            <marker date="1488618306432" expanded="true" signature="166:7008" ph="..." />
+            <marker date="1488618306432" expanded="true" signature="209:6936" ph="..." />
+            <marker date="1488618306432" expanded="true" signature="265:390" ph="..." />
+            <marker date="1488618306432" expanded="true" signature="439:6909" ph="..." />
+            <marker date="1488618306432" expanded="true" signature="472:6878" ph="..." />
+            <marker date="1488618306432" expanded="true" signature="527:2261" ph="..." />
+            <marker date="1488618306432" expanded="true" signature="592:1212" ph="..." />
+            <marker date="1488618306432" expanded="true" signature="651:799" ph="..." />
+            <marker date="1488618306432" expanded="true" signature="1035:1168" ph="..." />
+            <marker date="1488618306432" expanded="true" signature="1277:1642" ph="..." />
+            <marker date="1488618306432" expanded="true" signature="1354:1599" ph="..." />
+            <marker date="1488618306432" expanded="true" signature="1435:1552" ph="..." />
+            <marker date="1488618306432" expanded="true" signature="1707:2223" ph="..." />
+            <marker date="1488618306432" expanded="true" signature="1776:1900" ph="..." />
+            <marker date="1488618306432" expanded="true" signature="2053:2180" ph="..." />
+            <marker date="1488618306432" expanded="true" signature="2321:6844" ph="..." />
+            <marker date="1488618306432" expanded="true" signature="2387:6805" ph="..." />
+            <marker date="1488618306432" expanded="true" signature="2453:6762" ph="..." />
+            <marker date="1488618306432" expanded="true" signature="2519:4583" ph="..." />
+            <marker date="1488618306432" expanded="true" signature="2586:2750" ph="..." />
+            <marker date="1488618306432" expanded="true" signature="2820:4532" ph="..." />
+            <marker date="1488618306432" expanded="true" signature="3071:3465" ph="..." />
+            <marker date="1488618306432" expanded="true" signature="3150:3308" ph="..." />
+            <marker date="1488618306432" expanded="true" signature="3546:4477" ph="..." />
+            <marker date="1488618306432" expanded="true" signature="3622:4171" ph="..." />
+            <marker date="1488618306432" expanded="true" signature="3693:4108" ph="..." />
+            <marker date="1488618306432" expanded="true" signature="4254:4417" ph="..." />
+            <marker date="1488618306432" expanded="true" signature="4651:6715" ph="..." />
+            <marker date="1488618306432" expanded="true" signature="4718:4882" ph="..." />
+            <marker date="1488618306432" expanded="true" signature="4952:6664" ph="..." />
+            <marker date="1488618306432" expanded="true" signature="5203:5597" ph="..." />
+            <marker date="1488618306432" expanded="true" signature="5282:5440" ph="..." />
+            <marker date="1488618306432" expanded="true" signature="5678:6609" ph="..." />
+            <marker date="1488618306432" expanded="true" signature="5754:6303" ph="..." />
+            <marker date="1488618306432" expanded="true" signature="5825:6240" ph="..." />
+            <marker date="1488618306432" expanded="true" signature="6386:6549" ph="..." />
+            <marker date="1488618306432" expanded="true" signature="7129:7446" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/css/globals/header.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="92" column="21" lean-forward="false" selection-start-line="92" selection-start-column="21" selection-end-line="92" selection-end-column="21" />
+          <folding>
+            <marker date="1488618482699" expanded="true" signature="5:75" ph="{...}" />
+            <marker date="1488618482699" expanded="true" signature="90:279" ph="{...}" />
+            <marker date="1488618482699" expanded="true" signature="315:356" ph="{...}" />
+            <marker date="1488618482699" expanded="true" signature="370:435" ph="{...}" />
+            <marker date="1488618482699" expanded="true" signature="452:553" ph="{...}" />
+            <marker date="1488618482699" expanded="true" signature="585:655" ph="{...}" />
+            <marker date="1488618482699" expanded="true" signature="696:779" ph="{...}" />
+            <marker date="1488618482699" expanded="true" signature="806:890" ph="{...}" />
+            <marker date="1488618482699" expanded="true" signature="924:945" ph="{...}" />
+            <marker date="1488618482699" expanded="true" signature="982:1066" ph="{...}" />
+            <marker date="1488618482699" expanded="true" signature="1095:1121" ph="{...}" />
+            <marker date="1488618482699" expanded="true" signature="1144:1195" ph="{...}" />
+            <marker date="1488618482699" expanded="true" signature="1222:1288" ph="{...}" />
+            <marker date="1488618482699" expanded="true" signature="1320:1341" ph="{...}" />
+            <marker date="1488618482699" expanded="true" signature="1360:1416" ph="{...}" />
+            <marker date="1488618482699" expanded="true" signature="1437:1481" ph="{...}" />
+            <marker date="1488618482699" expanded="true" signature="1554:1579" ph="{...}" />
+            <marker date="1488618482699" expanded="true" signature="1591:1616" ph="{...}" />
+            <marker date="1488618482699" expanded="true" signature="1632:1678" ph="{...}" />
+            <marker date="1488618482699" expanded="true" signature="1702:1844" ph="{...}" />
+            <marker date="1488618482699" expanded="true" signature="1873:1984" ph="{...}" />
+            <marker date="1488618482699" expanded="true" signature="2010:2122" ph="{...}" />
+            <marker date="1488618482699" expanded="true" signature="2016:2070" ph="/*...*/" />
+            <marker date="1488618482699" expanded="true" signature="2152:2218" ph="{...}" />
+            <marker date="1488618482699" expanded="true" signature="2254:2301" ph="{...}" />
+            <marker date="1488618482699" expanded="true" signature="2325:2392" ph="{...}" />
+            <marker date="1488618482699" expanded="true" signature="2428:2475" ph="{...}" />
+            <marker date="1488618482699" expanded="true" signature="2497:2538" ph="{...}" />
+            <marker date="1488618482699" expanded="true" signature="2566:2589" ph="{...}" />
+            <marker date="1488618482699" expanded="true" signature="2631:2680" ph="{...}" />
+            <marker date="1488618482699" expanded="true" signature="2746:2887" ph="{...}" />
+            <marker date="1488618482699" expanded="true" signature="2939:2967" ph="{...}" />
+            <marker date="1488618482699" expanded="true" signature="2985:3048" ph="{...}" />
+            <marker date="1488618482699" expanded="true" signature="3084:3166" ph="{...}" />
+            <marker date="1488618482699" expanded="true" signature="3206:3302" ph="{...}" />
+            <marker date="1488618482699" expanded="true" signature="3339:3420" ph="{...}" />
+            <marker date="1488618482699" expanded="true" signature="3464:3512" ph="{...}" />
+            <marker date="1488618482699" expanded="true" signature="3582:3693" ph="{...}" />
+            <marker date="1488618482699" expanded="true" signature="3727:3770" ph="{...}" />
+            <marker date="1488618482699" expanded="true" signature="3814:3842" ph="{...}" />
+            <marker date="1488618482699" expanded="true" signature="3875:4000" ph="{...}" />
+            <marker date="1488618482699" expanded="true" signature="4035:4097" ph="{...}" />
+            <marker date="1488618482699" expanded="true" signature="4135:4183" ph="{...}" />
+            <marker date="1488618482699" expanded="true" signature="4216:4239" ph="{...}" />
+            <marker date="1488618482699" expanded="true" signature="4261:4323" ph="{...}" />
+            <marker date="1488618482699" expanded="true" signature="4356:4384" ph="{...}" />
+            <marker date="1488618482699" expanded="true" signature="4400:4427" ph="{...}" />
+            <marker date="1488618482699" expanded="true" signature="4461:4489" ph="{...}" />
+            <marker date="1488618482699" expanded="true" signature="4537:4563" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/common/UEditor.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="25" column="16" lean-forward="false" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+          <folding>
+            <marker date="1488618827045" expanded="true" signature="9:100" ph="..." />
+            <marker date="1488618827045" expanded="true" signature="32:88" ph="..." />
+            <marker date="1488618827045" expanded="true" signature="109:1175" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/ueditor/php/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1481813623000" expanded="true" signature="0:28" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="29:4799" ph="{&quot;imageActionName&quot;: &quot;uploadimage&quot;...}" />
+            <marker date="1481813623000" expanded="true" signature="35:48" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="87:108" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="141:156" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="186:202" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="269:283" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="317:337" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="371:386" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="419:434" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="461:475" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="558:586" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="619:659" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="692:727" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="760:780" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="813:834" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="867:886" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="919:938" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="971:990" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="1023:1042" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="1075:1094" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="1127:1145" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="1178:1204" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="1237:1302" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="1308:1323" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="1364:1385" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="1419:1434" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="1518:1546" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="1577:1593" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="1621:1635" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="1674:1686" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="1730:1751" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="1839:1867" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="1899:1913" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="1951:1966" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="1972:1986" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="2097:2120" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="2155:2172" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="2257:2285" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="2314:2328" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="2360:2376" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="2445:2459" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="2465:2477" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="2516:2537" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="2570:2585" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="2668:2696" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="2723:2737" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="2769:2793" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="2817:2972" ph="[...]" />
+            <marker date="1481813623000" expanded="true" signature="2974:2988" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="2994:3006" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="3043:3076" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="3108:3123" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="3204:3232" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="3258:3272" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="3302:3325" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="3348:3717" ph="[...]" />
+            <marker date="1481813623000" expanded="true" signature="3719:3733" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="3739:3755" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="3799:3820" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="3879:3895" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="3928:3942" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="3976:3990" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="4030:4045" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="4119:4132" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="4138:4154" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="4196:4217" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="4274:4290" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="4323:4337" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="4369:4383" ph="/*...*/" />
+            <marker date="1481813623000" expanded="true" signature="4413:4782" ph="[...]" />
+            <marker date="1481813623000" expanded="true" signature="4783:4796" ph="/*...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/ueditor/ueditor.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="22" column="60" lean-forward="false" selection-start-line="22" selection-start-column="60" selection-end-line="22" selection-end-column="60" />
+          <folding />
         </state>
       </provider>
     </entry>

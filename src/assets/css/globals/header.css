@@ -89,6 +89,9 @@ body {
 }
 
 /***************** start  *************************/
+.index-publish-box{
+    margin-top: 30px;
+}
 .feed-list {
     margin-top: 2rem;
 }

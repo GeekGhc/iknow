@@ -7,7 +7,7 @@
                     <div class="col-md-8">
                         <div class="index-publish-box">
                             <!-- 加载编辑器的容器 -->
-                            <script id="Ueditor" type="text/plain"></script>
+                            <ueditor></ueditor>
                         </div>
 
                         <div class="feed-list">
@@ -115,9 +115,9 @@
     </div>
 </template>
 <style src="../assets/css/globals/common.css"></style>
-
 <script>
     import SiteHeader from './common/SiteHeader'
+    import UEditor from './common/UEditor'
     export default{
         name:'start',
         data() {
@@ -126,17 +126,8 @@
           }
         },
         components:{
-           SiteHeader
+           SiteHeader,
+           'ueditor':UEditor
         }
     }
-</script>
-
-<script type="text/javascript">
-    //实例化编辑器
-    var ue = UE.getEditor( 'Ueditor', {
-        autoHeightEnabled: true,
-        autoFloatEnabled: true,
-        initialFrameWidth: 690,
-        initialFrameHeight:483
-    });
 </script>

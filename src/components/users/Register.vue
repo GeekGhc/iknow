@@ -49,7 +49,6 @@
         </div>
     </div>
 </template>
-<style src="../../assets/css/pages/login.css"></style>
 <script>
     import SiteHeader from '../common/SiteHeader'
     export default{
