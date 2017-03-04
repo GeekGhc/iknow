@@ -231,7 +231,7 @@ body {
     border-bottom: 1px solid #e5e5e5;
 }
 
-.ui.comments .comment .avatar img{
+.comment .avatar img{
     width: 36px;
     height: 36px;
     border-radius: 50%;

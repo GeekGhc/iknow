@@ -76,7 +76,7 @@
             register:function(){
                 console.log("name = "+this.newUser.name)
                 this.axios.post('http://localhost:8000/api/user/register',{user:this.newUser}).then(response => {
-                  console.log("data = "+response.data)
+                  console.log("data = "+response.data.title)
                 })
             }
         },
