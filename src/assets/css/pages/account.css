@@ -4,7 +4,7 @@
     background: -webkit-linear-gradient(to left, #5C258D, #4389A2); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #5C258D, #4389A2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
-    padding-top: 150px;
+    /*padding-top: 150px;*/
 }
 
 .user-banner-info .user-banner-left img {
@@ -17,6 +17,24 @@
 .user-banner .el-row .el-col {
     background: transparent;
     border: none;
+    padding-top: 150px !important;
+}
+.user-banner  .user-banner-tags{
+    position: absolute;
+    top:20px;
+    list-style: none;
+}
+.user-banner .user-banner-tags .tag-item{
+    background: rgba(0,0,0,.1);
+    padding: 0 1rem;
+    margin: 0 1rem 1rem 0;
+    float: left;
+    line-height: 1.5rem;
+    border-radius: 3px;
+}
+.user-banner .user-banner-tags .tag-item a{
+    color: #fff;
+    font-size: 1.04rem;
 }
 
 .user-banner-info .user-banner-left {
@@ -29,12 +47,14 @@
 
 .user-banner-info .user-banner-right {
     margin-left: 240px;
-    padding: 40px 10px 20px;
+    padding:30px 10px 20px;
 }
 
 .user-banner-info .user-banner-right .user-info-ul {
-    width: 30rem;
+    width: 25rem;
     padding-left: 0;
+    display: flex;
+    float: left;
 }
 
 .user-banner-right .user-info-ul li {
@@ -67,8 +87,9 @@
 
 .user-banner-control {
     width: 100%;
-    padding: 15px 10px;
+    padding: 0px 10px;
     background: #fff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 .user-banner-control .el-row .el-col {
@@ -79,12 +100,15 @@
 
 .user-banner-control .user-level-ul {
     list-style: none;
+    display: flex;
+    margin-bottom: 0;
 }
 
 .user-banner-control .user-level-ul li {
     float: left;
     font-size: 1.2rem;
-    margin-right: 1.8rem;
+    margin-right: 3rem;
+    padding: 5px 0;
 }
 
 .user-banner-control .user-level-ul li a {

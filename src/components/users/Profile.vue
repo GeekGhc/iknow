@@ -66,17 +66,7 @@
         </div>
     </div>
 </template>
-<style src="../../assets/css/globals/common.css"></style>
 <style src="../../assets/css/pages/profile.css"></style>
-<style>
-   .el-col {
-    background: #fff;
-    border: 1px solid #e5e5e5;
-    padding:0;
-    }
-
-
-</style>
 <script>
     import SiteHeader from '../common/SiteHeader'
     export default{

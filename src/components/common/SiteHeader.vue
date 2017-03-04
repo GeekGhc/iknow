@@ -36,9 +36,4 @@
         }
     }
 </script>
-<style>
-body{
-background: rgb(245, 248, 250);
-}
-</style>
 

@@ -5,6 +5,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8">
+                        <div class="index-publish-box">
+                            <!-- 加载编辑器的容器 -->
+                            <script id="Ueditor" type="text/plain"></script>
+                        </div>
+
                         <div class="feed-list">
                             <ul>
                                 <li class="feed-item">
@@ -12,8 +17,8 @@
                                         <a class="avatar">
                                             <img src="../assets/images/avatars/default/my-avatar.jpg">
                                         </a>
-                                        <a class="feed-item-author">JellyBean</a>
-                                        <span class="time">4天前</span>
+                                        <a class="feed-item-author">JellyBean123</a>
+                                        <span class="time"  id="aaa">4天前</span>
                                         <div class="control-operator">
                                             <a><i class="fa fa-chevron-down"></i></a>
                                         </div>
@@ -58,7 +63,7 @@
                                                                     type="textarea"
                                                                     autosize
                                                                     placeholder="回复JellyBean:"
-                                                                    v-model="textarea2">
+                                                                    v-model="textarea">
                                                             </el-input>
                                                         </div>
                                                         <div class="reply-button">
@@ -88,7 +93,7 @@
                                                                     type="textarea"
                                                                     autosize
                                                                     placeholder="回复JellyBean:"
-                                                                    v-model="textarea2">
+                                                                    v-model="textarea">
                                                             </el-input>
                                                         </div>
                                                         <div class="reply-button">
@@ -110,18 +115,28 @@
     </div>
 </template>
 <style src="../assets/css/globals/common.css"></style>
+
 <script>
     import SiteHeader from './common/SiteHeader'
     export default{
         name:'start',
         data() {
           return {
-             msg: 'Welcome to Your Vue.js App',
-             textarea2:''
+             textarea:''
           }
         },
         components:{
            SiteHeader
         }
     }
+</script>
+
+<script type="text/javascript">
+    //实例化编辑器
+    var ue = UE.getEditor( 'Ueditor', {
+        autoHeightEnabled: true,
+        autoFloatEnabled: true,
+        initialFrameWidth: 690,
+        initialFrameHeight:483
+    });
 </script>

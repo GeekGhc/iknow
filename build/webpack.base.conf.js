@@ -68,5 +68,8 @@ module.exports = {
                 }
             }
         ]
-    }
+    },
+    externals: {
+        'UE': 'UE',
+    },
 }
