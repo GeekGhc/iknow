@@ -27,7 +27,8 @@
 }
 .login-form .control-group{
     min-height: 3rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 0;
+    margin-top:1.2rem;
     line-height: 3rem;
     vertical-align: bottom;
     padding-left: 2rem;

@@ -5,6 +5,7 @@
             <div class="login-page">
                 <el-row :gutter="20">
                     <el-col :span="10" :offset="7">
+
                         <div class="login-header">
                             <div class="login-register">
                                 <router-link :to="{name: 'login'}">登录</router-link>
@@ -12,22 +13,31 @@
                             </div>
                         </div>
                         <div class="login-form">
-                            <div class="control-group">
+
+                            <div class="control-group" v-bind:class="{ 'form-group--error': $v.newUser.name.$error }">
                                 <label class="control-label">用户名</label>
                                 <el-input
                                         placeholder="请输入你的用户名"
-                                        v-model="newUser.name"
+                                        v-model.trim="newUser.name"
+                                        @input="$v.newUser.name.$touch()"
                                 >
                                 </el-input>
                             </div>
-                            <div class="control-group">
+                            <span class="form-group__message" v-if="!$v.newUser.name.required">用户名不能为空</span>
+                            <span class="form-group__message" v-if="!$v.newUser.name.minLength">用户名不能太短</span>
+
+                            <div class="control-group" v-bind:class="{ 'form-group--error': $v.newUser.email.$error }">
                                 <label class="control-label">邮箱</label>
                                 <el-input
                                         placeholder="请输入你的邮箱"
-                                        v-model="newUser.email"
+                                        v-model.trim="newUser.email"
+                                        @input="$v.newUser.email.$touch()"
                                 >
                                 </el-input>
                             </div>
+                            <span class="form-group__message" v-if="!$v.newUser.email.required">邮箱不能为空</span>
+                            <span class="form-group__message" v-if="!$v.newUser.email.email">请填写正确的邮箱格式</span>
+
                             <div class="control-group">
                                 <label class="control-label">密码</label>
                                 <el-input
@@ -49,7 +59,7 @@
                             <div class="control-group">
                                 <button
                                         class="btn btn-primary btn-lg btn-block btn-login-register"
-                                        @click="register()">立即注册
+                                >立即注册
                                 </button>
                             </div>
                         </div>
@@ -61,6 +71,7 @@
 </template>
 <script>
     import SiteHeader from '../common/SiteHeader'
+    import { required,minLength,between,email } from 'vuelidate/lib/validators'
     export default{
         data(){
             return{
@@ -69,7 +80,18 @@
                     email:'',
                     password:'',
                     confirm_pwd:''
-                }
+                },
+            }
+        },
+        validations: {
+            newUser:{
+               name: {
+                    required,
+                    minLength: minLength(4)
+               },
+               email: {
+                    required,email
+               }
             }
         },
         methods:{
@@ -84,4 +106,8 @@
             SiteHeader
         }
     }
+
+
+
+
 </script>

@@ -4,14 +4,15 @@ import Vue from 'vue'
 import App from './App'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-default/index.css'
-import Vuex from 'vuex'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
+import Vuelidate from 'vuelidate'
 import router from './router'
 
-// Vue.use(Vuex)
+
 Vue.use(VueAxios, axios)
 Vue.use(ElementUI)
+Vue.use(Vuelidate)
 
 /* eslint-disable no-new */
 new Vue({
