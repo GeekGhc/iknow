@@ -25,7 +25,6 @@
         </div>
     </div>
 </template>
-<style src="../assets/css/globals/common.css"></style>
 <script>
     import SiteHeader from './common/SiteHeader'
     import UEditor from './common/UEditor'
@@ -35,7 +34,7 @@
         name:'start',
         data() {
           return {
-             textarea:''
+
           }
         },
         mounted(){

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="post">
         <li class="feed-item">
             <div class="feed-item-head">
                 <a class="avatar">
@@ -32,7 +32,9 @@
 
         <div class="comments-list">
             <div class="comment-wrapper">
-                    <comment></comment>
+                <div class="ui comments">
+                <comment></comment>
+                </div>
             </div>
         </div>
     </div>
@@ -42,7 +44,6 @@
     export default{
         data(){
             return{
-
             }
         },
         components:{

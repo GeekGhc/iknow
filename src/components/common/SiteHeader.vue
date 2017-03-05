@@ -26,7 +26,6 @@
         </div>
     </div>
 </template>
-<style src="../../assets/css/globals/header.css"></style>
 <script>
     export default{
         data(){

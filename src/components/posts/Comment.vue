@@ -1,5 +1,5 @@
 <template>
-    <div id="post-comment">
+    <div>
         <div class="comment">
             <a class="avatar">
                 <img src="../../assets/images/avatars/default/my-avatar.jpg">

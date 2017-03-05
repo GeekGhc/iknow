@@ -66,7 +66,6 @@
         </div>
     </div>
 </template>
-<style src="../../assets/css/pages/account.css"></style>
 <script>
     import SiteHeader from '../common/SiteHeader'
     export default{

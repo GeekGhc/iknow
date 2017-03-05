@@ -2,3 +2,6 @@
     margin-top: 12px;
     width: 42rem;
 }
+.comment>.avatar~.content {
+    margin-left: 3.5em;
+}

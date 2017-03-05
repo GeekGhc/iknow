@@ -9,7 +9,7 @@ import axios from 'axios'
 import VueAxios from 'vue-axios'
 import router from './router'
 
-Vue.use(Vuex)
+// Vue.use(Vuex)
 Vue.use(VueAxios, axios)
 Vue.use(ElementUI)
 
