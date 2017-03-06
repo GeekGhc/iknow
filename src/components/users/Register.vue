@@ -13,9 +13,8 @@
                             </div>
                         </div>
                         <div class="login-form">
-
                             <div class="control-group" v-bind:class="{ 'form-group--error': $v.newUser.name.$error }">
-                                <label class="control-label">用户名2</label>
+                                <label class="control-label">用户名</label>
                                 <el-input
                                         placeholder="请输入你的用户名"
                                         v-model="newUser.name"
