@@ -1,41 +1,49 @@
-.login-page{
+.login-page {
     padding-top: 38px;
 }
-.login-page .el-col{
+
+.login-page .el-col {
     background: #fff !important;
 }
-.login-header{
+
+.login-header {
     padding: 20px 10px 24px;
     border-bottom: 1px solid #E5E5E5;
 }
-.login-header .login-register{
+
+.login-header .login-register {
     text-align: center;
 }
-.login-header a{
+
+.login-header a {
     color: #666;
     cursor: pointer;
     font-size: 24px;
     padding: 12px 8px;
-    margin:0 16px;
+    margin: 0 16px;
 }
-.login-header .login-register a.active{
+
+.login-header .login-register a.active {
     border-bottom: 3px solid #4A90E2;
     color: #4A90E2;
 }
-.login-form{
+
+.login-form {
     padding: 4rem;
 }
-.login-form .control-group{
+
+.login-form .control-group {
     min-height: 3rem;
     margin-bottom: 0;
-    margin-top:1.2rem;
+    margin-top: 1.2rem;
     line-height: 3rem;
     vertical-align: bottom;
     padding-left: 2rem;
     width: 100%;
     display: flex;
 }
-.login-form .control-group .control-label{
+
+.login-form .control-group .control-label {
     line-height: 2rem;
     color: #636363;
     float: left;
@@ -44,6 +52,28 @@
     text-align: right;
     font-size: 1.1rem;
 }
-.btn-login-register{
+
+.login-form .login-group {
+    margin-top: 0;
+}
+
+.show-login-error {
+
+}
+
+.login-remember {
+    margin-left: 7rem;
+    float: left;
+    padding: 0 !important;
+    vertical-align: middle;
+}
+
+.btn-login {
+    letter-spacing: 2px;
+    float: right;
+}
+
+.btn-register {
     padding: 0 2rem;
+    letter-spacing: 2px;
 }

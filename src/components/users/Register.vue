@@ -37,6 +37,7 @@
                             </div>
                             <span class="form-group__message" v-if="!$v.newUser.email.required">邮箱不能为空</span>
                             <span class="form-group__message" v-if="!$v.newUser.email.email">请填写正确的邮箱格式</span>
+                            <span class="form-group__message" v-if="!$v.newUser.email.isUnique">邮箱已经被注册</span>
 
                             <div class="control-group" v-bind:class="{ 'form-group--error': $v.newUser.password.$error }">
                                 <label class="control-label">密码</label>
@@ -61,11 +62,13 @@
                                 >
                                 </el-input>
                             </div>
+                            <span class="form-group__message" v-if="!$v.newUser.confirm_pwd.required">确认密码不能为空</span>
                             <span class="form-group__message" v-if="!$v.newUser.confirm_pwd.sameAsPassword">确认密码不一致</span>
 
                             <div class="control-group">
                                 <button
-                                        class="btn btn-primary btn-lg btn-block btn-login-register"
+                                        class="btn btn-primary btn-lg btn-block btn-register"
+                                        @click="register($v.newUser)"
                                 >立即注册
                                 </button>
                             </div>
@@ -102,23 +105,33 @@
                     }
                },
                email: {
-                    required,email
+                    required,
+                    email,
+                    async isUnique (value) {
+                       if (value === '') return true
+                       const response = await fetch(`http://localhost:8000/api/unique/email/${value}`)
+                       return Boolean(await response.json())
+                    }
                },
                password: {
                    required,
                    minLength: minLength(6)
                },
                confirm_pwd: {
+                    required,
                     sameAsPassword: sameAs('password')
                }
             }
         },
         methods:{
-            register:function(){
-                console.log("name = "+this.newUser.name)
-                this.axios.post('http://localhost:8000/api/user/register',{user:this.newUser}).then(response => {
-                  console.log("data = "+response.data.title)
-                })
+            register:function(value){
+                value.$touch();//验证所有信息
+                if(!value.$error){
+                    console.log("name = "+this.newUser.name)
+                    this.axios.post('http://localhost:8000/api/user/register',{user:this.newUser}).then(response => {
+                      console.log("data = "+response.data.status)
+                    })
+                }
             }
         },
         components:{
