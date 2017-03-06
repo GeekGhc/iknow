@@ -15,10 +15,10 @@
                         <div class="login-form">
 
                             <div class="control-group" v-bind:class="{ 'form-group--error': $v.newUser.name.$error }">
-                                <label class="control-label">用户名</label>
+                                <label class="control-label">用户名2</label>
                                 <el-input
                                         placeholder="请输入你的用户名"
-                                        v-model.trim="newUser.name"
+                                        v-model="newUser.name"
                                         @input="$v.newUser.name.$touch()"
                                 >
                                 </el-input>
@@ -96,8 +96,10 @@
                name: {
                     required,
                     minLength: minLength(4),
-                    isUnique (value) {
-                        if (value.length % 2 !== 0) return false
+                    async isUnique (value) {
+                       if (value === '') return true
+                       const response = await fetch(`http://localhost:8000/api/unique/name/${value}`)
+                       return Boolean(await response.json())
                     }
                },
                email: {
