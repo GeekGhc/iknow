@@ -8,18 +8,21 @@ import axios from 'axios'
 import VueAxios from 'vue-axios'
 import Vuelidate from 'vuelidate'
 import router from './router'
-// import store from './vuex'
+import store from './store'
+// import Vuex from 'vuex'
 
 
 Vue.use(VueAxios, axios)
 Vue.use(ElementUI)
 Vue.use(Vuelidate)
 
+
+
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
-  // store,
-  router,
-  template: '<App/>',
-  components: { App }
+    el: '#app',
+    store,
+    router,
+    template: '<App/>',
+    components: {App}
 })
