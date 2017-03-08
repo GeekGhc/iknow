@@ -15,11 +15,12 @@ export default new Router({
     history: true,
     routes: [
         {path: '/', name: 'start', component: Start},
-        {path: '/user/login', name: 'login', component: Login},
-        {path: '/user/register', name: 'register', component: Register},
+        {path: '/login', name: 'login', component: Login},
+        {path: '/register', name: 'register', component: Register},
         {path: '/profile', name: 'profile', component: Profile},
         {path: '/account', name: 'account', component: Account},
         {path: '/editor', name: 'ueditor', component: UEditor},
         {path: '/test', name: 'test', component: Test},
+        {path: '*',redirect:'/login'}
     ]
 })

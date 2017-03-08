@@ -56,9 +56,9 @@
                                 <div class="four wide column">
                                     <button
                                             class="ui button linkedin btn-login"
-                                            @click="login($v.user)"
+                                            @click="show"
 
-                                    >立即登录</button>
+                                    >立即登录22</button>
                                 </div>
                             </div>
                         </div>
@@ -69,7 +69,11 @@
     </div>
 </template>
 <script>
-    import SiteHeader from '../common/SiteHeader'
+    //webpack.base.config.js   resolve('src'),这个配置决定从src目录  引入vuex时注意不是在vex下的index.js
+    //可以是vuex目录下的store.js
+    import { mapActions } from 'vuex'
+    import { USER_SIGNIN } from 'store/modules/login'
+    import SiteHeader from 'components/common/SiteHeader'
     import { required,minLength,between,email,sameAs } from 'vuelidate/lib/validators'
     export default{
         data(){
@@ -79,7 +83,8 @@
                 password:'',
                 remember:false
                },
-               isError:false
+               isError:false,
+               isSubmit:false,//true为提交 false没有提交过
             }
         },
         validations: {
@@ -94,9 +99,15 @@
            }
         },
         methods:{
+            ...mapActions([USER_SIGNIN]),
             show:function(){
-                console.log("remember = "+this.user.remember)
+                console.log("remember = "+sessionStorage.getItem("user"))
             },
+            userLogin() {
+				this.isSubmit = true
+				this.USER_SIGNIN(this.user)
+				this.$router.replace({ path: '/' })
+			},
             login:function(value){
                 value.$touch();//验证所有信息
                 if(!value.$error){

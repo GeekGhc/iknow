@@ -80,7 +80,7 @@
     </div>
 </template>
 <script>
-    import SiteHeader from '../common/SiteHeader'
+    import SiteHeader from 'components/common/SiteHeader'
     import { required,minLength,between,email,sameAs } from 'vuelidate/lib/validators'
     export default{
         data(){

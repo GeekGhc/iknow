@@ -10,9 +10,11 @@
                             <ueditor></ueditor>
                         </div>
                         <div class="edit-control">
-                            <button class="btn btn-primary btn-lg">发布</button>
+                            <button
+                                    class="btn btn-primary btn-lg"
+                                    @click="add"
+                            >发布</button>
                         </div>
-
                         <div class="feed-list">
                             <ul>
                                 <post></post>
@@ -26,10 +28,10 @@
     </div>
 </template>
 <script>
-    import SiteHeader from './common/SiteHeader'
-    import UEditor from './common/UEditor'
-    import Post from './posts/Post'
-    import PostComment from './posts/Comment'
+    import SiteHeader from 'components/common/SiteHeader'
+    import UEditor from 'components/common/UEditor'
+    import Post from 'components/posts/Post'
+    import PostComment from 'components/posts/Comment'
     export default{
         name:'start',
         data() {
@@ -39,6 +41,11 @@
         },
         mounted(){
 
+        },
+        methods:{
+            add(){
+                console.log("aa = "+this.$store.getters.doneTodosCount)
+            }
         },
         components:{
            Post,
