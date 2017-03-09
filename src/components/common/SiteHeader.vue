@@ -11,13 +11,13 @@
                             <router-link :to="{ name: 'account'}" class="site-header-nav-item">帖子</router-link>
                         </nav>
                     </div>
-                   <!-- <div class="header-user-panel">
+                    <div class="header-user-panel" v-if="isLogin">
                         <section>
                             <a class="message"><i class="fa fa-bell-o fa-header-bell"></i></a>
                             <a class="avatar"><img src="../../assets/images/avatars/default/my-avatar.jpg"></a>
                         </section>
-                    </div>-->
-                    <div class="header-user-login" style="display:block;">
+                    </div>
+                    <div class="header-user-login"  v-if="!isLogin">
                         <router-link :to="{name: 'login'}">登录</router-link>/
                         <router-link :to="{ name: 'register'}">注册</router-link>
                     </div>
@@ -31,6 +31,16 @@
         data(){
             return{
                 msg:'hello vue'
+            }
+        },
+        mounted:{
+            userIsLogin(){
+
+            }
+        },
+        computed:{
+            isLogin(){
+                return this.$store.state.login.isLogin
             }
         }
     }

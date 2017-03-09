@@ -1,18 +1,26 @@
+import Vue from 'vue'
 import Vuex from 'vuex'
 export const USER_SIGNIN = 'USER_SIGNIN' //登录成功
 export const USER_SIGNOUT = 'USER_SIGNOUT' //退出登录
 
 export default{
-    state: JSON.parse(sessionStorage.getItem('user')) || {},
+    state: {
+        isLogin:false
+    },
     mutations: {
         [USER_SIGNIN](state, user) {
-            sessionStorage.setItem('user', JSON.stringify(user))
-            Object.assign(state, user)
-            console.log("登录成功了...")
+            Vue.axios.post('http://localhost:8000/api/user/login/',{user:user}).then(response => {
+                //如果验证成功
+                if(response.data.status){
+                    this.$router.replace({ path: '/' })
+                }
+                console.log("status = "+response.data.user)
+            })
+            state.isLogin = true
+            console.log("登录成功了... and user login is "+state.isLogin)
         },
         [USER_SIGNOUT](state) {
-            sessionStorage.removeItem('user')
-            Object.keys(state).forEach(k => Vue.delete(state, k))
+
         }
     },
     actions: {

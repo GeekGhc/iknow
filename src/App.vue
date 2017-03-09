@@ -6,7 +6,10 @@
 <script>
 import './assets/js/test'
 export default {
-  name: 'app'
+  name: 'app',
+  mounted:{
+
+  },
 }
 </script>
 <style src="./assets/css/source/bootstrap.min.css"></style>

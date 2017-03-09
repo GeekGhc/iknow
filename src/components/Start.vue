@@ -44,7 +44,7 @@
         },
         methods:{
             add(){
-                console.log("aa = "+this.$store.getters.doneTodosCount)
+
             }
         },
         components:{

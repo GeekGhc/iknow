@@ -56,9 +56,8 @@
                                 <div class="four wide column">
                                     <button
                                             class="ui button linkedin btn-login"
-                                            @click="show"
-
-                                    >立即登录22</button>
+                                            @click="userLogin($v.user)"
+                                    >立即登录3</button>
                                 </div>
                             </div>
                         </div>
@@ -84,7 +83,6 @@
                 remember:false
                },
                isError:false,
-               isSubmit:false,//true为提交 false没有提交过
             }
         },
         validations: {
@@ -101,21 +99,31 @@
         methods:{
             ...mapActions([USER_SIGNIN]),
             show:function(){
-                console.log("remember = "+sessionStorage.getItem("user"))
+                console.log("test data = "+this.$store.state.login.isLogin)
             },
-            userLogin() {
-				this.isSubmit = true
-				this.USER_SIGNIN(this.user)
-				this.$router.replace({ path: '/' })
+            userLogin(value) {
+                value.$touch();//验证所有信息
+                if(!value.$error){
+                     this.axios.post('http://localhost:8000/api/user/login/validation',{user:this.user}).then(response => {
+                        //如果验证成功
+                        if(response.data.status){
+                            this.USER_SIGNIN(this.user)
+                            this.$router.replace({ path: '/' })
+                        }
+                        this.isError = !response.data.status
+                        console.log("login status = "+response.data.status)
+                    })
+                }
 			},
             login:function(value){
                 value.$touch();//验证所有信息
                 if(!value.$error){
-                     this.axios.post('http://localhost:8000/api/user/login',{user:this.user}).then(response => {
+                     this.axios.post('http://localhost:8000/api/user/login/validation',{user:this.user}).then(response => {
                         if(response.data.status){
 
                         }
-                        this.isError = !data.status
+                            this.isError = !response.data.status
+                        console.log("status = "+response.data.status)
                     })
                 }
             }
