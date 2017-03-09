@@ -9,7 +9,6 @@ import VueAxios from 'vue-axios'
 import Vuelidate from 'vuelidate'
 import router from './router'
 import store from './store'
-// import Vuex from 'vuex'
 
 
 Vue.use(VueAxios, axios)

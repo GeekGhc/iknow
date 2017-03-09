@@ -107,7 +107,7 @@
                email: {
                     required,
                     email,
-                    async isUnique (value) {
+                    async isUnique(value) {
                        if (value === '') return true
                        const response = await fetch(`http://localhost:8000/api/unique/email/${value}`)
                        return Boolean(await response.json())

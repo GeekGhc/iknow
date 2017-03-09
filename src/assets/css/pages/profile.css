@@ -1,6 +1,9 @@
 .profile-page{
     padding-top: 18px;
 }
+.panel-page .el-col{
+    background: #fff;
+}
 .breadcrumb {
     background-color: transparent;
 }

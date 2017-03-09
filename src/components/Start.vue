@@ -7,7 +7,7 @@
                     <div class="col-md-8">
                         <div class="index-publish-box">
                             <!-- 加载编辑器的容器 -->
-                            <ueditor></ueditor>
+                            <!--<ueditor></ueditor>-->
                         </div>
                         <div class="edit-control">
                             <button

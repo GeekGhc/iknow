@@ -5,13 +5,7 @@
             <div class="login-page">
                 <el-row :gutter="20">
                     <el-col :span="10" :offset="7">
-                        <el-alert
-                                title="用户名或者邮箱错误"
-                                type="error"
-                                class="show-login-error"
-                                v-show="isError"
-                                show-icon>
-                        </el-alert>
+                        <el-button :plain="true" @click="open8">用户名或者邮箱错误</el-button>
                         <div class="login-header">
                             <div class="login-register">
                                 <router-link :to="{name: 'login'}" class="active">登录</router-link>
@@ -56,8 +50,8 @@
                                 <div class="four wide column">
                                     <button
                                             class="ui button linkedin btn-login"
-                                            @click="userLogin($v.user)"
-                                    >立即登录3</button>
+                                            @click="login($v.user)"
+                                    >立即登录</button>
                                 </div>
                             </div>
                         </div>
@@ -101,6 +95,13 @@
             show:function(){
                 console.log("test data = "+this.$store.state.login.isLogin)
             },
+            open8() {
+                this.$message({
+                showClose: true,
+                message: '用户名或者邮箱错误',
+                type: 'error'
+                })
+            },
             userLogin(value) {
                 value.$touch();//验证所有信息
                 if(!value.$error){
@@ -115,16 +116,12 @@
                     })
                 }
 			},
-            login:function(value){
-                value.$touch();//验证所有信息
-                if(!value.$error){
-                     this.axios.post('http://localhost:8000/api/user/login/validation',{user:this.user}).then(response => {
-                        if(response.data.status){
-
-                        }
-                            this.isError = !response.data.status
-                        console.log("status = "+response.data.status)
-                    })
+            async login(value){
+               value.$touch();//验证所有信息
+               if(!value.$error){
+                     const response = await fetch(`http://localhost:8000/api/user/login/validation/?email=${this.user.email}&&pwd=${this.user.password}`)
+                     this.isError = !Boolean(await response.json())
+                     console.log("response11 = "+this.isError)
                 }
             }
         },
