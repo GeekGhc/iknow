@@ -12,7 +12,7 @@
                             <router-link :to="{ name: 'start'}" class="site-header-nav-item">问答</router-link>
                         </nav>
                     </div>
-                    <div class="header-user-panel" v-if="true">
+                    <div class="header-user-panel" v-if="false">
                         <section>
                             <a class="message"><i class="fa fa-bell-o fa-header-bell"></i></a>
                             <el-dropdown>
@@ -27,7 +27,7 @@
                             </el-dropdown>
                         </section>
                     </div>
-                    <div class="header-user-login" v-if="false">
+                    <div class="header-user-login" v-if="true">
                         <router-link :to="{ name: 'login'}">登录</router-link>/
                         <router-link :to="{ name: 'register'}">注册</router-link>
                     </div>

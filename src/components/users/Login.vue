@@ -129,7 +129,8 @@
                         this.openError();
                      }else{
                         //如果验证成功
-                        this.$router.push('/')
+                        this.USER_SIGNIN(this.user)
+
                         console.log("response1 = "+this.isError)
                      }
                 }

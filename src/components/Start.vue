@@ -12,7 +12,8 @@
                         <div class="edit-control">
                             <button
                                     class="btn btn-primary btn-lg"
-                            >发布</button>
+                                    @click="show"
+                            >发布34</button>
                         </div>
                         <div class="feed-list">
                             <ul>
@@ -39,7 +40,9 @@
           }
         },
         methods:{
-
+            show(){
+                console.log("user is "+this.$store.state.login.isLogin)
+            }
         },
         components:{
            Post,
