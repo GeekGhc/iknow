@@ -4,12 +4,11 @@
     </div>
 </template>
 <script>
-import './assets/js/test'
 export default {
   name: 'app',
-  mounted:{
+  mounted(){
 
-  },
+  }
 }
 </script>
 <style src="./assets/css/source/bootstrap.min.css"></style>

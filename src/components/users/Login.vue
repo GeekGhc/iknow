@@ -5,7 +5,7 @@
             <div class="login-page">
                 <el-row :gutter="20">
                     <el-col :span="10" :offset="7">
-                        <el-button :plain="true" @click="open8">用户名或者邮箱错误</el-button>
+
                         <div class="login-header">
                             <div class="login-register">
                                 <router-link :to="{name: 'login'}" class="active">登录</router-link>
@@ -51,7 +51,9 @@
                                     <button
                                             class="ui button linkedin btn-login"
                                             @click="login($v.user)"
+                                            :plain="true"
                                     >立即登录</button>
+
                                 </div>
                             </div>
                         </div>
@@ -92,15 +94,16 @@
         },
         methods:{
             ...mapActions([USER_SIGNIN]),
-            show:function(){
-                console.log("test data = "+this.$store.state.login.isLogin)
-            },
-            open8() {
+            openError() {
                 this.$message({
                 showClose: true,
                 message: '用户名或者邮箱错误',
                 type: 'error'
                 })
+            },
+            show:function(){
+                console.log("test data22 = "+this.$store.state.login.isLogin)
+                this.openError();
             },
             userLogin(value) {
                 value.$touch();//验证所有信息
@@ -121,7 +124,14 @@
                if(!value.$error){
                      const response = await fetch(`http://localhost:8000/api/user/login/validation/?email=${this.user.email}&&pwd=${this.user.password}`)
                      this.isError = !Boolean(await response.json())
-                     console.log("response11 = "+this.isError)
+                     if(this.isError){
+                        console.log("你出错啦")
+                        this.openError();
+                     }else{
+                        //如果验证成功
+                        this.$router.push('/')
+                        console.log("response1 = "+this.isError)
+                     }
                 }
             }
         },

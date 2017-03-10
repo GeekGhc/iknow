@@ -4,7 +4,7 @@
         <div class="wrapper">
             <div class="profile-page">
                 <el-row :gutter="20">
-                    <el-col :span="12" :offset="6" style="padding-left:0;padding-right:0;">
+                    <el-col :span="12" :offset="6">
                         <div class="profile-header">
                             <div class="ui big breadcrumb">
                                 <a class="section">首页</a>

@@ -1,8 +1,8 @@
 .profile-page{
     padding-top: 18px;
 }
-.panel-page .el-col{
-    background: #fff;
+.profile-page .el-row .el-col{
+    background: #fff !important;
 }
 .breadcrumb {
     background-color: transparent;

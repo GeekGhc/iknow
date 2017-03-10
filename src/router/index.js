@@ -5,6 +5,7 @@ import Login from 'components/users/Login'
 import Register from 'components/users/Register'
 import Profile from 'components/users/Profile'
 import Account from 'components/users/Account'
+import Collect from 'components/users/Collect'
 import Test from 'components/users/Test'
 import UEditor from 'components/common/UEditor'
 
@@ -19,8 +20,9 @@ export default new Router({
         {path: '/register', name: 'register', component: Register},
         {path: '/profile', name: 'profile', component: Profile},
         {path: '/account', name: 'account', component: Account},
+        {path: '/collect', name: 'collect', component: Collect},
         {path: '/editor', name: 'ueditor', component: UEditor},
-        {path: '/test', name: 'test', component: Test},
+        // {path: '/test', name: 'test', component: Test},
         {path: '*',redirect:'/login'}
     ]
 })

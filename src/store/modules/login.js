@@ -9,13 +9,13 @@ export default{
     },
     mutations: {
         [USER_SIGNIN](state, user) {
-            Vue.axios.post('http://localhost:8000/api/user/login/',{user:user}).then(response => {
+            /*Vue.axios.post('http://localhost:8000/api/user/login/',{user:user}).then(response => {
                 //如果验证成功
                 if(response.data.status){
                     this.$router.replace({ path: '/' })
                 }
                 console.log("status = "+response.data.user)
-            })
+            })*/
             state.isLogin = true
             console.log("登录成功了... and user login is "+state.isLogin)
         },

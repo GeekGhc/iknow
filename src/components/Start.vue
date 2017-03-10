@@ -7,12 +7,11 @@
                     <div class="col-md-8">
                         <div class="index-publish-box">
                             <!-- 加载编辑器的容器 -->
-                            <!--<ueditor></ueditor>-->
+                            <ueditor></ueditor>
                         </div>
                         <div class="edit-control">
                             <button
                                     class="btn btn-primary btn-lg"
-                                    @click="add"
                             >发布</button>
                         </div>
                         <div class="feed-list">
@@ -39,13 +38,8 @@
 
           }
         },
-        mounted(){
-
-        },
         methods:{
-            add(){
 
-            }
         },
         components:{
            Post,
