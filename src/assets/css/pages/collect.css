@@ -1,0 +1,97 @@
+.empty {
+    width: 100%;
+    min-height: 36rem;
+    position: relative;
+    padding: 0!important;
+}
+
+.empty-wrapper {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    margin-top: -3rem;
+    text-align: center;
+}
+
+.empty-wrapper i {
+    color: rgb(204, 204, 204);
+    font-style: normal;
+    font-size: 2.4rem;
+}
+
+.empty-wrapper span {
+    color: rgb(204, 204, 204);
+    margin-top: 1.25rem;
+    font-size: 1.3rem;
+}
+
+.empty-tips {
+    line-height: 3rem;
+    width: 100%;
+    display: block;
+}
+.collect-list{
+    padding: 0rem 1.8rem;
+    position: relative;
+    list-style: none;
+}
+.collect-list .collect-post-item{
+    position: relative;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 12px 10px 0;
+}
+.collect-list .collect-post-item:hover{
+    background: #F5F8FA;
+    cursor: pointer;
+}
+.collect-post-item .post-avatar{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    float: left !important;
+}
+.collect-post-item .post-avatar img{
+    width: 50px;
+    height: 50px;
+}
+.collect-post-item .post-content-main{
+    margin-bottom: 10px;
+    margin-left: 65px;
+    overflow: hidden;
+}
+.collect-post-item .post-content-main .post-content{
+    margin-right: 100px;
+}
+.collect-post-item .post-info{
+    font-size: 14px;
+    color: #aeaeae;
+    width: 100%;
+    margin-top: 10px;
+    width: 810px;
+    margin-left: 65px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.collect-post-item .post-trash{
+    position: absolute;
+    right: 20px;
+    background-position: -355px -232px;
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+    display: none;
+}
+.collect-post-item .post-trash i{
+    font-size: 2em;
+    color: #aeaeae;
+}
+.collect-list .collect-post-item:hover .post-trash{
+    display: block;
+}
+.collect-form .col-no-more{
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #aeaeae;
+    font-size: 14px;
+}

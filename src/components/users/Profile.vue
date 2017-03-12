@@ -2,10 +2,10 @@
     <div id="profile">
         <site-header></site-header>
         <div class="wrapper">
-            <div class="profile-page">
+            <div class="panel-page">
                 <el-row :gutter="20">
                     <el-col :span="12" :offset="6">
-                        <div class="profile-header">
+                        <div class="panel-header">
                             <div class="ui big breadcrumb">
                                 <a class="section">首页</a>
                                 <i class="right chevron icon divider"></i>
@@ -13,6 +13,7 @@
                             </div>
                             <span>我的资料</span>
                         </div>
+
                         <div class="profile-form">
                             <div class="control-group">
                                 <label class="control-label">头像</label>

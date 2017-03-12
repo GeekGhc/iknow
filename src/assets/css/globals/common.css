@@ -9,3 +9,34 @@
 body{
     background: rgb(245, 248, 250);
 }
+
+/*********************************************/
+.panel-page{
+    padding-top: 18px;
+}
+.panel-page .el-row .el-col{
+    background: #fff !important;
+}
+.breadcrumb {
+    background-color: transparent;
+}
+.ui.big.breadcrumb{
+    position: absolute;
+    top: 25px;
+    background-position: -189px -194px;
+    left: 40px;
+    padding: 0;
+}
+.panel-header{
+    height: 72px;
+    line-height: 72px;
+    text-align: center;
+    font-size: 18px;
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #E5E5E5;
+}
+.panel-header span{
+    font-size: 20px;
+    color: rgb(51, 51, 51);
+}
