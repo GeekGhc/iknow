@@ -67,7 +67,6 @@
     //webpack.base.config.js   resolve('src'),这个配置决定从src目录  引入vuex时注意不是在vex下的index.js
     //可以是vuex目录下的store.js
     import { mapActions } from 'vuex'
-    import { USER_SIGNIN } from 'store/modules/login'
     import SiteHeader from 'components/common/SiteHeader'
     import { required,minLength,between,email,sameAs } from 'vuelidate/lib/validators'
     export default{
@@ -93,7 +92,7 @@
            }
         },
         methods:{
-            ...mapActions([USER_SIGNIN]),
+            ...mapActions(['USER_SIGNIN']),
             openError() {
                 this.$message({
                 showClose: true,
@@ -102,23 +101,9 @@
                 })
             },
             show:function(){
-                console.log("test data22 = "+this.$store.state.login.isLogin)
+
                 this.openError();
             },
-            userLogin(value) {
-                value.$touch();//验证所有信息
-                if(!value.$error){
-                     this.axios.post('http://localhost:8000/api/user/login/validation',{user:this.user}).then(response => {
-                        //如果验证成功
-                        if(response.data.status){
-                            this.USER_SIGNIN(this.user)
-                            this.$router.replace({ path: '/' })
-                        }
-                        this.isError = !response.data.status
-                        console.log("login status = "+response.data.status)
-                    })
-                }
-			},
             async login(value){
                value.$touch();//验证所有信息
                if(!value.$error){
@@ -131,7 +116,6 @@
                         //如果验证成功
                          this.USER_SIGNIN(this.user)
                          this.$router.push('/')
-                        console.log("this isError is = "+this.isError)
                      }
                 }
             }

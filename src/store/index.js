@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import Router from 'vue-router'
-import Login from 'store/modules/login'
 import mutations from './mutations'
 import actions from './actions'
 import getters from './getters'
@@ -9,21 +8,14 @@ import getters from './getters'
 Vue.use(Vuex)
 Vue.use(Router)
 
+const state = {
+    isLogin:false,//用户是否已经登录
+}
+
 export default new Vuex.Store({
-    state: {
-
-    },
-    mutations: {
-
-    },
-    actions:{
-
-    },
-    getters:{
-
-    },
-    modules:{
-        login:Login,
-    }
+    state,
+    getters,
+    actions,
+    mutations,
 })
 

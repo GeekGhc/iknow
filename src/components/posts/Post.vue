@@ -8,7 +8,16 @@
                 <a class="feed-item-author">JellyBean123</a>
                 <span class="time" id="aaa">4天前</span>
                 <div class="control-operator">
-                    <a><i class="fa fa-chevron-down"></i></a>
+                    <el-dropdown>
+                        <span class="el-dropdown-link">
+                            <a><i class="fa fa-chevron-down"></i></a>
+                        </span>
+                        <el-dropdown-menu slot="dropdown">
+                            <el-dropdown-item command="a">收藏</el-dropdown-item>
+                            <el-dropdown-item command="b">举报</el-dropdown-item>
+                            <el-dropdown-item command="b">删除</el-dropdown-item>
+                        </el-dropdown-menu>
+                    </el-dropdown>
                 </div>
 
             </div>

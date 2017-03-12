@@ -12,23 +12,33 @@
                             <router-link :to="{ name: 'start'}" class="site-header-nav-item">问答</router-link>
                         </nav>
                     </div>
-                    <div class="header-user-panel" v-if="false">
+                    <div class="header-user-panel" v-if="isLogin">
                         <section>
                             <a class="message"><i class="fa fa-bell-o fa-header-bell"></i></a>
                             <el-dropdown>
-                                <a class="avatar el-dropdown-link"><img src="../../assets/images/avatars/default/my-avatar.jpg"></a>
+                                <a class="avatar el-dropdown-link"><img
+                                        src="../../assets/images/avatars/default/my-avatar.jpg"></a>
                                 <el-dropdown-menu slot="dropdown">
-                                    <el-dropdown-item><router-link :to="{name: 'account'}">我的主页</router-link></el-dropdown-item>
-                                    <el-dropdown-item><router-link :to="{name: 'profile'}">我的帖子</router-link></el-dropdown-item>
-                                    <el-dropdown-item><router-link :to="{name: 'collect'}">我的收藏</router-link></el-dropdown-item>
-                                    <el-dropdown-item><router-link :to="{name: 'profile'}">账户设置</router-link></el-dropdown-item>
-                                    <el-dropdown-item>退出</el-dropdown-item>
+                                    <el-dropdown-item>
+                                        <router-link :to="{name: 'account'}">我的主页</router-link>
+                                    </el-dropdown-item>
+                                    <el-dropdown-item>
+                                        <router-link :to="{name: 'profile'}">我的帖子</router-link>
+                                    </el-dropdown-item>
+                                    <el-dropdown-item>
+                                        <router-link :to="{name: 'collect'}">我的收藏</router-link>
+                                    </el-dropdown-item>
+                                    <el-dropdown-item>
+                                        <router-link :to="{name: 'profile'}">账户设置</router-link>
+                                    </el-dropdown-item>
+                                    <el-dropdown-item divided><a @click="logout">退出</a></el-dropdown-item>
                                 </el-dropdown-menu>
                             </el-dropdown>
                         </section>
                     </div>
-                    <div class="header-user-login" v-if="true">
-                        <router-link :to="{ name: 'login'}">登录</router-link>/
+                    <div class="header-user-login" v-if="!isLogin">
+                        <router-link :to="{ name: 'login'}">登录</router-link>
+                        /
                         <router-link :to="{ name: 'register'}">注册</router-link>
                     </div>
                 </div>
@@ -37,18 +47,33 @@
     </div>
 </template>
 <script>
+    import { mapActions } from 'vuex'
     export default{
         data(){
             return{
-                msg:'hello vue'
+
             }
+        },
+        mounted(){
+              if(sessionStorage.getItem('user')){
+                this.$store.state.isLogin = true
+              }
         },
         computed:{
             isLogin(){
-                return this.$store.state.login.isLogin
+                return this.$store.state.isLogin
+            }
+        },
+        methods:{
+            ...mapActions(['USER_SIGNOUT']),
+            logout(){
+                 //退出登录
+                 this.USER_SIGNOUT()
+                 this.$router.push('/')
             }
         }
     }
+
 
 </script>
 

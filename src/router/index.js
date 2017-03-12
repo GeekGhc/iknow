@@ -23,6 +23,6 @@ export default new Router({
         {path: '/collect', name: 'collect', component: Collect},
         {path: '/editor', name: 'ueditor', component: UEditor},
         // {path: '/test', name: 'test', component: Test},
-        {path: '*',redirect:'/login'}
+        // {path: '*',redirect:'/login'}
     ]
 })

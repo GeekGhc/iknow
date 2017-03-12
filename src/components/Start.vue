@@ -13,7 +13,7 @@
                             <button
                                     class="btn btn-primary btn-lg"
                                     @click="show"
-                            >发布34</button>
+                            >发布</button>
                         </div>
                         <div class="feed-list">
                             <ul>
@@ -41,7 +41,7 @@
         },
         methods:{
             show(){
-                console.log("user is "+this.$store.state.login.isLogin)
+                console.log("user is "+this.$store.state.isLogin)
             }
         },
         components:{
