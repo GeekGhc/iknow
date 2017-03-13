@@ -17,7 +17,7 @@
                             <a class="message"><i class="fa fa-bell-o fa-header-bell"></i></a>
                             <el-dropdown>
                                 <a class="avatar el-dropdown-link"><img
-                                        src="../../assets/images/avatars/default/my-avatar.jpg"></a>
+                                        :src="userAvatar"></a>
                                 <el-dropdown-menu slot="dropdown">
                                     <el-dropdown-item>
                                         <router-link :to="{name: 'account'}">我的主页</router-link>
@@ -57,11 +57,15 @@
         mounted(){
               if(sessionStorage.getItem('user')){
                 this.$store.state.isLogin = true
+                this.$store.state.user = JSON.parse(sessionStorage.getItem('user'))
               }
         },
         computed:{
             isLogin(){
                 return this.$store.state.isLogin
+            },
+            userAvatar(){
+                return this.$store.state.user.avatar
             }
         },
         methods:{

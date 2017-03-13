@@ -30,6 +30,7 @@
 <script>
     import SiteHeader from 'components/common/SiteHeader'
     import UEditor from 'components/common/UEditor'
+    import QEditor from 'components/common/QEditor'
     import Post from 'components/posts/Post'
     import PostComment from 'components/posts/Comment'
     export default{
@@ -41,13 +42,14 @@
         },
         methods:{
             show(){
-                console.log("user is "+this.$store.state.isLogin)
+                console.log("user is sdwdss "+ this.$store.state.user.email)
             }
         },
         components:{
            Post,
            SiteHeader,
            'ueditor':UEditor,
+           'qeditor':QEditor,
            'post-comment':PostComment
         }
     }

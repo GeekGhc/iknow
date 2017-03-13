@@ -10,6 +10,9 @@ Vue.use(Router)
 
 const state = {
     isLogin:false,//用户是否已经登录
+    user:{
+
+    }
 }
 
 export default new Vuex.Store({

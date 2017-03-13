@@ -8,6 +8,7 @@ export default {
     [USER_SIGNIN](state, user) {
         sessionStorage.setItem('user', JSON.stringify(user))
         state.isLogin = true
+        state.user = user
         console.log("登录成功了... and user login is "+state.isLogin)
     },
     //用户退出登录

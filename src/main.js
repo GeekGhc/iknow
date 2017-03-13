@@ -9,11 +9,14 @@ import VueAxios from 'vue-axios'
 import Vuelidate from 'vuelidate'
 import router from './router'
 import store from './store'
+import VueQuillEditor from 'vue-quill-editor'
+
 
 
 Vue.use(VueAxios, axios)
 Vue.use(ElementUI)
 Vue.use(Vuelidate)
+Vue.use(VueQuillEditor)
 
 
 

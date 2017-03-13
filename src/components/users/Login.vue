@@ -101,22 +101,23 @@
                 })
             },
             show:function(){
-
                 this.openError();
             },
             async login(value){
                value.$touch();//验证所有信息
                if(!value.$error){
-                     const response = await fetch(`http://localhost:8000/api/user/login/validation/?email=${this.user.email}&&pwd=${this.user.password}`)
-                     this.isError = !Boolean(await response.json())
-                     if(this.isError){
-                        console.log("你出错啦")
-                        this.openError();
-                     }else{
-                        //如果验证成功
-                         this.USER_SIGNIN(this.user)
-                         this.$router.push('/')
-                     }
+                     this.axios.post('http://localhost:8000/api/user/login',{user:this.user}).then(response => {
+
+                          if(response.data.status){
+                          //如果验证成功
+                             this.USER_SIGNIN(response.data.user)
+                             this.$router.push('/')
+                          }else{
+                             console.log("你出错啦.."+response.data.status)
+                             this.openError();
+                             this.isError = !response.data.status
+                          }
+                    })
                 }
             }
         },

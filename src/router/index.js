@@ -8,6 +8,7 @@ import Account from 'components/users/Account'
 import Collect from 'components/users/Collect'
 import Test from 'components/users/Test'
 import UEditor from 'components/common/UEditor'
+import QEditor from 'components/common/QEditor'
 
 Vue.use(Router)
 
@@ -21,7 +22,8 @@ export default new Router({
         {path: '/profile', name: 'profile', component: Profile},
         {path: '/account', name: 'account', component: Account},
         {path: '/collect', name: 'collect', component: Collect},
-        {path: '/editor', name: 'ueditor', component: UEditor},
+        {path: '/ueditor', name: 'ueditor', component: UEditor},
+        {path: '/qeditor', name: 'qeditor', component: QEditor},
         // {path: '/test', name: 'test', component: Test},
         // {path: '*',redirect:'/login'}
     ]
