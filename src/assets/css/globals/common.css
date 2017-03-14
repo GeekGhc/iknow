@@ -1,33 +1,39 @@
 .wrapper {
     padding-top: 3.75rem;
 }
+
 .el-col {
     /*background: #fff !important;*/
     border: 1px solid #e5e5e5;
-    padding:0 !important;
+    padding: 0 !important;
 }
-body{
+
+body {
     background: rgb(245, 248, 250);
 }
 
 /*********************************************/
-.panel-page{
+.panel-page {
     padding-top: 18px;
 }
-.panel-page .el-row .el-col{
+
+.panel-page .el-row .el-col {
     background: #fff !important;
 }
+
 .breadcrumb {
     background-color: transparent;
 }
-.ui.big.breadcrumb{
+
+.ui.big.breadcrumb {
     position: absolute;
     top: 25px;
     background-position: -189px -194px;
     left: 40px;
     padding: 0;
 }
-.panel-header{
+
+.panel-header {
     height: 72px;
     line-height: 72px;
     text-align: center;
@@ -36,7 +42,18 @@ body{
     width: 100%;
     border-bottom: 1px solid #E5E5E5;
 }
-.panel-header span{
+
+.panel-header span {
     font-size: 20px;
     color: rgb(51, 51, 51);
+}
+
+/***************************/
+.ql-toolbar.ql-snow {
+    background: #f9f9f9;
+}
+
+.ql-container.ql-snow {
+    background: #fff;
+    min-height:320px;
 }

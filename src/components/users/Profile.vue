@@ -40,10 +40,10 @@
                             </div>
 
                             <div class="control-group group-box">
-                                <label class="control-label">邮箱</label>
+                                <label class="control-label">Github</label>
                                 <div class="controls">
-                                    <input type="text" placeholder="请填写邮箱">
-                                    <p class="help-block">验证账号邮箱</p>
+                                    <input type="text" placeholder="Github账户名">
+                                    <p class="help-block">更好展现自己</p>
                                 </div>
                             </div>
 
