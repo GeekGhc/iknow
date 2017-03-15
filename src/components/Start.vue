@@ -55,7 +55,6 @@
                 this.postContent.body = this.$refs.qeditor.body
                 this.postContent.html_body = this.$refs.qeditor.html_body
                 this.$refs.qeditor.content = ''
-                console.log("body = "+this.postContent.body)
                 this.POST_CREATE(this.postContent)
             },
         },

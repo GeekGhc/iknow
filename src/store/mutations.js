@@ -30,7 +30,10 @@ export default {
     },
     //用户发表帖子
     [POST_CREATE](state,post){
+        console.log("mutation post body = "+post.body)
+        console.log("post data first = "+state.posts.length)
         state.posts.push(post)
+        console.log("post data second = "+state.posts.length)
     },
     [POST_MODIFY](state,post){
         Vue.axios.patch('http://localhost:8000/api/post',{post:post}).then(response => {

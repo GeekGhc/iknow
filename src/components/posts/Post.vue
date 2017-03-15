@@ -3,22 +3,21 @@
         <li class="feed-item" v-for="(post,index) in posts">
             <div class="feed-item-head">
                 <a class="avatar">
-                    <img src="../../assets/images/avatars/default/my-avatar.jpg">
+                    <img :src="post.user.avatar">
                 </a>
-                <a class="feed-item-author">{{ post.user.name }}</a>
-                <span class="time" id="aaa">4天前</span>
+                <a class="feed-item-author" @click="favorite">{{ post.user.name }}</a>
+                <span class="time">4天前</span>
                 <div class="control-operator">
-                    <el-dropdown>
+                    <el-dropdown :hide-on-click="false">
                         <span class="el-dropdown-link">
                             <a><i class="fa fa-chevron-down"></i></a>
                         </span>
                         <el-dropdown-menu slot="dropdown">
-                            <el-dropdown-item command="a">收藏</el-dropdown-item>
-                            <el-dropdown-item command="b" @click="deletePost(post.id)">删除</el-dropdown-item>
+                            <el-dropdown-item><div @click="favorite(post.id)">收藏</div></el-dropdown-item>
+                            <el-dropdown-item><div @click="deletePost(post.id,index)">删除</div></el-dropdown-item>
                         </el-dropdown-menu>
                     </el-dropdown>
                 </div>
-
             </div>
             <div class="feed-item-body">
                 <div class="feed-item-body-wrapper">
@@ -53,6 +52,7 @@
     export default{
         data(){
             return{
+
             }
         },
         computed:{
@@ -68,8 +68,11 @@
             getPosts(){
               this.POST_GET()
             },
-            deletePost(postId){
-              console.log("delete post id = "+postId)
+            deletePost(postId,index){
+                console.log("delete postId = "+postId+"  index = "+index)
+            },
+            favorite(postId){
+                console.log("你已经成功收藏了。。。"+postId)
             }
         },
         components:{
