@@ -12,7 +12,7 @@
                         <div class="edit-control">
                             <button
                                     class="btn btn-primary btn-lg"
-                                    @click="postPublish"
+                                    @click="show"
                             >发布帖子</button>
                         </div>
                         <div class="feed-list">
@@ -53,14 +53,16 @@
         methods:{
             ...mapActions(['POST_CREATE']),
             show(){
+                this.$refs.qeditor.content = ''
                 console.log("content =  "+ this.$store.state.user.id)
             },
             postPublish(){
                 this.post.user_id = this.$store.state.user.id
                 this.post.last_user_id = this.$store.state.user.id
-                this.post.body = this.$refs.qeditor.body;
-                this.post.html_body = this.$refs.qeditor.html_body;
+                this.post.body = this.$refs.qeditor.body
+                this.post.html_body = this.$refs.qeditor.html_body
                 console.log("this post is "+this.post.user_id)
+                this.$refs.qeditor.content = ''
                 this.POST_CREATE(this.post)
             },
         },

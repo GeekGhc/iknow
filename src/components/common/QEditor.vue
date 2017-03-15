@@ -1,6 +1,7 @@
 <template>
     <div id="qeditor">
         <quill-editor ref="myTextEditor"
+                      v-model="content"
                       :config="editorOption"
                       @change="onEditorChange($event)">
         </quill-editor>
@@ -14,6 +15,7 @@
             return{
                 body:'',
                 html_body: '',
+                content:'',
                 editorOption: {
                     modules: {
                         toolbar: [

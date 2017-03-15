@@ -5,7 +5,6 @@
             <div class="login-page">
                 <el-row :gutter="20">
                     <el-col :span="10" :offset="7">
-
                         <div class="login-header">
                             <div class="login-register">
                                 <router-link :to="{name: 'login'}">登录</router-link>

@@ -107,7 +107,6 @@
                value.$touch();//验证所有信息
                if(!value.$error){
                      this.axios.post('http://localhost:8000/api/user/login',{user:this.user}).then(response => {
-
                           if(response.data.status){
                           //如果验证成功
                              this.USER_SIGNIN(response.data.user)

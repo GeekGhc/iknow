@@ -10,6 +10,12 @@ const state = {
     isLogin:false,//用户是否已经登录
     user:{},//用户信息
     posts:[],//所有的帖子
+    newPost:{//新的帖子
+        'body':'',
+        'html_body':'',
+        'user_id': 0,
+        'last_user_id': 0,
+    },
 }
 
 export default new Vuex.Store({
