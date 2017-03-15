@@ -12,7 +12,7 @@
                         <div class="edit-control">
                             <button
                                     class="btn btn-primary btn-lg"
-                                    @click="show"
+                                    @click="postPublish"
                             >发布帖子</button>
                         </div>
                         <div class="feed-list">
@@ -39,15 +39,10 @@
         data(){
           return {
               posts:[],
-              post:{
+              postContent:{
                 'body':'',
                 'html_body':'',
-                'user_id': 0,
-                'last_user_id': 0,
               },
-              postTemp:{
-
-              }
           }
         },
         methods:{
@@ -57,13 +52,11 @@
                 console.log("content =  "+ this.$store.state.user.id)
             },
             postPublish(){
-                this.post.user_id = this.$store.state.user.id
-                this.post.last_user_id = this.$store.state.user.id
-                this.post.body = this.$refs.qeditor.body
-                this.post.html_body = this.$refs.qeditor.html_body
-                console.log("this post is "+this.post.user_id)
+                this.postContent.body = this.$refs.qeditor.body
+                this.postContent.html_body = this.$refs.qeditor.html_body
                 this.$refs.qeditor.content = ''
-                this.POST_CREATE(this.post)
+                console.log("body = "+this.postContent.body)
+                this.POST_CREATE(this.postContent)
             },
         },
         components:{

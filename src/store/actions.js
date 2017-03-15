@@ -29,10 +29,15 @@ export default {
             console.log("post = "+response.data.posts)
         })
     },
-    [POST_CREATE]({commit},post) {
-        Vue.axios.post('http://localhost:8000/api/post',{post:post}).then(response => {
-            commit(POST_CREATE,response.data)
-            console.log("post data = "+response.data)
+    [POST_CREATE](context,postContent) {
+        context.state.newPost.user_id = context.state.user.id
+        context.state.newPost.last_user_id = context.state.user.id
+        context.state.newPost.body = postContent.body
+        context.state.newPost.html_body = postContent.html_body
+        Vue.axios.post('http://localhost:8000/api/post',{post:context.state.newPost}).then(response => {
+            if(response.data.status){
+                context.commit(POST_CREATE,response.data.post)
+            }
         })
     },
     [POST_MODIFY]({commit},postId) {

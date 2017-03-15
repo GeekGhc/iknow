@@ -30,15 +30,15 @@ export default {
     },
     //用户发表帖子
     [POST_CREATE](state,post){
-
+        state.posts.push(post)
     },
     [POST_MODIFY](state,post){
         Vue.axios.patch('http://localhost:8000/api/post',{post:post}).then(response => {
 
         })
     },
-    [POST_DELETE](state,post){
-        Vue.axios.delete('http://localhost:8000/api/post',{post:post}).then(response => {
+    [POST_DELETE](state,postId){
+        Vue.axios.delete('http://localhost:8000/api/post',{postId:postId}).then(response => {
 
         })
     },
