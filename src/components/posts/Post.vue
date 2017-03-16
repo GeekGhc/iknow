@@ -64,12 +64,26 @@
               this.getPosts()
         },
         methods:{
-            ...mapActions(['POST_GET']),
+            ...mapActions(['POST_GET','POST_DELETE']),
+            deleteSuccess() {
+                this.$message({
+                  message: '帖子删除成功',
+                  type: 'success'
+                });
+            },
+            favoriteSuccess() {
+                this.$message({
+                  message: '帖子收藏成功',
+                  type: 'success'
+                });
+            },
             getPosts(){
               this.POST_GET()
             },
             deletePost(postId,index){
                 console.log("delete postId = "+postId+"  index = "+index)
+                this.POST_DELETE({postId,index})
+                this.deleteSuccess()
             },
             favorite(postId){
                 console.log("你已经成功收藏了。。。"+postId)

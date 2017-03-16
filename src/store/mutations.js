@@ -40,10 +40,8 @@ export default {
 
         })
     },
-    [POST_DELETE](state,postId){
-        Vue.axios.delete('http://localhost:8000/api/post',{postId:postId}).then(response => {
-
-        })
+    [POST_DELETE](state,index){
+        state.posts.splice(index,1)
     },
 
 }
