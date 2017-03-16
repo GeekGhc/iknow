@@ -23,7 +23,7 @@
                                         <router-link :to="{name: 'account'}">我的主页</router-link>
                                     </el-dropdown-item>
                                     <el-dropdown-item>
-                                        <router-link :to="{name: 'profile'}">我的帖子</router-link>
+                                        <router-link :to="{name: 'account'}">我的帖子</router-link>
                                     </el-dropdown-item>
                                     <el-dropdown-item>
                                         <router-link :to="{name: 'collect'}">我的收藏</router-link>

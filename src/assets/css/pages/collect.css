@@ -95,3 +95,11 @@
     color: #aeaeae;
     font-size: 14px;
 }
+/***************** postList **********************/
+.list-form .col-no-more{
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #aeaeae;
+    font-size: 14px;
+}

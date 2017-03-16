@@ -87,6 +87,7 @@
             },
             favorite(postId){
                 console.log("你已经成功收藏了。。。"+postId)
+                this.favoriteSuccess()
             }
         },
         components:{
