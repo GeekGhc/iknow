@@ -24,7 +24,7 @@ export default new Router({
         {path: '/account', name: 'account', component: Account},
         {path: '/collect', name: 'collect', component: Collect},
         {path: '/posts', name: 'posts', component: Posts},
-        {path: '/post/:id', name: 'posts', component: PostShow},
+        {path: '/post/:id', name: 'postShow', component: PostShow},
         {path: '/ueditor', name: 'ueditor', component: UEditor},
         {path: '/qeditor', name: 'qeditor', component: QEditor},
         // {path: '/test', name: 'test', component: Test},

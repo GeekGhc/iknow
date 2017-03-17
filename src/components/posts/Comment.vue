@@ -1,6 +1,6 @@
 <template>
         <div class="comment">
-            <form class="ui reply form">
+            <form class="ui reply form" v-if="show_post_comment">
                 <div class="field">
                     <el-input
                             type="textarea"
@@ -22,9 +22,12 @@
                     <div class="metadata">
                         <div class="date">2 days ago</div>
                     </div>
-                    <a class="reply active pull-right">回复</a>
+                    <a
+                            class="reply active pull-right"
+                            @click="toggle_comment_reply()"
+                    >回复</a>
                 </div>
-                <form class="ui reply form">
+                <form class="ui reply form" v-if="show_comment_reply">
                     <div class="field">
                         <el-input
                                 type="textarea"
@@ -43,7 +46,17 @@
     export default{
         data(){
             return{
-                   textarea:''
+               show_post_comment:false,
+               show_comment_reply:false,
+               textarea:''
+            }
+        },
+        methods:{
+            toggle_comment_reply(){
+                this.show_comment_reply = !this.show_comment_reply
+            },
+            toggle_post_comment(){
+                this.show_post_comment = !this.show_post_comment
             }
         },
         components:{

@@ -13,7 +13,6 @@
                             </div>
                             <span>我的帖子</span>
                         </div>
-
                         <div class="list-form">
                             <div class="empty empty-wrapper" style="display:none">
                                 <i>╮(╯∀╰)╭</i>

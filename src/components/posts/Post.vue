@@ -38,14 +38,17 @@
                         </a>
                         <div class="feed-item-separation"></div>
                         <div class="feed-item-comment">
-                            <i class="fa fa-commenting-o"></i>{{ post.comment_count }}
+                            <i
+                                    class="fa fa-commenting-o"
+                                    @click="show_post_comment"
+                            ></i>{{ post.comment_count }}
                         </div>
                     </div>
                 </div>
                 <div class="comments-list" v-if="true">
                     <div class="comment-wrapper">
                         <div class="ui comments">
-                            <comment></comment>
+                            <comment ref="post-comment"></comment>
                         </div>
                     </div>
                 </div>
@@ -96,6 +99,9 @@
             favorite(postId){
                 console.log("你已经成功收藏了。。。"+postId)
                 this.favoriteSuccess()
+            },
+            show_post_comment(){
+                this.$refs.post-comment.toggle_post_comment()
             }
         },
         components:{

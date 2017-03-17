@@ -6,7 +6,6 @@
     background-color: #fafafa;
     border: 1px solid #d1d5d8;
 }
-
 .comments-list .comment-wrapper {
     width: 100%;
     padding-top: 12px;
@@ -36,8 +35,11 @@
     margin-left: 0;
 }
 .ui.comments .comment{
-    margin-top:10px;
-    border-bottom: 1px solid #e5e5e5;
+    margin-bottom:10px !important;
+    border-bottom: 1px solid #e5e5e5 !important;
+}
+.ui.comments .comment:last-child {
+    border-bottom: none !important;
 }
 .ui.comments .comment .field{
     margin-top:4px;
@@ -64,4 +66,7 @@
 }
 .ui.comments .comment .reply.form .reply-button{
     text-align: right;
+}
+.ui.comments .comment>.avatar~.content{
+    margin-bottom: 10px;
 }
