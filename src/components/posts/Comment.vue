@@ -1,4 +1,5 @@
 <template>
+    <div id="comment">
         <div class="comment">
             <form class="ui reply form" v-if="show_post_comment">
                 <div class="field">
@@ -40,6 +41,7 @@
                 </form>
             </div>
         </div>
+    </div>
 </template>
 
 <script>
@@ -57,11 +59,15 @@
             },
             toggle_post_comment(){
                 this.show_post_comment = !this.show_post_comment
+            },
+            printInfo(info){
+                console.log("info has printed...."+info)
             }
         },
         components:{
 
         }
     }
+
 
 </script>

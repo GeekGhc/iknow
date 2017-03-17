@@ -40,7 +40,7 @@
                         <div class="feed-item-comment">
                             <i
                                     class="fa fa-commenting-o"
-                                    @click="show_post_comment"
+                                    @click="showPostComment"
                             ></i>{{ post.comment_count }}
                         </div>
                     </div>
@@ -48,7 +48,7 @@
                 <div class="comments-list" v-if="true">
                     <div class="comment-wrapper">
                         <div class="ui comments">
-                            <comment ref="post-comment"></comment>
+                            <comment ref="comment"></comment>
                         </div>
                     </div>
                 </div>
@@ -100,8 +100,8 @@
                 console.log("你已经成功收藏了。。。"+postId)
                 this.favoriteSuccess()
             },
-            show_post_comment(){
-                this.$refs.post-comment.toggle_post_comment()
+            showPostComment(){
+                this.$refs.comment.printInfo("gavin")
             }
         },
         components:{
