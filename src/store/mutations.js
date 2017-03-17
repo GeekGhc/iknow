@@ -47,7 +47,7 @@ export default {
     },
     //用户删除帖子
     [USER_POST_DELETE](state,index){
-
+        state.userPosts.splice(index,1)
     },
     //用户修改帖子
     [USER_POST_MODIFY](state,post){

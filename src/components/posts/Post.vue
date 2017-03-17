@@ -1,49 +1,57 @@
 <template>
     <div id="post">
-        <li class="feed-item" v-for="(post,index) in posts">
-            <div class="feed-item-head">
-                <a class="avatar">
-                    <img :src="post.user.avatar">
-                </a>
-                <a class="feed-item-author" @click="favorite">{{ post.user.name }}</a>
-                <span class="time">4天前</span>
-                <div class="control-operator">
-                    <el-dropdown :hide-on-click="false">
+        <ul>
+            <li class="feed-item" v-for="(post,index) in posts">
+                <div class="feed-item-head">
+                    <a class="avatar">
+                        <img :src="post.user.avatar">
+                    </a>
+                    <a class="feed-item-author" @click="favorite">{{ post.user.name }}</a>
+                    <span class="time">4天前</span>
+                    <div class="control-operator">
+                        <el-dropdown :hide-on-click="false">
                         <span class="el-dropdown-link">
                             <a><i class="fa fa-chevron-down"></i></a>
                         </span>
-                        <el-dropdown-menu slot="dropdown">
-                            <el-dropdown-item><div @click="favorite(post.id)">收藏</div></el-dropdown-item>
-                            <el-dropdown-item><div @click="deletePost(post.id,index)">删除</div></el-dropdown-item>
-                        </el-dropdown-menu>
-                    </el-dropdown>
-                </div>
-            </div>
-            <div class="feed-item-body">
-                <div class="feed-item-body-wrapper">
-                    <div class="feed-item-body-content">
-                        <p v-html="post.html_body"></p>
+                            <el-dropdown-menu slot="dropdown">
+                                <el-dropdown-item>
+                                    <div @click="favorite(post.id)">收藏</div>
+                                </el-dropdown-item>
+                                <el-dropdown-item>
+                                    <div @click="deletePost(post.id,index)">删除</div>
+                                </el-dropdown-item>
+                            </el-dropdown-menu>
+                        </el-dropdown>
                     </div>
                 </div>
-            </div>
-            <div class="feed-item-foot">
-                <a class="feed-item-thumbs">
-                    <i class="fa fa-thumbs-o-up"></i>{{ post.vote_count}}
-                </a>
-                <div class="feed-item-separation"></div>
-                <div class="feed-item-comment">
-                    <i class="fa fa-commenting-o"></i>{{ post.comment_count }}
+                <div class="feed-item-body">
+                    <div class="feed-item-body-wrapper">
+                        <div class="feed-item-body-content">
+                            <p v-html="post.html_body"></p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </li>
+                <div class="feed-item-foot">
+                    <div class="feed-item-foot-wrapper">
+                        <a class="feed-item-thumbs">
+                            <i class="fa fa-thumbs-o-up"></i>{{ post.vote_count}}
+                        </a>
+                        <div class="feed-item-separation"></div>
+                        <div class="feed-item-comment">
+                            <i class="fa fa-commenting-o"></i>{{ post.comment_count }}
+                        </div>
+                    </div>
+                </div>
+                <div class="comments-list" v-if="true">
+                    <div class="comment-wrapper">
+                        <div class="ui comments">
+                            <comment></comment>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
 
-        <div class="comments-list" v-if="false">
-            <div class="comment-wrapper">
-                <div class="ui comments">
-                <comment></comment>
-                </div>
-            </div>
-        </div>
     </div>
 </template>
 <script>
@@ -94,5 +102,7 @@
             Comment
         }
     }
+
+
 
 </script>

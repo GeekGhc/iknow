@@ -17,6 +17,13 @@ const state = {
         'user_id': 0,
         'last_user_id': 0,
     },
+    newComment:{
+        'post_id':0,
+        'user_id':0,
+        'to_user_id':0,
+        'to_comment_id':0,
+        'body':''
+    }
 }
 
 export default new Vuex.Store({

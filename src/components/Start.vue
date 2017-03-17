@@ -16,9 +16,7 @@
                             >发布帖子</button>
                         </div>
                         <div class="feed-list">
-                            <ul>
                                 <post></post>
-                            </ul>
                         </div>
                     </div>
                     <div class="col-md-4"></div>

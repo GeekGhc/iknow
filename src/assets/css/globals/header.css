@@ -174,10 +174,12 @@ body {
 .feed-item-body-wrapper .feed-item-body-content p {
     margin-bottom: 1rem;
 }
-
 .feed-item-foot {
-    padding: 1rem 1rem 1rem 1rem;
     line-height: 2.15rem;
+}
+.feed-item-foot .feed-item-foot-wrapper{
+    padding: .5rem 1rem;
+    display: flex;
 }
 
 .feed-item-foot .feed-item-thumbs {
@@ -205,57 +207,4 @@ body {
 .feed-item-thumbs i, .feed-item-comment i {
     margin-right: 5px;
     font-size: 1.2em;
-}
-
-/**************** comment  ************************/
-.comments-list {
-    margin-top: -1.5rem;
-    padding: 0 24px;
-    background-color: #fafafa;
-    border: 1px solid #d1d5d8;
-}
-
-.comments-list .comment-wrapper {
-    width: 100%;
-    padding-top: 12px;
-}
-
-.comment-wrapper .comment-list:last-child {
-    border-bottom: none;
-}
-
-.comment-wrapper .comment-list {
-    position: relative;
-    margin-top: 10px;
-    text-align: -webkit-match-parent;
-    border-bottom: 1px solid #e5e5e5;
-}
-
-.ui.comments .comment .avatar img{
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-}
-.ui.comments .comment .actions .reply{
-    /*text-align: right;*/
-    float: right;
-}
-.ui.comments .comment .metadata {
-    margin-left: 0;
-}
-.ui.comments .comment{
-    margin-top:10px;
-    border-bottom: 1px solid #e5e5e5;
-}
-.ui.comments .comment:last-child{
-    border-bottom: none;
-}
-.ui.form .field{
-    margin-bottom: 5px;
-}
-.ui.comments .comment .reply.form{
-    margin-bottom: 10px;
-}
-.ui.comments .comment .reply.form .reply-button{
-    text-align: right;
 }

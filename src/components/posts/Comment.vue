@@ -1,6 +1,17 @@
 <template>
-    <div>
         <div class="comment">
+            <form class="ui reply form">
+                <div class="field">
+                    <el-input
+                            type="textarea"
+                            autosize
+                            placeholder="回复JellyBean:"
+                            v-model="textarea">
+                    </el-input>
+                    <div class="ui primary button pull-right">回复</div>
+                </div>
+            </form>
+
             <a class="avatar">
                 <img src="../../assets/images/avatars/default/my-avatar.jpg">
             </a>
@@ -21,14 +32,11 @@
                                 placeholder="回复JellyBean:"
                                 v-model="textarea">
                         </el-input>
-                    </div>
-                    <div class="reply-button">
-                        <div class="ui primary button">回复</div>
+                        <div class="ui primary button pull-right">回复</div>
                     </div>
                 </form>
             </div>
         </div>
-    </div>
 </template>
 
 <script>

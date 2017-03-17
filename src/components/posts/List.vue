@@ -22,7 +22,13 @@
 
                             <ul class="collect-list">
                                 <li class="collect-post-item" v-for="(post,index) in posts">
-                                    <em class="post-trash"><i class="trash outline icon"></i></em>
+                                    <em class="post-trash">
+                                        <i
+                                                class="trash outline icon"
+                                                @click="deletePost(post.id,index)"
+                                        >
+                                        </i>
+                                    </em>
                                     <div class="post-avatar">
                                         <img :src="userAvatar">
                                     </div>
@@ -78,7 +84,6 @@
                 this.USER_POST_GET()
             },
             deletePost(postId,index){
-                console.log("delete postId = "+postId+"  index = "+index)
                 this.USER_POST_DELETE({postId,index})
                 this.deleteSuccess()
             },

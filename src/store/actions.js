@@ -66,7 +66,12 @@ export default {
     },
     //删除帖子
     [USER_POST_DELETE]({commit},payload) {
-
+        console.log("payload index = "+payload.index+" delete id = "+payload.postId)
+        Vue.axios.delete('http://localhost:8000/api/user/post/'+payload.postId).then(response => {
+            if(response.data.status){
+                commit(USER_POST_DELETE,payload.index)
+            }
+        })
     },
     //修改帖子
     [USER_POST_MODIFY]({commit},postId) {
