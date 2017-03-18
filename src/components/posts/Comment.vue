@@ -25,7 +25,7 @@
                         <div class="date">2 days ago</div>
                     </div>
                     <a
-                            class="reply active pull-right"
+                            class="reply active pull-right comment-reply-btn"
                             @click="toggle_comment_reply()"
                     >回复</a>
                 </div>

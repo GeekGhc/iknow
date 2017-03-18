@@ -28,7 +28,6 @@
     border-radius: 50%;
 }
 .ui.comments .comment .actions .reply{
-    /*text-align: right;*/
     float: right;
 }
 .ui.comments .comment .metadata {
@@ -69,4 +68,17 @@
 }
 .ui.comments .comment>.avatar~.content{
     margin-bottom: 10px;
+}
+.ui.comments .comment>.avatar~.content .actions{
+    margin-bottom: 6px;
+}
+.ui.comments .comment>.avatar~.content:hover{
+    cursor: pointer;
+}
+.ui.comments .comment>.avatar~.content .comment-reply-btn{
+    display: none;
+    font-size: 14px;
+}
+.ui.comments .comment>.avatar~.content:hover .comment-reply-btn{
+    display: block;
 }

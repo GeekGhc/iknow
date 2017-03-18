@@ -10,6 +10,7 @@ import {
     USER_POST_GET,
     USER_POST_DELETE,
     USER_POST_MODIFY,
+    COMMENT_CREATE,
 } from './mutation-types.js'
 
 Vue.use(VueAxios, axios)
@@ -26,6 +27,7 @@ export default {
         state.isLogin = false
         console.log("退出成功了... and user login is "+state.isLogin)
     },
+
     //加载所有帖子
     [POST_GET](state,posts){
         state.posts = posts
@@ -51,6 +53,11 @@ export default {
     },
     //用户修改帖子
     [USER_POST_MODIFY](state,post){
+
+    },
+
+    //用户发表评论
+    [COMMENT_CREATE](state,comment){
 
     },
 
