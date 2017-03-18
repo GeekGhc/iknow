@@ -44,11 +44,11 @@
 .ui.comments .comment .field{
     margin-top:4px;
 }
-.ui.comments .comment .field .el-textarea{
-    width:80%;
+.ui.comments  .field .el-textarea{
+    width:85%;
 }
-.ui.comments .comment .field .button.primary{
-    width:15%;
+.ui.comments  .field .button.primary{
+    width:12%;
     margin-top:2px;
     vertical-align: middle;
 }

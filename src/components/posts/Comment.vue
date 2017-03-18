@@ -1,18 +1,19 @@
 <template>
     <div id="comment">
-        <div class="comment">
-            <form class="ui reply form" v-if="show_post_comment">
-                <div class="field">
-                    <el-input
-                            type="textarea"
-                            autosize
-                            placeholder="回复JellyBean:"
-                            v-model="textarea">
-                    </el-input>
-                    <div class="ui primary button pull-right">回复</div>
-                </div>
-            </form>
 
+        <form class="ui reply form" v-if="show_post_comment">
+            <div class="field">
+                <el-input
+                        type="textarea"
+                        autosize
+                        placeholder="回复JellyBean:"
+                        v-model="textarea">
+                </el-input>
+                <div class="ui primary button pull-right">回复</div>
+            </div>
+        </form>
+
+        <div class="comment">
             <a class="avatar">
                 <img src="../../assets/images/avatars/default/my-avatar.jpg">
             </a>
@@ -36,7 +37,10 @@
                                 placeholder="回复JellyBean:"
                                 v-model="textarea">
                         </el-input>
-                        <div class="ui primary button pull-right">回复</div>
+                        <div
+                                class="ui primary button pull-right"
+                                @click="toggle_post_comment"
+                        >回复</div>
                     </div>
                 </form>
             </div>
@@ -50,7 +54,8 @@
             return{
                show_post_comment:false,
                show_comment_reply:false,
-               textarea:''
+               textarea:'',
+               content:'ghcghc'
             }
         },
         methods:{
@@ -68,6 +73,8 @@
 
         }
     }
+
+
 
 
 </script>

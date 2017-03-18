@@ -13,10 +13,15 @@
                             <button
                                     class="btn btn-primary btn-lg"
                                     @click="postPublish"
-                            >发布帖子</button>
+                            >发布帖子
+                            </button>
                         </div>
                         <div class="feed-list">
-                                <post></post>
+                            <ul>
+                                <li class="feed-item" v-for="(post,index) in posts">
+                                    <post :post="post" :index="index"></post>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <div class="col-md-4"></div>
@@ -36,18 +41,28 @@
         name:'start',
         data(){
           return {
-              posts:[],
               postContent:{
                 'body':'',
                 'html_body':'',
               },
           }
         },
+        computed:{
+            posts(){
+               return this.$store.state.posts
+            }
+        },
+        mounted(){
+              this.getPosts()
+        },
         methods:{
-            ...mapActions(['POST_CREATE']),
+            ...mapActions(['POST_CREATE','POST_GET']),
             show(){
                 this.$refs.qeditor.content = ''
                 console.log("content =  "+ this.$store.state.user.id)
+            },
+            getPosts(){
+              this.POST_GET()
             },
             postPublish(){
                 this.postContent.body = this.$refs.qeditor.body
@@ -64,4 +79,6 @@
            'post-comment':PostComment
         }
     }
+
+
 </script>

@@ -1,7 +1,6 @@
 <template>
     <div id="post">
-        <ul>
-            <li class="feed-item" v-for="(post,index) in posts">
+
                 <div class="feed-item-head">
                     <a class="avatar">
                         <img :src="post.user.avatar">
@@ -52,27 +51,20 @@
                         </div>
                     </div>
                 </div>
-            </li>
-        </ul>
-
     </div>
 </template>
 <script>
     import { mapActions } from 'vuex'
     import Comment from './Comment'
     export default{
+        props:['post','index'],
         data(){
             return{
 
             }
         },
         computed:{
-            posts(){
-               return this.$store.state.posts
-            }
-        },
-        mounted(){
-              this.getPosts()
+
         },
         methods:{
             ...mapActions(['POST_GET','POST_DELETE']),
@@ -88,9 +80,6 @@
                   type: 'success'
                 });
             },
-            getPosts(){
-              this.POST_GET()
-            },
             deletePost(postId,index){
                 console.log("delete postId = "+postId+"  index = "+index)
                 this.POST_DELETE({postId,index})
@@ -101,11 +90,12 @@
                 this.favoriteSuccess()
             },
             showPostComment(){
-                this.$refs.comment.printInfo("gavin")
+                this.$refs.comment.toggle_post_comment()
+                console.log("ghhghgh = "+this.$refs.comment.show_comment_reply)
             }
         },
         components:{
-            Comment
+            'comment':Comment
         }
     }
 
