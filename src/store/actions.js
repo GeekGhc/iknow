@@ -10,6 +10,7 @@ import {
     USER_POST_GET,
     USER_POST_DELETE,
     USER_POST_MODIFY,
+    COMMENT_GET,
     COMMENT_CREATE,
 } from './mutation-types.js'
 
@@ -79,11 +80,20 @@ export default {
         commit(USER_POST_MODIFY)
     },
 
+    //加载用户对帖子的评论
+    [COMMENT_GET]({commit},payload){
+        Vue.axios.get('http://localhost:8000/api/post/'+payload.postId+'/comment').then(response => {
+            if(response.data.status){
+                payload.comments = response.data.comments
+                console.log("comments = "+payload.comments)
+            }
+        })
+    },
     //用户发表评论
-    [COMMENT_CREATE](context,commentData){
-        commentData.user_id = context.state.user.id
-        console.log("comment body = "+commentData.body+" user id = "+context.state.user.id)
-        Vue.axios.post('http://localhost:8000/api/comment',{comment:commentData}).then(response => {
+    [COMMENT_CREATE](context){
+        context.state.newComment.user_id = context.state.user.id
+        console.log("comment body = "+context.state.newComment.body+" user id = "+context.state.user.id)
+        Vue.axios.post('http://localhost:8000/api/comment',{comment:context.state.newComment}).then(response => {
             if(response.data.status){
                 console.log("评论成功")
             }

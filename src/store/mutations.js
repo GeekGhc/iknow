@@ -10,6 +10,7 @@ import {
     USER_POST_GET,
     USER_POST_DELETE,
     USER_POST_MODIFY,
+    COMMENT_GET,
     COMMENT_CREATE,
 } from './mutation-types.js'
 

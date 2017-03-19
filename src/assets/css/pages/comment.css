@@ -10,7 +10,10 @@
     width: 100%;
     padding-top: 12px;
 }
-
+.comment-wrapper .ui.comments>.reply.form {
+    margin-top:0 !important;
+    margin-bottom: 1em;
+}
 .comment-wrapper .comment-list:last-child {
     border-bottom: none;
 }

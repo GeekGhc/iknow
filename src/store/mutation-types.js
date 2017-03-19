@@ -12,5 +12,6 @@ export const USER_POST_DELETE = 'USER_POST_DELETE' //用户删除帖子
 export const POST_FAVORITE = 'POST_FAVORITE' //用户收藏帖子
 export const POST_LIKE = 'POST_LIKE' //用户点赞帖子
 
+export const COMMENT_GET = 'COMMENT_GET'//加载用户的评论
 export const COMMENT_CREATE = 'COMMENT_CREATE'//用户发表评论
 
