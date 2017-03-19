@@ -47,7 +47,7 @@
                 <div class="comments-list" v-if="true">
                     <div class="comment-wrapper">
                         <div class="ui comments">
-                            <comment ref="comment"></comment>
+                            <comment ref="comment" :postId="post.id"></comment>
                         </div>
                     </div>
                 </div>
@@ -60,7 +60,7 @@
         props:['post','index'],
         data(){
             return{
-
+                postData:{},
             }
         },
         computed:{
@@ -91,7 +91,6 @@
             },
             showPostComment(){
                 this.$refs.comment.toggle_post_comment()
-                console.log("ghhghgh = "+this.$refs.comment.show_comment_reply)
             }
         },
         components:{

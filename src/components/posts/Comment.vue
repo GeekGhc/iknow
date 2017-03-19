@@ -7,9 +7,12 @@
                         type="textarea"
                         autosize
                         placeholder="回复JellyBean:"
-                        v-model="textarea">
+                        v-model="comment_content">
                 </el-input>
-                <div class="ui primary button pull-right">回复</div>
+                <div
+                        class="ui primary button pull-right"
+                        @click="postComment"
+                >回复</div>
             </div>
         </form>
 
@@ -49,21 +52,38 @@
 </template>
 
 <script>
+    import { mapActions } from 'vuex'
     export default{
+        props:['postId'],
         data(){
             return{
                show_post_comment:false,
                show_comment_reply:false,
-               textarea:'',
-               content:'ghcghc'
+               comment_content:'',
+               comment_data:{
+                'post_id':0,
+                'user_id':0,
+                'to_user_id':0,
+                'to_comment_id':0,
+                'body':'',
+               }
             }
         },
         methods:{
+            ...mapActions(['COMMENT_CREATE']),
             toggle_comment_reply(){
                 this.show_comment_reply = !this.show_comment_reply
             },
             toggle_post_comment(){
                 this.show_post_comment = !this.show_post_comment
+            },
+            postComment(){
+                this.comment_data.post_id = this.postId
+                this.comment_data.body = this.comment_content
+                this.COMMENT_CREATE(this.comment_data)
+            },
+            comment_reply(){
+
             },
             printInfo(info){
                 console.log("info has printed...."+info)
