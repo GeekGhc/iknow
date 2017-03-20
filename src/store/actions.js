@@ -12,6 +12,8 @@ import {
     USER_POST_MODIFY,
     COMMENT_GET,
     COMMENT_CREATE,
+    COLLECT_POST,
+    USER_COLLECTIOIN,
 } from './mutation-types.js'
 
 Vue.use(VueAxios, axios)
@@ -59,7 +61,6 @@ export default {
 
     //加载用户的帖子
     [USER_POST_GET](context) {
-        console.log("user id = "+context.state.user.id)
         Vue.axios.post('http://localhost:8000/api/user/post',{userId:context.state.user.id}).then(response => {
             if(response.data.status){
                 context.commit(USER_POST_GET,response.data.posts)
@@ -98,5 +99,14 @@ export default {
                 console.log("评论成功")
             }
         })
+    },
+
+    //用户收藏帖子
+    [COLLECT_POST](context,payload){
+
+    },
+    //用户收藏帖子列表
+    [USER_COLLECTIOIN](){
+
     }
 }

@@ -4,7 +4,7 @@
             <a class="avatar">
                 <img :src="post.user.avatar">
             </a>
-            <a class="feed-item-author" @click="favorite">{{ post.user.name }}</a>
+            <a class="feed-item-author">{{ post.user.name }}</a>
             <span class="time">4天前</span>
             <div class="control-operator">
                 <el-dropdown :hide-on-click="false">
@@ -13,7 +13,7 @@
                         </span>
                     <el-dropdown-menu slot="dropdown">
                         <el-dropdown-item>
-                            <div @click="favorite(post.id)">收藏</div>
+                            <div @click="collect()">收藏</div>
                         </el-dropdown-item>
                         <el-dropdown-item>
                             <div @click="deletePost(post.id,index)">删除</div>
@@ -77,6 +77,7 @@
         props:['post','index'],
         data(){
             return{
+                isCollect:false,
                 hasComments:false,
                 show_post_comment:false,
                 comment_content:'',
@@ -93,12 +94,11 @@
             this.getComments()
         },
         methods:{
-            ...mapActions(['POST_GET','POST_DELETE','COMMENT_GET','COMMENT_CREATE']),
+            ...mapActions(['POST_GET','POST_DELETE','COMMENT_GET','COMMENT_CREATE','COLLECT_POST']),
             getComments(){
                 this.axios.get('http://localhost:8000/api/post/'+this.postId+'/comment').then(response => {
                     if(response.data.status){
                         this.comments = response.data.comments
-                        console.log("response comments = "+response.data.comments+"  comments length = "+this.comments.length)
                         if(this.comments.length>0){
                            this.hasComments = true
                         }else{
@@ -119,14 +119,29 @@
                   type: 'success'
                 });
             },
+            favoriteWarning() {
+                this.$message({
+                  message: '你已经收藏过该帖子了',
+                  type: 'warning'
+                });
+            },
             deletePost(postId,index){
-                console.log("delete postId = "+postId+"  index = "+index)
                 this.POST_DELETE({postId,index})
                 this.deleteSuccess()
             },
-            favorite(postId){
-                console.log("你已经成功收藏了。。。"+postId)
-                this.favoriteSuccess()
+            collect(){
+                console.log("你已经成功收藏了。。。and isCollect is "+this.isCollect)
+                if(this.isCollect){
+                    this.favoriteWarning()
+                }else{
+                    this.axios.post('http://localhost:8000/api/post/collect',{userId:this.$store.state.user.id,postId:this.post.id}).then(response => {
+                        if(response.data.status){
+                            this.isCollect = response.data.isCollect
+                            console.log("恭喜你 收藏成功了。。。"+this.isCollect)
+                        }
+                    })
+                    this.favoriteSuccess()
+                }
             },
             postComment(){
                 this.$store.state.newComment.post_id = this.postId
@@ -138,7 +153,6 @@
                 if(this.comments.length == 0){
                     this.hasComments = !this.hasComments
                 }
-                console.log("hasComments = "+this.hasComments+"  show post = "+this.show_post_comment)
                 this.show_post_comment = !this.show_post_comment
             },
         },

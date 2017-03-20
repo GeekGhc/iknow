@@ -12,6 +12,8 @@ import {
     USER_POST_MODIFY,
     COMMENT_GET,
     COMMENT_CREATE,
+    COLLECT_POST,
+    USER_COLLECTIOIN,
 } from './mutation-types.js'
 
 Vue.use(VueAxios, axios)

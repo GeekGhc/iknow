@@ -15,3 +15,6 @@ export const POST_LIKE = 'POST_LIKE' //用户点赞帖子
 export const COMMENT_GET = 'COMMENT_GET'//加载用户的评论
 export const COMMENT_CREATE = 'COMMENT_CREATE'//用户发表评论
 
+export const COLLECT_POST = 'COLLECT_POST'//用户收藏帖子
+export const USER_COLLECTIOIN = 'USER_COLLECTION'//用户收藏帖子列表
+
