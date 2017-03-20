@@ -92,6 +92,7 @@
         },
         mounted(){
             this.getComments()
+            this.hasCollected()
         },
         methods:{
             ...mapActions(['POST_GET','POST_DELETE','COMMENT_GET','COMMENT_CREATE','COLLECT_POST']),
@@ -128,6 +129,12 @@
             deletePost(postId,index){
                 this.POST_DELETE({postId,index})
                 this.deleteSuccess()
+            },
+            async hasCollected(){
+                 var userId = this.$store.state.user.id
+                 var postId = this.post.id
+                 const response = await fetch(`http://localhost:8000/api/user/${userId}/post/${postId}`)
+                 this.isCollect = Boolean(await response.json())
             },
             collect(){
                 console.log("你已经成功收藏了。。。and isCollect is "+this.isCollect)
