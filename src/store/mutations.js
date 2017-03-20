@@ -14,6 +14,7 @@ import {
     COMMENT_CREATE,
     COLLECT_POST,
     USER_COLLECTION,
+    COLLECT_DELETE,
 } from './mutation-types.js'
 
 Vue.use(VueAxios, axios)
@@ -65,8 +66,12 @@ export default {
     },
 
     //用户收藏的帖子
-    [USER_COLLECTIOIN](state,collection){
+    [USER_COLLECTION](state,collection){
         state.collection = collection
     },
+    //用户取消收藏的帖子
+    [COLLECT_DELETE](state,index){
+        state.collection.splice(index,1)
+    }
 
 }

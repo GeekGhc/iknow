@@ -72,7 +72,7 @@
             this.getCollections()
         },
         methods:{
-        ...mapActions(['USER_COLLECTION']),
+        ...mapActions(['USER_COLLECTION','COLLECT_DELETE']),
             favoriteDelete() {
                 this.$message({
                   message: '已取消收藏该帖子',
@@ -84,8 +84,10 @@
                 this.USER_COLLECTION(userId)
             },
             deletePost(postId,index){
-                this.USER_POST_DELETE({postId,index})
-                this.deleteSuccess()
+                console.log("post id = "+postId)
+                var userId = this.$store.state.user.id
+                this.COLLECT_DELETE({userId,postId,index})
+                this.favoriteDelete()
             },
         },
         components:{

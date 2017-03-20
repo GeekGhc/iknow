@@ -14,6 +14,7 @@ import {
     COMMENT_CREATE,
     COLLECT_POST,
     USER_COLLECTION,
+    COLLECT_DELETE,
 } from './mutation-types.js'
 
 Vue.use(VueAxios, axios)
@@ -106,11 +107,19 @@ export default {
 
     },
     //用户收藏帖子列表
-    [USER_COLLECTIOIN]({commit},userId){
+    [USER_COLLECTION]({commit},userId){
         Vue.axios.get('http://localhost:8000/api/user/'+userId+'/collect').then(response => {
             if(response.data.status){
-                commit(USER_COLLECTIOIN,response.data.collection)
+                commit(USER_COLLECTION,response.data.collection)
             }
         })
-    }
+    },
+    //取消帖子的收藏
+    [COLLECT_DELETE]({commit},payload) {
+        Vue.axios.post('http://localhost:8000/api/post/collect',{userId:payload.userId,postId:payload.postId}).then(response => {
+            if(response.data.status){
+                commit(COLLECT_DELETE,payload.index)
+            }
+        })
+    },
 }
