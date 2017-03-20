@@ -13,7 +13,7 @@ import {
     COMMENT_GET,
     COMMENT_CREATE,
     COLLECT_POST,
-    USER_COLLECTIOIN,
+    USER_COLLECTION,
 } from './mutation-types.js'
 
 Vue.use(VueAxios, axios)
@@ -62,6 +62,11 @@ export default {
     //用户发表评论
     [COMMENT_CREATE](state,comment){
 
+    },
+
+    //用户收藏的帖子
+    [USER_COLLECTIOIN](state,collection){
+        state.collection = collection
     },
 
 }

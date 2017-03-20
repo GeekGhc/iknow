@@ -20,15 +20,20 @@
                                 <span class="empty-tips">你还没有收藏帖子哦</span>
                             </div>
                             <ul class="collect-list">
-                                <li class="collect-post-item">
-                                    <em class="post-trash"><i class="trash outline icon"></i></em>
+                                <li class="collect-post-item" v-for="(post,index) in collection">
+                                    <em class="post-trash">
+                                        <i
+                                                class="trash outline icon"
+                                                @click="deletePost(post.id,index)"
+                                        >
+                                        </i>
+                                    </em>
                                     <div class="post-avatar">
-                                        <img src="../../assets/images/avatars/elliot.jpg">
+                                        <img :src="userAvatar">
                                     </div>
                                     <div class="post-content-main">
                                         <div class="post-content">
-                                            想用webpack + vuejs2.0 实现图片的懒加载，目前只找到了vue-lazyload-img，这样的话，如果当我下拉列表的时候，
-                                            列表加载第二页数据，这时候列表的图片还会懒加载吗？在webpack中如何运用vue-lazyload-img呢？
+                                            {{ post.body }}
                                         </div>
                                     </div>
                                     <div class="post-info">
@@ -47,12 +52,41 @@
     </div>
 </template>
 <script>
+    import { mapActions } from 'vuex'
     import SiteHeader from '../common/SiteHeader'
     export default{
         data(){
             return{
                 msg:'hello vue'
             }
+        },
+        computed:{
+            collection(){
+               return this.$store.state.collection
+            },
+            userAvatar(){
+                return this.$store.state.user.avatar
+            }
+        },
+        mounted(){
+            this.getCollections()
+        },
+        methods:{
+        ...mapActions(['USER_COLLECTION']),
+            favoriteDelete() {
+                this.$message({
+                  message: '已取消收藏该帖子',
+                  type: 'success'
+                });
+            },
+            getCollections(){
+                var userId = this.$store.state.user.id
+                this.USER_COLLECTION(userId)
+            },
+            deletePost(postId,index){
+                this.USER_POST_DELETE({postId,index})
+                this.deleteSuccess()
+            },
         },
         components:{
              SiteHeader

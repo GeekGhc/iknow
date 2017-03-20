@@ -13,7 +13,7 @@ import {
     COMMENT_GET,
     COMMENT_CREATE,
     COLLECT_POST,
-    USER_COLLECTIOIN,
+    USER_COLLECTION,
 } from './mutation-types.js'
 
 Vue.use(VueAxios, axios)
@@ -106,7 +106,11 @@ export default {
 
     },
     //用户收藏帖子列表
-    [USER_COLLECTIOIN](){
-
+    [USER_COLLECTIOIN]({commit},userId){
+        Vue.axios.get('http://localhost:8000/api/user/'+userId+'/collect').then(response => {
+            if(response.data.status){
+                commit(USER_COLLECTIOIN,response.data.collection)
+            }
+        })
     }
 }
