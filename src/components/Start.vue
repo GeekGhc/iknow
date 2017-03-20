@@ -48,8 +48,8 @@
           }
         },
         computed:{
-            posts(){
-               return this.$store.state.posts
+            posts:function(){
+               return this.$store.state.posts.reverse()
             }
         },
         mounted(){
