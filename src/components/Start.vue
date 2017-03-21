@@ -49,7 +49,7 @@
         },
         computed:{
             posts:function(){
-               return this.$store.state.posts.reverse()
+               return this.$store.state.posts
             }
         },
         mounted(){

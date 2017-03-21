@@ -14,10 +14,6 @@
     margin-top:0 !important;
     margin-bottom: 1em;
 }
-.comment-wrapper .comment-list:last-child {
-    border-bottom: none;
-}
-
 .comment-wrapper .comment-list {
     position: relative;
     margin-top: 10px;
@@ -36,12 +32,12 @@
 .ui.comments .comment .metadata {
     margin-left: 0;
 }
-.ui.comments .comment{
+.ui.comments ul>li:last-child {
+    border-bottom: none !important;
+}
+.ui.comments ul>li{
     margin-bottom:10px !important;
     border-bottom: 1px solid #e5e5e5 !important;
-}
-.ui.comments .comment:last-child {
-    border-bottom: none !important;
 }
 .ui.comments .comment .field{
     margin-top:4px;

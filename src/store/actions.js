@@ -5,6 +5,7 @@ import {
     USER_SIGNIN,
     USER_SIGNOUT,
     POST_GET,
+    POST_SHOW,
     POST_CREATE,
     POST_DELETE,
     USER_POST_GET,
@@ -29,6 +30,15 @@ export default {
     [USER_SIGNOUT]({commit}) {
         sessionStorage.removeItem('user')
         commit(USER_SIGNOUT)
+    },
+
+    //加载帖子详情
+    [POST_SHOW]({commit},payload) {
+        Vue.axios.get('http://localhost:8000/api/post/'+payload.postId).then(response => {
+            if(response.data.status){
+                  console.log("post id = "+payload.postId);
+            }
+        })
     },
     //加载所有帖子数据
     [POST_GET]({commit}) {
@@ -92,11 +102,12 @@ export default {
         })
     },
     //用户发表评论
-    [COMMENT_CREATE](context){
+    [COMMENT_CREATE](context,comments){
         context.state.newComment.user_id = context.state.user.id
         console.log("comment body = "+context.state.newComment.body+" user id = "+context.state.user.id)
         Vue.axios.post('http://localhost:8000/api/comment',{comment:context.state.newComment}).then(response => {
             if(response.data.status){
+                comments.push(response.data.comment)
                 console.log("评论成功")
             }
         })

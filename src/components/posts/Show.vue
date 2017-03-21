@@ -26,14 +26,19 @@
     export default{
         data(){
             return{
-                msg:'hello vue'
+                post:'',
             }
         },
         mounted(){
-
+            this.getPost()
         },
         methods:{
-
+        ...mapActions(['POST_SHOW']),
+            getPost(){
+                var post = this.post
+                var postId = this.$route.params.id
+                this.POST_SHOW(post,postId)
+            }
         },
         components:{
             SiteHeader

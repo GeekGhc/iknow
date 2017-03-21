@@ -21,11 +21,12 @@
                         <el-input
                                 type="textarea"
                                 autosize
-                                placeholder="回复JellyBean:"
+                                :placeholder="reply_to_user"
                                 v-model="textarea">
                         </el-input>
                         <div
                                 class="ui primary button pull-right"
+                                @click="comment_reply"
                         >回复</div>
                     </div>
                 </form>
@@ -48,7 +49,8 @@
                 'to_comment_id':0,
                 'body':'',
                },
-               textarea:''
+               textarea:'',
+               reply_to_user:"回复"+this.comment.user.name+":"
             }
         },
         methods:{

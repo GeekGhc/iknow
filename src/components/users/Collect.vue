@@ -31,11 +31,17 @@
                                     <div class="post-avatar">
                                         <img :src="userAvatar">
                                     </div>
-                                    <div class="post-content-main">
+                                    <router-link
+                                            tag="div"
+                                            class="post-content-main"
+                                            :to="{ name: 'postShow', params: { id: post.id }}"
+                                            replace
+                                    >
                                         <div class="post-content">
                                             {{ post.body }}
                                         </div>
-                                    </div>
+                                    </router-link>
+
                                     <div class="post-info">
                                         <div class="coll-from pull-left">来自：PHP 进阶问答 </div>
                                         <div class="coll-time pull-right">2016/12/8</div>

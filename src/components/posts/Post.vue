@@ -51,7 +51,7 @@
                             <el-input
                                     type="textarea"
                                     autosize
-                                    placeholder="回复JellyBean:"
+                                    :placeholder="reply_to_user"
                                     v-model="comment_content">
                             </el-input>
                             <div
@@ -82,7 +82,9 @@
                 show_post_comment:false,
                 comment_content:'',
                 comments:[],
+                localComments:[],
                 postData:{},
+                reply_to_user:"回复"+this.post.user.name+":"
             }
         },
         computed:{
@@ -135,6 +137,7 @@
                  var postId = this.post.id
                  const response = await fetch(`http://localhost:8000/api/user/${userId}/post/${postId}`)
                  this.isCollect = Boolean(await response.json())
+                 console.log("this post collect is "+this.isCollect)
             },
             collect(){
                 console.log("你已经成功收藏了。。。and isCollect is "+this.isCollect)
@@ -153,7 +156,7 @@
             postComment(){
                 this.$store.state.newComment.post_id = this.postId
                 this.$store.state.newComment.body = this.comment_content
-                this.COMMENT_CREATE()
+                this.COMMENT_CREATE(this.comments)
                 this.show_post_comment = false
             },
             toggle_post_comment(){
