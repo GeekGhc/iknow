@@ -82,7 +82,6 @@
                 show_post_comment:false,
                 comment_content:'',
                 comments:[],
-                localComments:[],
                 postData:{},
                 reply_to_user:"回复"+this.post.user.name+":"
             }

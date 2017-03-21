@@ -36,6 +36,7 @@ export default {
     [POST_SHOW]({commit},payload) {
         Vue.axios.get('http://localhost:8000/api/post/'+payload.postId).then(response => {
             if(response.data.status){
+                  payload.post = response.data.post
                   console.log("post id = "+payload.postId);
             }
         })
