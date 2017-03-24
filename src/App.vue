@@ -18,6 +18,7 @@ export default {
 <style src="./assets/css/globals/header.css"></style>
 <style src="./assets/css/globals/validate.css"></style>
 <style src="./assets/css/pages/login.css"></style>
+<style src="./assets/css/pages/post.css"></style>
 <style src="./assets/css/pages/account.css"></style>
 <style src="./assets/css/pages/comment.css"></style>
 <style src="./assets/css/pages/profile.css"></style>

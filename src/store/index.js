@@ -9,6 +9,7 @@ Vue.use(Vuex)
 const state = {
     isLogin:false,//用户是否已经登录
     user:{},//用户信息
+    post:{},//当前用户浏览的帖子
     posts:[],//所有的帖子
     userPosts:[],//用户的帖子
     collection:[],//用户收藏的帖子

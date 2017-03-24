@@ -4,6 +4,7 @@ import VueAxios from 'vue-axios'
 import {
     USER_SIGNIN,
     USER_SIGNOUT,
+    POST_SHOW,
     POST_GET,
     POST_CREATE,
     POST_DELETE,
@@ -32,6 +33,12 @@ export default {
         console.log("退出成功了... and user login is "+state.isLogin)
     },
 
+
+    //当前用户浏览的帖子
+    [POST_SHOW](state,post){
+        state.post = post
+        console.log("mutation post user name = "+state.post.user.name)
+    },
     //加载所有帖子
     [POST_GET](state,posts){
         state.posts = posts

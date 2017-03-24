@@ -14,47 +14,75 @@
                             <span>帖子详情</span>
                         </div>
 
-                        <div class="feed-item-head">
-                            <a class="avatar">
-                                <img src="/static/images/avatar/elliot.jpg">
-                            </a>
-                            <a class="feed-item-author">Gavin</a>
-                            <span class="time">4天前</span>
-                            <div class="control-operator">
-                                <el-dropdown :hide-on-click="false">
+                        <div class="post-page">
+                            <div class="feed-item-head">
+                                <a class="avatar">
+                                    <img src="/static/images/avatar/elliot.jpg">
+                                </a>
+                                <a class="feed-item-author">hhhhh</a>
+                                <span class="time">4天前</span>
+                                <div class="control-operator">
+                                    <el-dropdown :hide-on-click="false">
                                     <span class="el-dropdown-link">
                                         <a><i class="fa fa-chevron-down"></i></a>
                                     </span>
-                                    <el-dropdown-menu slot="dropdown">
-                                        <el-dropdown-item>
-                                            <div>收藏</div>
-                                        </el-dropdown-item>
-                                        <el-dropdown-item>
-                                            <div>删除</div>
-                                        </el-dropdown-item>
-                                    </el-dropdown-menu>
-                                </el-dropdown>
+                                        <el-dropdown-menu slot="dropdown">
+                                            <el-dropdown-item>
+                                                <div>收藏</div>
+                                            </el-dropdown-item>
+                                            <el-dropdown-item>
+                                                <div>删除</div>
+                                            </el-dropdown-item>
+                                        </el-dropdown-menu>
+                                    </el-dropdown>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="feed-item-body">
-                            <div class="feed-item-body-wrapper">
-                                <div class="feed-item-body-content">
-                                    <p>这是一篇帖子</p>
+                            <div class="feed-item-body">
+                                <div class="feed-item-body-wrapper">
+                                    <div class="feed-item-body-content">
+                                        <div>
+                                            bsdb发布绝对是发你的房间东方闪电打死你放大放大 的那部分绝对是父都是发的时刻交付的防守打法的
+                                            的放大是<br/>
+                                            发布绝对是看风使舵电脑附近看到是否
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feed-item-foot">
+                                <div class="feed-item-foot-wrapper">
+                                    <a class="feed-item-thumbs">
+                                        <i class="fa fa-thumbs-o-up"></i>34
+                                    </a>
+                                    <div class="feed-item-separation"></div>
+                                    <div class="feed-item-comment">
+                                        <i
+                                                class="fa fa-commenting-o"
+                                                @click="toggle_post_comment"
+                                        ></i>22
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="feed-item-foot">
-                            <div class="feed-item-foot-wrapper">
-                                <a class="feed-item-thumbs">
-                                    <i class="fa fa-thumbs-o-up"></i>34
-                                </a>
-                                <div class="feed-item-separation"></div>
-                                <div class="feed-item-comment">
-                                    <i
-                                            class="fa fa-commenting-o"
-                                            @click="toggle_post_comment"
-                                    ></i>22
+
+                        <div class="comments-list" v-show="hasComments">
+                            <div class="comment-wrapper">
+                                <div class="ui comments">
+                                    <form class="ui reply form" v-if="true">
+                                        <div class="field">
+                                            <el-input
+                                                    type="textarea"
+                                                    autosize
+                                                    :placeholder="reply_to_user"
+                                                    v-model="comment_content">
+                                            </el-input>
+                                            <div
+                                                    class="ui primary button pull-right"
+                                                    @click="postComment"
+                                            >回复</div>
+                                        </div>
+                                    </form>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -73,7 +101,7 @@
     export default{
         data(){
             return{
-                post:null,
+                post:this.$store.state.post,
                 isCollect:false,
                 comments:[],
                 hasComments:false,
@@ -82,25 +110,29 @@
                 reply_to_user:"回复"
             }
         },
+        compouted:{
+           
+        },
         mounted(){
             this.getPost()
+            this.hasCollected()
         },
         methods:{
         ...mapActions(['POST_SHOW','COMMENT_CREATE']),
             getPost(){
-                var post = this.post
                 var postId = this.$route.params.id
-                this.POST_SHOW(post,postId)
+                this.POST_SHOW(postId)
+
             },
             async hasCollected(){
                  var userId = this.$store.state.user.id
-                 var postId = this.post.id
+                 var postId = this.$route.params.id
                  const response = await fetch(`http://localhost:8000/api/user/${userId}/post/${postId}`)
                  this.isCollect = Boolean(await response.json())
-                 console.log("this post collect is "+this.isCollect)
+                 console.log("this post collect is "+this.isCollect+" / post id = "+postId)
             },
             postComment(){
-                this.$store.state.newComment.post_id = this.postId
+                this.$store.state.newComment.post_id = this.post.id
                 this.$store.state.newComment.body = this.comment_content
                 this.COMMENT_CREATE(this.comments)
                 this.show_post_comment = false
@@ -117,8 +149,5 @@
             'comment':Comment
         }
     }
-
-
-
 
 </script>

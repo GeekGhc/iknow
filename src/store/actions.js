@@ -33,11 +33,11 @@ export default {
     },
 
     //加载帖子详情
-    [POST_SHOW]({commit},payload) {
-        Vue.axios.get('http://localhost:8000/api/post/'+payload.postId).then(response => {
+    [POST_SHOW]({commit},postId) {
+        Vue.axios.get('http://localhost:8000/api/post/'+postId).then(response => {
             if(response.data.status){
-                  payload.post = response.data.post
-                  console.log("post id = "+payload.postId);
+                  commit(POST_SHOW,response.data.post)
+                  
             }
         })
     },

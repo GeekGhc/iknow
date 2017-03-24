@@ -34,7 +34,7 @@
                                     <router-link
                                             tag="div"
                                             class="post-content-main"
-                                            :to="{ name: 'postShow', params: { id: post.id }}"
+                                            :to="{ name: 'postShow', params: { id:post.id}}"
                                             replace
                                     >
                                         <div class="post-content">
