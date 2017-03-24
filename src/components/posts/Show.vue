@@ -19,7 +19,7 @@
                                 <a class="avatar">
                                     <img src="/static/images/avatar/elliot.jpg">
                                 </a>
-                                <a class="feed-item-author">ffff</a>
+                                <a class="feed-item-author">{{ post.user.name }}</a>
                                 <span class="time">4天前</span>
                                 <div class="control-operator">
                                     <el-dropdown :hide-on-click="false">

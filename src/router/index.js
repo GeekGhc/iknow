@@ -6,6 +6,7 @@ import Register from 'components/users/Register'
 import Profile from 'components/users/Profile'
 import Account from 'components/users/Account'
 import Collect from 'components/users/Collect'
+import Message from 'components/users/Message'
 import Posts from 'components/posts/List'
 import PostShow from 'components/posts/Show'
 import UEditor from 'components/common/UEditor'
@@ -23,6 +24,7 @@ export default new Router({
         {path: '/profile', name: 'profile', component: Profile},
         {path: '/account', name: 'account', component: Account},
         {path: '/collect', name: 'collect', component: Collect},
+        {path: '/message', name: 'message', component: Message},
         {path: '/posts', name: 'posts', component: Posts},
         {path: '/post/:id', name: 'postShow', component: PostShow},
         {path: '/ueditor', name: 'ueditor', component: UEditor},

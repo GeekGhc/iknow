@@ -6,6 +6,8 @@
             </a>
             <div class="content">
                 <a class="author">{{ comment.user.name }}</a>
+                <span class="author-reply" v-if="comment.to_user_id">回复</span>
+                <a class="author" v-if="comment.to_user_id">{{ comment.to_user.name }}</a>
                 <div class="text">{{ comment.body }}</div>
                 <div class="actions">
                     <div class="metadata">
@@ -22,7 +24,7 @@
                                 type="textarea"
                                 autosize
                                 :placeholder="reply_to_user"
-                                v-model="textarea">
+                                v-model="comment_content">
                         </el-input>
                         <div
                                 class="ui primary button pull-right"
@@ -38,7 +40,7 @@
 <script>
     import { mapActions } from 'vuex'
     export default{
-        props:['postId','comment'],
+        props:['postId','comment','comments'],
         data(){
             return{
                show_comment_reply:false,
@@ -49,7 +51,7 @@
                 'to_comment_id':0,
                 'body':'',
                },
-               textarea:'',
+               comment_content:'',
                reply_to_user:"回复"+this.comment.user.name+":"
             }
         },
@@ -59,7 +61,13 @@
                 this.show_comment_reply = !this.show_comment_reply
             },
             comment_reply(){
-
+                this.$store.state.newComment.post_id = this.postId
+                this.$store.state.newComment.to_comment_id = this.comment.id
+                this.$store.state.newComment.to_user_id = this.comment.user.id
+                this.$store.state.newComment.body = this.comment_content
+                this.COMMENT_CREATE(this.comments)
+                this.show_comment_reply = false
+                this.comment_content = ''
             },
         },
         components:{

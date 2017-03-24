@@ -14,7 +14,7 @@
                     </div>
                     <div class="header-user-panel" v-if="isLogin">
                         <section>
-                            <a class="message"><i class="fa fa-bell-o fa-header-bell"></i></a>
+                            <router-link :to="{ name: 'message'}" class="message"><i class="fa fa-bell-o fa-header-bell"></i></router-link>
                             <el-dropdown>
                                 <a class="avatar el-dropdown-link"><img
                                         :src="userAvatar"></a>

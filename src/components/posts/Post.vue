@@ -62,7 +62,7 @@
                     </form>
                     <ul>
                         <li v-for="(comment,index) in comments">
-                            <comment :postId="post.id" :comment="comment"></comment>
+                            <comment :postId="post.id" :comment="comment" :comments="comments"></comment>
                         </li>
                     </ul>
                 </div>
@@ -157,6 +157,7 @@
                 this.$store.state.newComment.body = this.comment_content
                 this.COMMENT_CREATE(this.comments)
                 this.show_post_comment = false
+                this.comment_content = ''
             },
             toggle_post_comment(){
                 if(this.comments.length == 0){
