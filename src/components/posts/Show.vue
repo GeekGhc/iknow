@@ -19,7 +19,7 @@
                                 <a class="avatar">
                                     <img src="/static/images/avatar/elliot.jpg">
                                 </a>
-                                <a class="feed-item-author">hhhhh</a>
+                                <a class="feed-item-author">ffff</a>
                                 <span class="time">4天前</span>
                                 <div class="control-operator">
                                     <el-dropdown :hide-on-click="false">
@@ -68,7 +68,7 @@
                         <div class="comments-list" v-show="hasComments">
                             <div class="comment-wrapper">
                                 <div class="ui comments">
-                                    <form class="ui reply form" v-if="true">
+                                    <form class="ui reply form" v-if="show_post_comment">
                                         <div class="field">
                                             <el-input
                                                     type="textarea"
@@ -82,7 +82,11 @@
                                             >回复</div>
                                         </div>
                                     </form>
-                                    
+                                    <ul>
+                                        <li v-for="(comment,index) in comments">
+                                            <comment :postId="post.id" :comment="comment"></comment>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -101,7 +105,6 @@
     export default{
         data(){
             return{
-                post:this.$store.state.post,
                 isCollect:false,
                 comments:[],
                 hasComments:false,
@@ -110,19 +113,34 @@
                 reply_to_user:"回复"
             }
         },
-        compouted:{
-           
+        computed:{
+           post:function(){
+            return this.$store.state.post
+           }
         },
-        mounted(){
+        created(){
             this.getPost()
             this.hasCollected()
+            this.getComments()
         },
         methods:{
         ...mapActions(['POST_SHOW','COMMENT_CREATE']),
             getPost(){
                 var postId = this.$route.params.id
                 this.POST_SHOW(postId)
-
+            },
+            getComments(){
+                var postId = this.$route.params.id
+                this.axios.get('http://localhost:8000/api/post/'+postId+'/comment').then(response => {
+                    if(response.data.status){
+                        this.comments = response.data.comments
+                        if(this.comments.length>0){
+                           this.hasComments = true
+                        }else{
+                           this.hasComments = false
+                        }
+                    }
+                })
             },
             async hasCollected(){
                  var userId = this.$store.state.user.id

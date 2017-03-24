@@ -10,3 +10,13 @@
 .post-page{
     padding: 20px 20px 2px;
 }
+
+.feed-item-head .feed-item-author{
+    font-size: 16px;
+}
+.feed-item-head .time{
+    font-size: 14px;
+}
+.ui.comments>ul{
+    list-style: none;
+}

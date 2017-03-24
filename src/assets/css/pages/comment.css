@@ -43,10 +43,10 @@
     margin-top:4px;
 }
 .ui.comments  .field .el-textarea{
-    width:85%;
+    width:80%;
 }
 .ui.comments  .field .button.primary{
-    width:12%;
+    width:15%;
     margin-top:2px;
     vertical-align: middle;
 }
