@@ -19,7 +19,7 @@
                                 <a class="avatar">
                                     <img src="/static/images/avatar/elliot.jpg">
                                 </a>
-                                <a class="feed-item-author">{{ post.user.name }}</a>
+                                <a class="feed-item-author">{{post.user.name}}</a>
                                 <span class="time">4天前</span>
                                 <div class="control-operator">
                                     <el-dropdown :hide-on-click="false">
@@ -30,9 +30,6 @@
                                             <el-dropdown-item>
                                                 <div>收藏</div>
                                             </el-dropdown-item>
-                                            <el-dropdown-item>
-                                                <div>删除</div>
-                                            </el-dropdown-item>
                                         </el-dropdown-menu>
                                     </el-dropdown>
                                 </div>
@@ -41,10 +38,8 @@
                             <div class="feed-item-body">
                                 <div class="feed-item-body-wrapper">
                                     <div class="feed-item-body-content">
-                                        <div>
-                                            bsdb发布绝对是发你的房间东方闪电打死你放大放大 的那部分绝对是父都是发的时刻交付的防守打法的
-                                            的放大是<br/>
-                                            发布绝对是看风使舵电脑附近看到是否
+                                        <div v-html="post.html_body">
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -105,6 +100,7 @@
     export default{
         data(){
             return{
+              
                 isCollect:false,
                 comments:[],
                 hasComments:false,
@@ -114,14 +110,16 @@
             }
         },
         computed:{
-           post:function(){
-            return this.$store.state.post
+           post(){
+             return this.$store.state.post
            }
         },
         created(){
-            this.getPost()
             this.hasCollected()
             this.getComments()
+        },
+        mounted(){
+            this.getPost()
         },
         methods:{
         ...mapActions(['POST_SHOW','COMMENT_CREATE']),
@@ -147,7 +145,7 @@
                  var postId = this.$route.params.id
                  const response = await fetch(`http://localhost:8000/api/user/${userId}/post/${postId}`)
                  this.isCollect = Boolean(await response.json())
-                 console.log("this post collect is "+this.isCollect+" / post id = "+postId)
+                 console.log("this post collect is "+this.isCollect+" and  post id = "+postId)
             },
             postComment(){
                 this.$store.state.newComment.post_id = this.post.id
