@@ -77,26 +77,31 @@ body {
     height: 2.2rem;
     border-radius: 50%;
 }
-.site-header .header-user-login{
+
+.site-header .header-user-login {
     float: right;
 }
-.header-user-login{
+
+.header-user-login {
     font-size: 1.2em;
     color: rgb(171, 184, 194);
 }
-.header-user-login a{
+
+.header-user-login a {
     cursor: pointer;
     padding: 0 3px;
 }
 
 /***************** start  *************************/
-.index-publish-box{
+.index-publish-box {
     margin-top: 30px;
 }
-.edit-control{
+
+.edit-control {
     width: 100%;
     padding: 1.5rem 0;
 }
+
 .feed-list {
     margin-top: 2rem;
 }
@@ -174,10 +179,12 @@ body {
 .feed-item-body-wrapper .feed-item-body-content p {
     margin-bottom: 1rem;
 }
+
 .feed-item-foot {
     line-height: 2.15rem;
 }
-.feed-item-foot .feed-item-foot-wrapper{
+
+.feed-item-foot .feed-item-foot-wrapper {
     padding: .5rem 1rem;
     display: flex;
 }
@@ -187,6 +194,10 @@ body {
     float: left;
     color: #666;
     cursor: pointer;
+}
+
+.feed-item-foot .feed-item-foot-wrapper .feed-item-thumbs.active{
+    color: #FF851B;
 }
 
 .feed-item-foot .feed-item-separation {

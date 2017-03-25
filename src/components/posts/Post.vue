@@ -31,9 +31,7 @@
         </div>
         <div class="feed-item-foot">
             <div class="feed-item-foot-wrapper">
-                <a class="feed-item-thumbs">
-                    <i class="fa fa-thumbs-o-up"></i>{{ post.vote_count}}
-                </a>
+                <post-like :post="post"></post-like>
                 <div class="feed-item-separation"></div>
                 <div class="feed-item-comment">
                     <i
@@ -73,6 +71,7 @@
 <script>
     import { mapActions } from 'vuex'
     import Comment from './Comment'
+    import Like from './Like'
     export default{
         props:['post','index'],
         data(){
@@ -167,7 +166,8 @@
             },
         },
         components:{
-            'comment':Comment
+            'comment':Comment,
+            'post-like':Like
         }
     }
 </script>
