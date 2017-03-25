@@ -28,7 +28,7 @@
                                     </span>
                                         <el-dropdown-menu slot="dropdown">
                                             <el-dropdown-item>
-                                                <div>收藏</div>
+                                                <div @click="collect()">收藏</div>
                                             </el-dropdown-item>
                                         </el-dropdown-menu>
                                     </el-dropdown>
@@ -100,7 +100,6 @@
     export default{
         data(){
             return{
-              
                 isCollect:false,
                 comments:[],
                 hasComments:false,
@@ -158,6 +157,32 @@
                     this.hasComments = !this.hasComments
                 }
                 this.show_post_comment = !this.show_post_comment
+            },
+            collect(){
+                console.log("你已经成功收藏了。。。and isCollect is "+this.isCollect)
+                if(this.isCollect){
+                    this.favoriteWarning()
+                }else{
+                    this.axios.post('http://localhost:8000/api/post/collect',{userId:this.$store.state.user.id,postId:this.post.id}).then(response => {
+                        if(response.data.status){
+                            this.isCollect = response.data.isCollect
+                            console.log("恭喜你 收藏成功了。。。"+this.isCollect)
+                        }
+                    })
+                    this.favoriteSuccess()
+                }
+            },
+            favoriteSuccess() {
+                this.$message({
+                  message: '帖子收藏成功',
+                  type: 'success'
+                });
+            },
+            favoriteWarning() {
+                this.$message({
+                  message: '你已经收藏过该帖子了',
+                  type: 'warning'
+                });
             },
         },
         components:{

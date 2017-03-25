@@ -32,9 +32,15 @@
                                         <img :src="userAvatar">
                                     </div>
                                     <div class="post-content-main">
-                                        <div class="post-content">
-                                            {{ post.body }}
-                                        </div>
+                                        <router-link
+                                                tag="div"
+                                                class="post-content"
+                                                :to="{ name: 'postShow', params: { id:post.id}}"
+                                                replace
+                                        >    
+                                                {{ post.body }}
+                                        </router-link>
+                                        
                                     </div>
                                     <div class="post-info">
                                         <div class="coll-from pull-left">来自：PHP 进阶问答 </div>
