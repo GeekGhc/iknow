@@ -43,6 +43,7 @@
                  var postId = this.post.id
                  const response = await fetch(`http://localhost:8000/api/user/${userId}/post/${postId}/like`)
                  this.isVoted = Boolean(await response.json())
+                 console.log("this post body = "+this.post.body)
             }
         },
         components:{

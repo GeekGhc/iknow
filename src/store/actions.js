@@ -32,15 +32,6 @@ export default {
         commit(USER_SIGNOUT)
     },
 
-    //加载帖子详情
-    [POST_SHOW]({commit},postId) {
-        Vue.axios.get('http://localhost:8000/api/post/'+postId).then(response => {
-            if(response.data.status){
-                  commit(POST_SHOW,response.data.post)
-                  
-            }
-        })
-    },
     //加载所有帖子数据
     [POST_GET]({commit}) {
         Vue.axios.get('http://localhost:8000/api/post').then(response => {

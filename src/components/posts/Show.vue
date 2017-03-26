@@ -17,9 +17,9 @@
                         <div class="post-page">
                             <div class="feed-item-head">
                                 <a class="avatar">
-                                    <img src="/static/images/avatar/elliot.jpg">
+                                    <img :src="postUser.avatar">
                                 </a>
-                                <a class="feed-item-author">{{post.user.name}}</a>
+                                <a class="feed-item-author">{{postUser.name}}</a>
                                 <span class="time">4天前</span>
                                 <div class="control-operator">
                                     <el-dropdown :hide-on-click="false">
@@ -39,22 +39,20 @@
                                 <div class="feed-item-body-wrapper">
                                     <div class="feed-item-body-content">
                                         <div v-html="post.html_body">
-                                            
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="feed-item-foot">
                                 <div class="feed-item-foot-wrapper">
-                                    <a class="feed-item-thumbs">
-                                        <i class="fa fa-thumbs-o-up"></i>34
-                                    </a>
+                                    <post-like :post="post"></post-like>
                                     <div class="feed-item-separation"></div>
                                     <div class="feed-item-comment">
                                         <i
                                                 class="fa fa-commenting-o"
                                                 @click="toggle_post_comment"
-                                        ></i>22
+                                        ></i>{{post.comment_count}}
                                     </div>
                                 </div>
                             </div>
@@ -74,12 +72,13 @@
                                             <div
                                                     class="ui primary button pull-right"
                                                     @click="postComment"
-                                            >回复</div>
+                                            >回复
+                                            </div>
                                         </div>
                                     </form>
                                     <ul>
                                         <li v-for="(comment,index) in comments">
-                                            <comment :postId="post.id" :comment="comment"></comment>
+                                            <comment :postId="post.id" :comment="comment" :comments="comments"></comment>
                                         </li>
                                     </ul>
                                 </div>
@@ -96,10 +95,13 @@
 <script>
     import { mapActions } from 'vuex'
     import Comment from './Comment'
+    import Like from './Like'
     import SiteHeader from '../common/SiteHeader'
     export default{
         data(){
             return{
+                post:{},
+                postUser:{},
                 isCollect:false,
                 comments:[],
                 hasComments:false,
@@ -108,10 +110,12 @@
                 reply_to_user:"回复"
             }
         },
-        computed:{
-           post(){
-             return this.$store.state.post
-           }
+        beforeRouteEnter (to, from, next) {
+            var postId = to.params.id
+            next()
+        },
+        watch: {
+
         },
         created(){
             this.hasCollected()
@@ -121,10 +125,16 @@
             this.getPost()
         },
         methods:{
-        ...mapActions(['POST_SHOW','COMMENT_CREATE']),
-            getPost(){
+        ...mapActions(['COMMENT_CREATE']),
+           getPost(){
                 var postId = this.$route.params.id
-                this.POST_SHOW(postId)
+                this.axios.get('http://localhost:8000/api/post/'+postId).then(response => {
+                    if(response.data.status){
+                          this.post=response.data.post
+                          this.postUser = response.data.post.user
+                    }
+                    console.log("post user name is  = "+this.post.user.name)
+                })
             },
             getComments(){
                 var postId = this.$route.params.id
@@ -187,8 +197,10 @@
         },
         components:{
             SiteHeader,
-            'comment':Comment
+            'comment':Comment,
+            'post-like':Like
         }
     }
+
 
 </script>
