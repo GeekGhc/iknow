@@ -1,16 +1,18 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Start from 'components/Start'
-import Login from 'components/users/Login'
-import Register from 'components/users/Register'
-import Profile from 'components/users/Profile'
-import Account from 'components/users/Account'
-import Collect from 'components/users/Collect'
-import Message from 'components/users/Message'
-import Posts from 'components/posts/List'
-import PostShow from 'components/posts/Show'
-import UEditor from 'components/common/UEditor'
-import QEditor from 'components/common/QEditor'
+
+const Start = r => require.ensure([], () => r(require('components/Start')), 'start')
+const Login = r => require.ensure([], () => r(require('components/users/Login')), 'login')
+const Register = r => require.ensure([], () => r(require('components/users/Register')), 'register')
+const Profile = r => require.ensure([], () => r(require('components/users/Profile')), 'profile')
+const Account = r => require.ensure([], () => r(require('components/users/Account')), 'account')
+const Collect = r => require.ensure([], () => r(require('components/users/Collect')), 'collect')
+const Message = r => require.ensure([], () => r(require('components/users/Message')), 'message')
+const Posts = r => require.ensure([], () => r(require('components/posts/List')), 'Posts')
+const Like = r => require.ensure([], () => r(require('components/posts/Like')), 'Posts')
+const Comment = r => require.ensure([], () => r(require('components/posts/Comment')), 'Posts')
+const PostShow = r => require.ensure([], () => r(require('components/posts/Show')), 'PostShow')
+const QEditor = r => require.ensure([], () => r(require('components/common/QEditor')), 'QEditor')
 
 Vue.use(Router)
 
@@ -27,7 +29,6 @@ export default new Router({
         {path: '/message', name: 'message', component: Message},
         {path: '/posts', name: 'posts', component: Posts},
         {path: '/post/:id', name: 'postShow', component: PostShow},
-        {path: '/ueditor', name: 'ueditor', component: UEditor},
         {path: '/qeditor', name: 'qeditor', component: QEditor},
         // {path: '/test', name: 'test', component: Test},
         // {path: '*',redirect:'/login'}
