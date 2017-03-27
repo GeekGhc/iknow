@@ -29,8 +29,7 @@
                                         </i>
                                     </em>
                                     <div class="post-avatar">
-                                        <img :src="userAvatar">
-                                    </div>
+                                        <img :src="userAvatar">                                    </div>
                                     <div class="post-content-main">
                                         <router-link
                                                 tag="div"

@@ -45,7 +45,12 @@
                                             </a>
                                         </li>
                                     </ul>
-                                    <a class="modify-profile"><i class="fa fa-pencil-square-o"></i>修改资料</a>
+                                    <router-link
+                                            :to="{name: 'profile'}"
+                                            class="modify-profile"
+                                    >
+                                        <i class="fa fa-pencil-square-o"></i>修改资料
+                                    </router-link>
                                 </div>
                             </div>
                         </el-col>
@@ -56,8 +61,11 @@
                         <el-col :span="12" :offset="9">
                             <ul class="user-level-ul">
                                 <li><a>我的帖子</a></li>
-                                <li><a>我的回答</a></li>
-                                <li><a>我的圈子</a></li>
+                                <li><a>我的收藏</a></li>
+                            </ul>
+                            <ul class="user-banner-button">
+                                <li><button class="ui button">关注他</button></li>
+                                <user-message></user-message>
                             </ul>
                         </el-col>
                     </el-row>
@@ -68,6 +76,7 @@
 </template>
 <script>
     import SiteHeader from '../common/SiteHeader'
+    import UserMessage from '../Message/UserMessage'
     export default{
         data(){
             return{
@@ -75,7 +84,8 @@
             }
         },
         components:{
-            SiteHeader
+            SiteHeader,
+            'user-message':UserMessage
         }
     }
 

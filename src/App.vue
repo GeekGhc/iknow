@@ -4,6 +4,7 @@
     </div>
 </template>
 <script>
+import  "./assets/js/source/bootstrap.min.js"
 export default {
   name: 'app',
   mounted(){

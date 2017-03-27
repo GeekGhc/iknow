@@ -100,7 +100,8 @@
 
 .user-banner-control .user-level-ul {
     list-style: none;
-    display: flex;
+    position: relative;
+    display: inline-block;
     margin-bottom: 0;
 }
 
@@ -114,4 +115,15 @@
 .user-banner-control .user-level-ul li a {
     cursor: pointer;
     color: #666;
+}
+
+.user-banner-control .user-banner-button{
+    display: inline-block;
+    list-style: none;
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 0 !important;
+}
+.user-banner-control .user-banner-button li{
+    display: inline-block;
 }

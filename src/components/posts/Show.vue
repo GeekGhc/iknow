@@ -112,17 +112,18 @@
         },
         beforeRouteEnter (to, from, next) {
             var postId = to.params.id
-            next()
-        },
-        watch: {
+            next(vm =>{
+
+            })
 
         },
         created(){
+            this.fetchData()
             this.hasCollected()
             this.getComments()
         },
         mounted(){
-            this.getPost()
+
         },
         methods:{
         ...mapActions(['COMMENT_CREATE']),
@@ -133,8 +134,22 @@
                           this.post=response.data.post
                           this.postUser = response.data.post.user
                     }
-                    console.log("post user name is  = "+this.post.user.name)
+                    console.log("post user name = "+this.post.user.name)
                 })
+            },
+            async fetchData(){
+                var postId = this.$route.params.id
+                const response = await fetch(`http://localhost:8000/api/post/${postId}`).then((response) =>
+                {
+                    return response.json()
+                })
+                .then(data=>{
+                     this.post = data.post
+                     this.postUser = data.post.user
+                     console.log("this post user name is---- "+this.post.user.name)
+                     console.log(data);
+                })
+
             },
             getComments(){
                 var postId = this.$route.params.id
