@@ -1,10 +1,10 @@
 .account-page .user-banner {
     width: 100%;
-    background: #5C258D; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #5C258D, #4389A2); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #5C258D, #4389A2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   /* background: #5C258D;
+    background: -webkit-linear-gradient(to left, #5C258D, #4389A2);
+    background: linear-gradient(to left, #5C258D, #4389A2); */
     color: #fff;
-    /*padding-top: 150px;*/
+    background: url("/static/images/account/pattern.png");
 }
 
 .user-banner-info .user-banner-left img {

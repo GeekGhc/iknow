@@ -40,10 +40,18 @@
                             </div>
 
                             <div class="control-group group-box">
-                                <label class="control-label">Github</label>
+                                <label class="control-label">城市</label>
                                 <div class="controls">
-                                    <input type="text" placeholder="Github账户名">
-                                    <p class="help-block">更好展现自己</p>
+                                    <input type="text" placeholder="请填写你所在的城市">
+                                    <p class="help-block">show出你的定位</p>
+                                </div>
+                            </div>
+
+                            <div class="control-group group-box">
+                                <label class="control-label">站点</label>
+                                <div class="controls">
+                                    <input type="text" placeholder="http://example.com">
+                                    <p class="help-block">让别人更加了解你</p>
                                 </div>
                             </div>
 
@@ -58,6 +66,10 @@
                                     </el-input>
                                     <p class="help-block">必要的说明可以让别人更好的认识你</p>
                                 </div>
+                            </div>
+
+                            <div class="control-group group-box">
+                                <button class="ui blue medium button floated right">保存</button>
                             </div>
 
                         </div>

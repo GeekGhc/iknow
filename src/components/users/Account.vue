@@ -72,11 +72,15 @@
                 </div>
             </div>
         </div>
+
+        <user-post></user-post>
+
     </div>
 </template>
 <script>
     import SiteHeader from '../common/SiteHeader'
     import UserMessage from '../Message/UserMessage'
+    import UserPost from '../posts/UserPost'
     export default{
         data(){
             return{
@@ -85,7 +89,8 @@
         },
         components:{
             SiteHeader,
-            'user-message':UserMessage
+            'user-message':UserMessage,
+            'user-post':UserPost
         }
     }
 
