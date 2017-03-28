@@ -9,7 +9,7 @@
                         <nav class="site-header-nav" role="navigation">
                             <router-link :to="{ name: 'start'}" class="site-header-nav-item active">首页</router-link>
                             <router-link :to="{ name: 'start'}" class="site-header-nav-item">帖子</router-link>
-                            <router-link :to="{ name: 'start'}" class="site-header-nav-item">问答</router-link>
+                            <router-link  :to="{ name: 'show', params: { id:9 }}" class="site-header-nav-item">问答</router-link>
                         </nav>
                     </div>
                     <div class="header-user-panel" v-if="isLogin">
@@ -20,7 +20,7 @@
                                         :src="userAvatar"></a>
                                 <el-dropdown-menu slot="dropdown">
                                     <el-dropdown-item>
-                                        <router-link :to="{name: 'account'}">我的主页</router-link>
+                                        <router-link :to="{name: 'account',params: { id:userId }}">我的主页</router-link>
                                     </el-dropdown-item>
                                     <el-dropdown-item>
                                         <router-link :to="{name: 'posts'}">我的帖子</router-link>
@@ -66,6 +66,9 @@
             },
             userAvatar(){
                 return this.$store.state.user.avatar
+            },
+            userId(){
+                return this.$store.state.user.id
             }
         },
         methods:{

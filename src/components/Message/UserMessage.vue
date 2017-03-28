@@ -1,6 +1,8 @@
 <template>
     <li id="userMessage">
-    <button class="ui button" data-toggle="modal" data-target="#myModal">发私信</button>
+    <button class="ui button" data-toggle="modal" data-target="#myModal">
+        <i class="mail outline icon"></i>发私信
+    </button>
     <div class="modal fade" tabindex="-1" role="dialog" id="myModal" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">

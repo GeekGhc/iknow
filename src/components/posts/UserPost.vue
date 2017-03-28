@@ -31,7 +31,6 @@
                                     >
                                         和积分飞往南方new奶粉分那位妇女
                                     </router-link>
-
                                 </div>
                                 <div class="post-info">
                                     <div class="coll-from pull-left">来自：PHP 进阶问答 </div>

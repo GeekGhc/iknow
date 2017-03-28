@@ -46,7 +46,7 @@
                             </div>
                             <div class="feed-item-foot">
                                 <div class="feed-item-foot-wrapper">
-                                    <post-like :post="post"></post-like>
+                                    <post-like :post="post" v-if="post"></post-like>
                                     <div class="feed-item-separation"></div>
                                     <div class="feed-item-comment">
                                         <i
@@ -112,10 +112,7 @@
         },
         beforeRouteEnter (to, from, next) {
             var postId = to.params.id
-            next(vm =>{
-
-            })
-
+            next()
         },
         created(){
             this.fetchData()
@@ -149,7 +146,6 @@
                      console.log("this post user name is---- "+this.post.user.name)
                      console.log(data);
                 })
-
             },
             getComments(){
                 var postId = this.$route.params.id

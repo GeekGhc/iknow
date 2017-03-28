@@ -29,16 +29,16 @@
                                         </i>
                                     </em>
                                     <div class="post-avatar">
-                                        <img :src="userAvatar">                                    </div>
+                                        <img :src="userAvatar">
+                                    </div>
                                     <div class="post-content-main">
                                         <router-link
                                                 tag="div"
                                                 class="post-content"
-                                                :to="{ name: 'postShow', params: { id:post.id }}"
+                                                :to="{ name: 'show', params: { id:post.id }}"
                                         >    
                                                 {{ post.body }}
                                         </router-link>
-                                        
                                     </div>
                                     <div class="post-info">
                                         <div class="coll-from pull-left">来自：PHP 进阶问答 </div>
