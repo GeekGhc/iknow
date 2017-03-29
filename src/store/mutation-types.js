@@ -1,6 +1,9 @@
 export const USER_SIGNIN = 'USER_SIGNIN' //登录成功
 export const USER_SIGNOUT = 'USER_SIGNOUT' //退出登录
 
+export const USER_PROFILE = 'USER_PROFILE'//用户的资料
+export const PROFILE_EDIT = 'PROFILE_EDIT'//用户的资料修改
+
 export const POST_GET = 'POST_GET' //加载所有帖子
 export const POST_CREATE = 'POST_CREATE' //用户发表帖子
 export const POST_DELETE = 'POST_DELETE' //用户删除帖子

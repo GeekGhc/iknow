@@ -19,8 +19,13 @@ body {
     padding-top: 18px;
 }
 
-.panel-page .el-row .el-col {
-    background: #fff !important;
+.panel-page .el-row .el-col{
+    background: #fff;
+    border: none;
+}
+
+.follow-page .el-row .el-col{
+    background: none;
 }
 
 .breadcrumb {

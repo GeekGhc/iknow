@@ -99,22 +99,19 @@
 }
 
 .user-banner-control .user-level-ul {
-    list-style: none;
     position: relative;
     display: inline-block;
     margin-bottom: 0;
-}
-
-.user-banner-control .user-level-ul li {
     float: left;
     font-size: 1.2rem;
     margin-right: 3rem;
     padding: 5px 0;
 }
 
-.user-banner-control .user-level-ul li a {
+.user-banner-control .user-level-ul  a {
+    font-size: 1.2rem;
     cursor: pointer;
-    color: #666;
+    color: #54C8FF;
 }
 
 .user-banner-control .user-banner-button{

@@ -15,11 +15,12 @@
                         </div>
 
                         <div class="collect-form">
-                            <div class="empty empty-wrapper" style="display:none">
+                            <div class="empty empty-wrapper" v-if="!collection.length">
                                 <i>╮(╯∀╰)╭</i>
                                 <span class="empty-tips">你还没有收藏帖子哦</span>
                             </div>
-                            <ul class="collect-list">
+
+                            <ul class="collect-list" v-if="collection.length">
                                 <li class="collect-post-item" v-for="(post,index) in collection">
                                     <em class="post-trash">
                                         <i
@@ -48,7 +49,7 @@
                                 </li>
                             </ul>
 
-                            <div class="col-no-more">╮(╯∀╰)╭ 没有更多了</div>
+                            <div class="col-no-more" v-if="collection.length">╮(╯∀╰)╭ 没有更多了</div>
                         </div>
                     </el-col>
                 </el-row>

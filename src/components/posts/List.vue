@@ -14,12 +14,12 @@
                             <span>我的帖子</span>
                         </div>
                         <div class="list-form">
-                            <div class="empty empty-wrapper" style="display:none">
+                            <div class="empty empty-wrapper" v-if="!posts.length">
                                 <i>╮(╯∀╰)╭</i>
                                 <span class="empty-tips">你还没有发表帖子哦</span>
                             </div>
 
-                            <ul class="collect-list">
+                            <ul class="collect-list" v-if="posts.length">
                                 <li class="collect-post-item" v-for="(post,index) in posts">
                                     <em class="post-trash">
                                         <i
@@ -47,7 +47,7 @@
                                 </li>
                             </ul>
 
-                            <div class="col-no-more">╮(╯∀╰)╭ 没有更多了</div>
+                            <div class="col-no-more" v-if="posts.length">╮(╯∀╰)╭ 没有更多了</div>
                         </div>
                     </el-col>
                 </el-row>

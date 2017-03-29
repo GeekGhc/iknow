@@ -26,7 +26,11 @@
                             <div class="control-group group-box">
                                 <label class="control-label">昵称</label>
                                 <div class="controls">
-                                    <input type="text" placeholder="请输入你的昵称">
+                                    <input 
+                                        type="text" 
+                                        placeholder="请输入你的昵称"
+                                        v-model="user.name"
+                                        >
                                     <p class="help-block">默认使用微信昵称</p>
                                 </div>
                             </div>
@@ -34,7 +38,11 @@
                             <div class="control-group group-box">
                                 <label class="control-label">手机号码</label>
                                 <div class="controls">
-                                    <input type="text" placeholder="请填写手机号">
+                                    <input 
+                                        type="text" 
+                                        placeholder="请填写手机号"
+                                        v-model="user.phone"
+                                        >
                                     <p class="help-block">用于找回账号</p>
                                 </div>
                             </div>
@@ -42,7 +50,11 @@
                             <div class="control-group group-box">
                                 <label class="control-label">城市</label>
                                 <div class="controls">
-                                    <input type="text" placeholder="请填写你所在的城市">
+                                    <input 
+                                        type="text" 
+                                        placeholder="请填写你所在的城市"
+                                        v-model="user.city"
+                                        >
                                     <p class="help-block">show出你的定位</p>
                                 </div>
                             </div>
@@ -50,7 +62,11 @@
                             <div class="control-group group-box">
                                 <label class="control-label">站点</label>
                                 <div class="controls">
-                                    <input type="text" placeholder="http://example.com">
+                                    <input 
+                                        type="text"
+                                        placeholder="http://example.com"
+                                        v-model="user.site"
+                                     >
                                     <p class="help-block">让别人更加了解你</p>
                                 </div>
                             </div>
@@ -62,7 +78,7 @@
                                             type="textarea"
                                             :autosize="{ minRows: 2, maxRows: 4}"
                                             placeholder="请输入内容"
-                                            v-model="textarea3">
+                                            v-model="user.description">
                                     </el-input>
                                     <p class="help-block">必要的说明可以让别人更好的认识你</p>
                                 </div>
@@ -84,7 +100,13 @@
     export default{
         data(){
             return{
-                 textarea3: ''
+                 user:{
+                    name:'',
+                    phone:'',
+                    city:'',
+                    site:'',
+                    description:''
+                 },
             }
         },
         components:{

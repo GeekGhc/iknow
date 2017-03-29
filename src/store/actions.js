@@ -4,6 +4,8 @@ import VueAxios from 'vue-axios'
 import {
     USER_SIGNIN,
     USER_SIGNOUT,
+    USER_PROFILE,
+    PROFILE_EDIT,
     POST_GET,
     POST_SHOW,
     POST_CREATE,
@@ -30,6 +32,15 @@ export default {
     [USER_SIGNOUT]({commit}) {
         sessionStorage.removeItem('user')
         commit(USER_SIGNOUT)
+    },
+
+    //用户资料
+    [USER_PROFILE]({commit}){
+
+    },
+    //用户资料的修改
+    [PROFILE_EDIT]({commit}){
+
     },
 
     //加载所有帖子数据

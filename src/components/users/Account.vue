@@ -20,30 +20,42 @@
                                     <h2 v-if="user">{{ user.name }}</h2>
                                     <p>我是一个有追求的人 Keep Coding </p>
                                     <ul class="user-info-ul">
-                                        <li>
+                                        <router-link
+                                                tag="li"
+                                                :to="{ name: 'posts'}"
+                                        >
                                             <a href="#" v-if="showCount">
-                                                <span>{{ showCount.posts_count}}</span>
+                                                <span>{{ showCount.posts_count }}</span>
                                                 帖子
                                             </a>
-                                        </li>
-                                        <li>
+                                        </router-link>
+                                        <router-link
+                                                tag="li"
+                                                :to="{ name: 'following', params: { id:8 }}"
+                                        >
                                             <a href="#" v-if="showCount">
-                                                <span>{{ showCount.following_count}}</span>
+                                                <span>{{ showCount.following_count }}</span>
                                                 关注者
                                             </a>
-                                        </li>
-                                        <li>
+                                        </router-link>
+                                        <router-link
+                                                tag="li"
+                                                :to="{ name: 'followers', params: { id:8 }}"
+                                        >
                                             <a href="#" v-if="showCount">
-                                                <span>{{ showCount.followers_count}}</span>
+                                                <span>{{ showCount.followers_count }}</span>
                                                 粉丝
                                             </a>
-                                        </li>
-                                        <li>
+                                        </router-link>
+                                        <router-link
+                                                tag="li"
+                                                :to="{ name: 'collect'}"
+                                        >
                                             <a href="#" v-if="showCount">
-                                                <span>{{ showCount.collect_count}}</span>
+                                                <span>{{ showCount.collect_count }}</span>
                                                 收藏
                                             </a>
-                                        </li>
+                                        </router-link>
                                     </ul>
                                     <router-link
                                             :to="{name: 'profile'}"
@@ -59,10 +71,9 @@
                 <div class="user-banner-control">
                     <el-row :gutter="20">
                         <el-col :span="12" :offset="9">
-                            <ul class="user-level-ul">
-                                <li><a>我的帖子</a></li>
-                                <li><a>我的收藏</a></li>
-                            </ul>
+                            <div class="user-level-ul">
+                                <a>最新动态</a>
+                            </div>
                             <ul class="user-banner-button">
                                 <follow-button></follow-button>
                                 <user-message></user-message>
@@ -110,7 +121,7 @@
         },
         components:{
             SiteHeader,
-            'follow-button':Follow,
+            'follow-button':FollowButton,
             'user-message':UserMessage,
             'user-post':UserPost
         }

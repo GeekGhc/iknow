@@ -5,7 +5,7 @@
                 <el-col :span="12" :offset="6">
                     <div class="list-form">
                         <div class="panel-header">
-                            <span>帖子列表</span>
+                            <span>最新动态</span>
                         </div>
                         <div class="empty empty-wrapper" style="display:none">
                             <i>╮(╯∀╰)╭</i>

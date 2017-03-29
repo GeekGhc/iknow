@@ -129,6 +129,7 @@
                     console.log("name = "+this.newUser.name)
                     this.axios.post('http://localhost:8000/api/user/register',{user:this.newUser}).then(response => {
                       console.log("data = "+response.data.status)
+                      this.$router.push({ name: 'login'})
                     })
                 }
             }

@@ -24,4 +24,5 @@ export default {
 <style src="./assets/css/pages/comment.css"></style>
 <style src="./assets/css/pages/profile.css"></style>
 <style src="./assets/css/pages/collect.css"></style>
+<style src="./assets/css/pages/follow.css"></style>
 

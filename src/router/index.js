@@ -32,6 +32,8 @@ export default new Router({
         {path: '/collect', name: 'collect', component: Collect},
         {path: '/message', name: 'message', component: Message},
         {path: '/posts', name: 'posts', component: Posts},
+        {path: '/followers/:id', name: 'followers', component: Follower},
+        {path: '/following/:id', name: 'following', component: Following},
         // {path: '/test', name: 'test', component: Test},
         // {path: '*',redirect:'/login'}
     ]

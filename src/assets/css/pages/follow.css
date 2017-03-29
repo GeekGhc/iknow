@@ -1,0 +1,15 @@
+.ui.cards > .card > .extra.user-follow-footer {
+    vertical-align: middle;
+}
+
+.ui.cards > .card > .extra.user-follow-footer a {
+    font-size: 16px;
+}
+
+.ui.cards > .card > .extra.user-follow-footer .user-follow-footer-panel {
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
