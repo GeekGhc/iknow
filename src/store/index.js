@@ -19,13 +19,14 @@ const state = {
         'user_id': 0,
         'last_user_id': 0,
     },
-    newComment:{
+    newComment:{//新的评论
         'post_id':0,
         'user_id':0,
         'to_user_id':0,
         'to_comment_id':0,
         'body':''
-    }
+    },
+    userProfile:null//用户的资料
 }
 
 export default new Vuex.Store({

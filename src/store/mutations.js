@@ -4,7 +4,8 @@ import VueAxios from 'vue-axios'
 import {
     USER_SIGNIN,
     USER_SIGNOUT,
-    POST_SHOW,
+    USER_PROFILE,
+    PROFILE_EDIT,
     POST_GET,
     POST_CREATE,
     POST_DELETE,
@@ -31,6 +32,16 @@ export default {
     [USER_SIGNOUT](state) {
         state.isLogin = false
         console.log("退出成功了... and user login is "+state.isLogin)
+    },
+
+    //用户资料
+    [USER_PROFILE](state,profile) {
+       state.userProfile = profile
+        console.log("this profile description is "+state.userProfile.name)
+    },
+    //用户资料修改
+    [PROFILE_EDIT](state,user) {
+        state.user.name = user
     },
 
 

@@ -52,3 +52,6 @@
     border-radius: 50%;
     vertical-align: bottom;
 }
+.profile-save-btn{
+    padding: 11px 2rem !important;
+}

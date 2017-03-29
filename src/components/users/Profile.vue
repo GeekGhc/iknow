@@ -40,7 +40,7 @@
                                 <div class="controls">
                                     <input 
                                         type="text" 
-                                        placeholder="请填写手机号"
+                                        placeholder="请填写你的手机号"
                                         v-model="user.phone"
                                         >
                                     <p class="help-block">用于找回账号</p>
@@ -85,7 +85,12 @@
                             </div>
 
                             <div class="control-group group-box">
-                                <button class="ui blue medium button floated right">保存</button>
+                                <el-button 
+                                    type="primary" size="large" class="profile-save-btn"
+                                    @click="profileEdit"
+                                    >
+                                    保存
+                                </el-button>
                             </div>
 
                         </div>
@@ -96,18 +101,51 @@
     </div>
 </template>
 <script>
+    import { mapActions } from 'vuex'
     import SiteHeader from '../common/SiteHeader'
     export default{
         data(){
             return{
-                 user:{
+                user:{
                     name:'',
                     phone:'',
                     city:'',
                     site:'',
                     description:''
-                 },
+                },
             }
+        },
+        mounted(){
+            this.fetchData()
+        },
+        computed:{
+
+        },
+        watch: {
+            // 如果路由有变化，会再次执行该方法
+            '$route': 'fetchData'
+        },
+        methods:{
+        ...mapActions(['USER_PROFILE','PROFILE_EDIT']),
+            fetchData(){
+                let userId = this.$store.state.user.id
+                this.axios.get('http://localhost:8000/api/user/profile/'+userId).then(response => {
+                    if(response.data.status){
+                       this.user = response.data.profile
+                    }
+                })
+            },
+            profileEdit(){
+                let data = this.user
+                let userId = this.$store.state.user.id
+                this.PROFILE_EDIT({userId,data})
+
+                this.$message({
+                  message: '用户信息更新成功',
+                  type: 'success'
+                });
+            }
+
         },
         components:{
             SiteHeader

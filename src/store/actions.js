@@ -7,7 +7,6 @@ import {
     USER_PROFILE,
     PROFILE_EDIT,
     POST_GET,
-    POST_SHOW,
     POST_CREATE,
     POST_DELETE,
     USER_POST_GET,
@@ -35,12 +34,22 @@ export default {
     },
 
     //用户资料
-    [USER_PROFILE]({commit}){
-
+    [USER_PROFILE]({commit},userId){
+        Vue.axios.get('http://localhost:8000/api/user/profile/'+userId).then(response => {
+            if(response.data.status){
+                console.log("response profile = "+response.data.profile)
+                commit(USER_PROFILE,response.data.profile)
+            }
+        })
     },
     //用户资料的修改
-    [PROFILE_EDIT]({commit}){
-
+    [PROFILE_EDIT]({commit},payload){
+        Vue.axios.post('http://localhost:8000/api/user/profile',{userId:payload.userId,data:payload.data}).then(response => {
+            if(response.data.status){
+                commit(PROFILE_EDIT,response.data.user)
+                console.log("资料更新成功！！！")
+            }
+        })
     },
 
     //加载所有帖子数据
