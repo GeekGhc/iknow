@@ -12,11 +12,10 @@ import {
     USER_POST_GET,
     USER_POST_DELETE,
     USER_POST_MODIFY,
-    COMMENT_GET,
     COMMENT_CREATE,
-    COLLECT_POST,
     USER_COLLECTION,
     COLLECT_DELETE,
+    USER_FOLLOW,
 } from './mutation-types.js'
 
 Vue.use(VueAxios, axios)
@@ -36,7 +35,7 @@ export default {
 
     //用户资料
     [USER_PROFILE](state,profile) {
-       state.userProfile = profile
+        state.userProfile = profile
         console.log("this profile description is "+state.userProfile.name)
     },
     //用户资料修改
@@ -85,6 +84,12 @@ export default {
     //用户取消收藏的帖子
     [COLLECT_DELETE](state,index){
         state.collection.splice(index,1)
+    },
+
+    [USER_FOLLOW](state,followed){
+        followed = ! followed
+        console.log("mutation follow  = "+followed)
     }
+
 
 }

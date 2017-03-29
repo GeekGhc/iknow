@@ -17,6 +17,7 @@ import {
     COLLECT_POST,
     USER_COLLECTION,
     COLLECT_DELETE,
+    USER_FOLLOW,
 } from './mutation-types.js'
 
 Vue.use(VueAxios, axios)
@@ -127,7 +128,12 @@ export default {
 
     //用户收藏帖子
     [COLLECT_POST](context,payload){
-
+        Vue.axios.post('http://localhost:8000/api/user/follow',{userId:payload.userId,followedId:payload.followedId}).then(response => {
+            if(response.data.status){
+                payload.followed = response.data.followed
+                console.log("关注用户成功..."+response.data.followed)
+            }
+        })
     },
     //用户收藏帖子列表
     [USER_COLLECTION]({commit},userId){
@@ -144,5 +150,11 @@ export default {
                 commit(COLLECT_DELETE,payload.index)
             }
         })
+    },
+
+    //用户关注
+    [USER_FOLLOW]({commit},followed){
+        console.log("action followed  = "+followed)
+        commit(USER_FOLLOW,followed)
     },
 }

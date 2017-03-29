@@ -3,8 +3,8 @@
         <button
                 class="ui button"
                 v-bind:class="{'green':followed}"
-                v-html="text"
-                @click="follow(followed)"
+                v-text="text"
+                @click="follow(z)"
         >
             <i class="user icon"></i>关注他
         </button>
@@ -13,7 +13,6 @@
 
 <script>
     import { mapActions } from 'vuex'
-    import { mapMutations } from 'vuex'
     export default{
         props:['followedId'],
         data(){
@@ -23,21 +22,17 @@
         },
         computed: {
             text(){
-                return this.followed ? '<i class="user icon"></i>已关注' : '<i class="user icon"></i>关注他';
+                return this.followed ? '已关注' : '关注他';
             }
         },
         methods:{
-         ...mapActions(['USER_FOLLOW']),
-            follow(followed){
+        ...mapActions(['USER_FOLLOW']),
+            follow(){
                 let userId = this.$store.state.user.id
                 let followedId = this.followedId
                 console.log("user id = "+userId+" / "+followedId)
-                this.axios.post('http://localhost:8000/api/user/follow',{userId:userId,followedId:followedId}).then(response => {
-                    if(response.data.status){
-                        this.followed = response.data.followed
-                        console.log("关注用户成功..."+response.data.followed)
-                    }
-                })
+                this.USER_FOLLOW(this.followed)
+                console.log("account followed =  "+this.followed)
             }
         },
         components:{
@@ -45,3 +40,4 @@
         }
     }
 </script>
+

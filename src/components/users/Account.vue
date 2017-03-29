@@ -75,7 +75,7 @@
                                 <a>最新动态</a>
                             </div>
                             <ul class="user-banner-button">
-                                <follow-button></follow-button>
+                                <follow-button :followedId="userId"></follow-button>
                                 <user-message></user-message>
                             </ul>
                         </el-col>
@@ -106,6 +106,11 @@
         watch: {
             // 如果路由有变化，会再次执行该方法
             '$route': 'fetchData'
+        },
+        computed:{
+            userId(){
+                return this.$route.params.id
+            }
         },
         methods:{
             fetchData(){
