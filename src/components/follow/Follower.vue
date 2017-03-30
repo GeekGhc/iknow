@@ -22,7 +22,7 @@
                                             <i class="student icon"></i> 主页
                                         </router-link>
                                     </div>
-                                    <follow-button :followedId="follower.id"></follow-button>
+                                    <follow-button :followedId="follower.id" v-if="follower.id !== localUserId"></follow-button>
                                 </div>
                             </div>
 
@@ -52,6 +52,9 @@
         computed:{
             followers(){
                return this.$store.state.followers
+            },
+            localUserId(){
+                return this.$store.state.user.id
             }
         },
         methods:{

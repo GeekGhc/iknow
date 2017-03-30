@@ -14,12 +14,6 @@
 
                         <ul class="collect-list">
                             <li class="collect-post-item">
-                                <em class="post-trash">
-                                    <i
-                                            class="trash outline icon"
-                                    >
-                                    </i>
-                                </em>
                                 <div class="post-avatar">
                                     <img src="../../assets/images/avatars/default/my-avatar.jpg">
                                 </div>

@@ -75,8 +75,8 @@
                                 <a>最新动态</a>
                             </div>
                             <ul class="user-banner-button">
-                                <follow-user :followedId="userId"></follow-user>
-                                <user-message></user-message>
+                                <follow-user :followedId="userId" v-if="localUserId !== userId"></follow-user>
+                                <user-message v-if="localUserId !== userId"></user-message>
                             </ul>
                         </el-col>
                     </el-row>
@@ -110,6 +110,9 @@
         computed:{
             userId(){
                 return this.$route.params.id
+            },
+            localUserId(){
+                return this.$store.state.user.id
             }
         },
         methods:{
