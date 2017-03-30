@@ -1,14 +1,11 @@
 <template>
-    <li id="follow">
-        <button
-                class="ui button"
-                v-bind:class="{'green':followed}"
-                v-html="text"
-                @click="follow(followed)"
-        >
-            <i class="user icon"></i>关注他
-        </button>
-    </li>
+    <button
+            class="ui button pull-right"
+            v-text="text"
+            @click="followUser(follow)"
+    >
+        Follow
+    </button>
 </template>
 
 <script>
@@ -18,26 +15,34 @@
         props:['followedId'],
         data(){
             return{
-                followed:false
+                follow:{
+                    isFollowed:false
+                }
             }
+        },
+        mounted(){
+            this.isFollow()
         },
         computed: {
             text(){
-                return this.followed ? '<i class="user icon"></i>已关注' : '<i class="user icon"></i>关注他';
+                return this.follow.isFollowed ? 'UnFollow' : 'Follow';
             }
         },
         methods:{
-         ...mapActions(['USER_FOLLOW']),
-            follow(followed){
+        ...mapActions(['USER_FOLLOW']),
+            //用户关注
+            followUser(follow){
                 let userId = this.$store.state.user.id
                 let followedId = this.followedId
                 console.log("user id = "+userId+" / "+followedId)
-                this.axios.post('http://localhost:8000/api/user/follow',{userId:userId,followedId:followedId}).then(response => {
-                    if(response.data.status){
-                        this.followed = response.data.followed
-                        console.log("关注用户成功..."+response.data.followed)
-                    }
-                })
+                this.USER_FOLLOW({userId,followedId,follow})
+            },
+            //用户是否关注了这个用户
+            async isFollow(){
+                let userId = this.$store.state.user.id
+                let followedId = this.followedId
+                const response = await fetch(`http://localhost:8000/api/user/${userId}/follow/${followedId}`)
+                this.follow.isFollowed =  Boolean(await response.json())
             }
         },
         components:{

@@ -13,3 +13,8 @@
     padding: 0;
     vertical-align: baseline;
 }
+
+.ui.cards > .card .content img {
+    width: 36px;
+    height: 36px;
+}

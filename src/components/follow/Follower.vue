@@ -8,56 +8,28 @@
                         <h2 class="ui header">
                             <div class="content">粉丝列表</div>
                         </h2>
-                        <div class="ui cards two column">
-                            <div class="card column">
+                        <div class="ui cards stackable one column grid">
+                            <div class="card column" v-for="(follower,index) in followers">
                                 <div class="content">
-                                    <img class="right floated mini ui image" src="/static/images/avatar/elliot.jpg">
-                                    <div class="header">葛华春</div>
-                                    <div class="meta">22个关注者</div>
-                                    <div class="description">Elliot requested permission to view your contact details
-                                    </div>
+                                    <img class="right floated mini ui image" :src="follower.avatar">
+                                    <div class="header">{{ follower.name }}</div>
+                                    <div class="meta">{{follower.followers_count}}个关注者</div>
+                                    <div class="description">{{follower.profile.description}}</div>
                                 </div>
                                 <div class="extra content user-follow-footer">
                                     <div class="user-follow-footer-panel">
-                                        <a><i class="student icon"></i> 主页 </a>
+                                        <router-link :to="{name: 'account',params: { id:follower.id }}">
+                                            <i class="student icon"></i> 主页
+                                        </router-link>
                                     </div>
-                                    <button class="ui button pull-right">Follow</button>
+                                    <follow-button :followedId="follower.id"></follow-button>
                                 </div>
                             </div>
 
-                            <div class="card column">
-                                <div class="content">
-                                    <img class="right floated mini ui image" src="/static/images/avatar/elliot.jpg">
-                                    <div class="header">葛华春</div>
-                                    <div class="meta">22个关注者</div>
-                                    <div class="description">Elliot requested permission to view your contact details
-                                    </div>
-                                </div>
-                                <div class="extra content user-follow-footer">
-                                    <div class="user-follow-footer-panel">
-                                        <a><i class="student icon"></i> 主页 </a>
-                                    </div>
-                                    <button class="ui button pull-right">Follow</button>
-                                </div>
-                            </div>
-
-                            <div class="card column">
-                                <div class="content">
-                                    <img class="right floated mini ui image" src="/static/images/avatar/elliot.jpg">
-                                    <div class="header">葛华春</div>
-                                    <div class="meta">22个关注者</div>
-                                    <div class="description">Elliot requested permission to view your contact details
-                                    </div>
-                                </div>
-                                <div class="extra content user-follow-footer">
-                                    <div class="user-follow-footer-panel">
-                                        <a><i class="student icon"></i> 主页 </a>
-                                    </div>
-                                    <button class="ui button pull-right">Follow</button>
-                                </div>
-                            </div>
                         </div>
+
                     </el-col>
+
                 </el-row>
             </div>
         </div>
@@ -67,17 +39,31 @@
 <script>
     import { mapActions } from 'vuex'
     import SiteHeader from '../common/SiteHeader'
+    import FollowButton from '../follow/FollowButton'
     export default{
         data(){
             return{
 
             }
         },
+        mounted(){
+            this.getFollowers()
+        },
+        computed:{
+            followers(){
+               return this.$store.state.followers
+            }
+        },
+        methods:{
+        ...mapActions(['FOLLOWERS_GET']),
+            getFollowers(){
+                let userId =  this.$route.params.id
+                this.FOLLOWERS_GET(userId)
+            }
+        },
         components:{
-             SiteHeader
+             SiteHeader,
+             FollowButton
         }
     }
-
-
-
 </script>

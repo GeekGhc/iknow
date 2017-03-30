@@ -13,6 +13,8 @@ const state = {
     posts:[],//所有的帖子
     userPosts:[],//用户的帖子
     collection:[],//用户收藏的帖子
+    followers:{},
+    following:{},
     newPost:{//新的帖子
         'body':'',
         'html_body':'',

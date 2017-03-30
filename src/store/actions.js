@@ -18,6 +18,8 @@ import {
     USER_COLLECTION,
     COLLECT_DELETE,
     USER_FOLLOW,
+    FOLLOWERS_GET,
+    FOLLOWING_GET,
 } from './mutation-types.js'
 
 Vue.use(VueAxios, axios)
@@ -143,6 +145,7 @@ export default {
             }
         })
     },
+
     //取消帖子的收藏
     [COLLECT_DELETE]({commit},payload) {
         Vue.axios.post('http://localhost:8000/api/post/collect',{userId:payload.userId,postId:payload.postId}).then(response => {
@@ -153,8 +156,30 @@ export default {
     },
 
     //用户关注
-    [USER_FOLLOW]({commit},followed){
-        console.log("action followed  = "+followed)
-        commit(USER_FOLLOW,followed)
+    [USER_FOLLOW]({commit},payload){
+        Vue.axios.post('http://localhost:8000/api/user/follow',{userId:payload.userId,followedId:payload.followedId}).then(response => {
+            if(response.data.status){
+                commit(USER_FOLLOW,payload.follow)
+                console.log("关注用户成功..."+response.data.followed)
+            }
+        })
     },
+
+    //用户粉丝
+    [FOLLOWERS_GET]({commit},userId){
+        Vue.axios.get('http://localhost:8000/api/user/'+userId+'/followers').then(response => {
+            if(response.data.status){
+                commit(FOLLOWERS_GET,response.data.followers)
+            }
+        })
+    },
+
+    //用户关注的人
+    [FOLLOWING_GET]({commit},userId){
+        Vue.axios.get('http://localhost:8000/api/user/'+userId+'/following').then(response => {
+            if(response.data.status){
+                commit(FOLLOWING_GET,response.data.following)
+            }
+        })
+    }
 }

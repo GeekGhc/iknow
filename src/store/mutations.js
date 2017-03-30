@@ -16,6 +16,8 @@ import {
     USER_COLLECTION,
     COLLECT_DELETE,
     USER_FOLLOW,
+    FOLLOWERS_GET,
+    FOLLOWING_GET,
 } from './mutation-types.js'
 
 Vue.use(VueAxios, axios)
@@ -86,10 +88,30 @@ export default {
         state.collection.splice(index,1)
     },
 
-    [USER_FOLLOW](state,followed){
-        followed = ! followed
-        console.log("mutation follow  = "+followed)
-    }
+    [USER_FOLLOW](state,follow){
+        follow.isFollowed = ! follow.isFollowed
+        console.log("mutation follow  = "+follow.isFollowed)
+    },
+    [FOLLOWERS_GET](state,follow){
+        follow.isFollowed = ! follow.isFollowed
+        console.log("mutation follow  = "+follow.isFollowed)
+    },
+    [FOLLOWING_GET](state,follow){
+        follow.isFollowed = ! follow.isFollowed
+        console.log("mutation follow  = "+follow.isFollowed)
+    },
+
+    //用户粉丝
+    [FOLLOWERS_GET](state,followers){
+        state.followers = followers
+        console.log("followers = "+followers)
+    },
+    //用户关注的人
+    [FOLLOWING_GET](state,following){
+        state.following = following
+        console.log("followers = "+following)
+    },
+
 
 
 }

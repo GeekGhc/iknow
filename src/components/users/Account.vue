@@ -31,7 +31,7 @@
                                         </router-link>
                                         <router-link
                                                 tag="li"
-                                                :to="{ name: 'following', params: { id:8 }}"
+                                                :to="{ name: 'following', params: { id:userId }}"
                                         >
                                             <a href="#" v-if="showCount">
                                                 <span>{{ showCount.following_count }}</span>
@@ -40,7 +40,7 @@
                                         </router-link>
                                         <router-link
                                                 tag="li"
-                                                :to="{ name: 'followers', params: { id:8 }}"
+                                                :to="{ name: 'followers', params: { id:userId }}"
                                         >
                                             <a href="#" v-if="showCount">
                                                 <span>{{ showCount.followers_count }}</span>
@@ -75,7 +75,7 @@
                                 <a>最新动态</a>
                             </div>
                             <ul class="user-banner-button">
-                                <follow-button :followedId="userId"></follow-button>
+                                <follow-user :followedId="userId"></follow-user>
                                 <user-message></user-message>
                             </ul>
                         </el-col>
@@ -91,7 +91,7 @@
 <script>
     import SiteHeader from '../common/SiteHeader'
     import UserMessage from '../Message/UserMessage'
-    import FollowButton from '../follow/FollowButton'
+    import FollowUser from '../follow/FollowUser'
     import UserPost from '../posts/UserPost'
     export default{
         data(){
@@ -126,7 +126,7 @@
         },
         components:{
             SiteHeader,
-            'follow-button':FollowButton,
+            'follow-user':FollowUser,
             'user-message':UserMessage,
             'user-post':UserPost
         }

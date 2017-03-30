@@ -23,3 +23,5 @@ export const USER_COLLECTION = 'USER_COLLECTION'//用户收藏帖子列表
 export const COLLECT_DELETE = 'COLLECT_DELETE'//用户取消收藏帖子
 
 export const USER_FOLLOW = 'USER_FOLLOW'//用户关注
+export const FOLLOWERS_GET = 'FOLLOWERS_GET'//用户粉丝
+export const FOLLOWING_GET = 'FOLLOWING_GET'//用户关注的人
