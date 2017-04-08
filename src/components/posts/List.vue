@@ -42,7 +42,7 @@
                                     </div>
                                     <div class="post-info">
                                         <div class="coll-from pull-left">来自：PHP 进阶问答 </div>
-                                        <div class="coll-time pull-right">2016/12/8</div>
+                                        <div class="coll-time pull-right">{{post.created_at}}</div>
                                     </div>
                                 </li>
                             </ul>

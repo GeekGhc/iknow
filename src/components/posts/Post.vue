@@ -5,7 +5,7 @@
                 <img :src="post.user.avatar">
             </a>
             <a class="feed-item-author">{{ post.user.name }}</a>
-            <span class="time">4天前</span>
+            <span class="time">{{post.created_at}}</span>
             <div class="control-operator">
                 <el-dropdown :hide-on-click="false">
                         <span class="el-dropdown-link">

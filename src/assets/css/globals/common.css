@@ -63,3 +63,16 @@ body {
     background: #fff;
     min-height:320px;
 }
+.fa-icon-sm{
+    margin-right: 4px;
+}
+.fa-icon-md{
+    margin-right:6px;
+}
+.fa-icon-lg{
+    margin-right:8px;
+}
+.bell-badge{
+    background-color: #DB2828!important;
+    border-color: #DB2828!important;
+}

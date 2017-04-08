@@ -20,6 +20,9 @@ import {
     USER_FOLLOW,
     FOLLOWERS_GET,
     FOLLOWING_GET,
+    NOTIFICATIONS_COUNT,
+    NOTIFY_MESSAGE_GET,
+    MARK_NOTIFY_MESSAGE,
 } from './mutation-types.js'
 
 Vue.use(VueAxios, axios)
@@ -181,5 +184,30 @@ export default {
                 commit(FOLLOWING_GET,response.data.following)
             }
         })
-    }
+    },
+
+    //用户未读消息的个数
+    [NOTIFICATIONS_COUNT]({commit},userId){
+        Vue.axios.get('http://localhost:8000/api/user/'+userId+'/notifications/count').then(response => {
+            if(response.data.status){
+                commit(NOTIFICATIONS_COUNT,response.data.count)
+            }
+        })
+    },
+    //用户消息
+    [NOTIFY_MESSAGE_GET]({commit},userId){
+        Vue.axios.get('http://localhost:8000/api/user/'+userId+'/notifications').then(response => {
+            if(response.data.status){
+                commit(NOTIFY_MESSAGE_GET,response.data.messages)
+            }
+        })
+    },
+    //标志用户消息
+    [MARK_NOTIFY_MESSAGE]({commit},userId){
+        Vue.axios.post('http://localhost:8000/api/user/'+userId+'/notifications/markRead').then(response => {
+            if(response.data.status){
+                commit(MARK_NOTIFY_MESSAGE)
+            }
+        })
+    },
 }

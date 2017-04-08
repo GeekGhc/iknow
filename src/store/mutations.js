@@ -18,6 +18,9 @@ import {
     USER_FOLLOW,
     FOLLOWERS_GET,
     FOLLOWING_GET,
+    NOTIFICATIONS_COUNT,
+    NOTIFY_MESSAGE_GET,
+    MARK_NOTIFY_MESSAGE
 } from './mutation-types.js'
 
 Vue.use(VueAxios, axios)
@@ -111,6 +114,18 @@ export default {
         state.following = following
         console.log("followers = "+following)
     },
+
+    //用户的消息通知
+    [NOTIFICATIONS_COUNT](state,count){
+        state.notifications_count = count
+    },
+    [NOTIFY_MESSAGE_GET](state,messages){
+        state.messages = messages
+    },
+    [MARK_NOTIFY_MESSAGE](state){
+        state.messages = null
+        state.notifications_count = 0
+    }
 
 
 

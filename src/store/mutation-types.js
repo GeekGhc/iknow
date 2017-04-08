@@ -25,3 +25,7 @@ export const COLLECT_DELETE = 'COLLECT_DELETE'//用户取消收藏帖子
 export const USER_FOLLOW = 'USER_FOLLOW'//用户关注
 export const FOLLOWERS_GET = 'FOLLOWERS_GET'//用户粉丝
 export const FOLLOWING_GET = 'FOLLOWING_GET'//用户关注的人
+
+export const NOTIFICATIONS_COUNT = 'NOTIFICATIONS_COUNT'//用户消息的个数
+export const NOTIFY_MESSAGE_GET = 'NOTIFY_MESSAGE_GET'//用户消息
+export const MARK_NOTIFY_MESSAGE = 'MARK_NOTIFY_MESSAGE'//标志用户消息

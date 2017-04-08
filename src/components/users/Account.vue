@@ -18,7 +18,9 @@
                                 </div>
                                 <div class="user-banner-right">
                                     <h2 v-if="user">{{ user.name }}</h2>
-                                    <p>我是一个有追求的人 Keep Coding </p>
+                                    <p v-if="user"><i class="fa fa-location-arrow fa-icon-sm"></i> {{ user.profile.city }}</p>
+                                    <p class="user-account-link" v-if="user"><i class="fa fa-link fa-icon-sm"></i> <a target="_blank" :href="user.profile.site">{{user.profile.site}}</a></p>
+                                    <p v-if="user">{{ user.profile.description }}</p>
                                     <ul class="user-info-ul">
                                         <router-link
                                                 tag="li"
@@ -60,6 +62,7 @@
                                     <router-link
                                             :to="{name: 'profile'}"
                                             class="modify-profile"
+                                            v-if="localUserId !== userId"
                                     >
                                         <i class="fa fa-pencil-square-o"></i>修改资料
                                     </router-link>
@@ -76,7 +79,6 @@
                             </div>
                             <ul class="user-banner-button">
                                 <follow-user :followedId="userId" v-if="localUserId !== userId"></follow-user>
-                                <user-message v-if="localUserId !== userId"></user-message>
                             </ul>
                         </el-col>
                     </el-row>
@@ -130,7 +132,6 @@
         components:{
             SiteHeader,
             'follow-user':FollowUser,
-            'user-message':UserMessage,
             'user-post':UserPost
         }
     }

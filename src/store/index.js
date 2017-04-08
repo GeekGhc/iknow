@@ -28,7 +28,9 @@ const state = {
         'to_comment_id':0,
         'body':''
     },
-    userProfile:null//用户的资料
+    userProfile:null,//用户的资料
+    notifications_count:null,
+    messages:null,
 }
 
 export default new Vuex.Store({

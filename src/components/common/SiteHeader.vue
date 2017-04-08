@@ -8,13 +8,15 @@
 
                         <nav class="site-header-nav" role="navigation">
                             <router-link :to="{ name: 'start'}" class="site-header-nav-item active">首页</router-link>
-                            <router-link :to="{ name: 'start'}" class="site-header-nav-item">帖子</router-link>
-                            <router-link  :to="{ name: 'show', params: { id:9 }}" class="site-header-nav-item">问答</router-link>
+                            <router-link :to="{ name: 'start'}" class="site-header-nav-item">名人圈</router-link>
                         </nav>
                     </div>
                     <div class="header-user-panel" v-if="isLogin">
                         <section>
-                            <router-link :to="{ name: 'message'}" class="message"><i class="fa fa-bell-o fa-header-bell"></i></router-link>
+                            <router-link :to="{ name: 'message'}" class="message">
+                                <i class="fa fa-bell-o fa-header-bell"></i>
+                                <span class="badge bell-badge" v-if="notifications_count > 0">{{ notifications_count }}</span>
+                            </router-link>
                             <el-dropdown>
                                 <a class="avatar el-dropdown-link"><img
                                         :src="userAvatar"></a>
@@ -59,6 +61,7 @@
                 this.$store.state.isLogin = true
                 this.$store.state.user = JSON.parse(sessionStorage.getItem('user'))
               }
+              this.getNotificationsCount()
         },
         computed:{
             isLogin(){
@@ -69,14 +72,22 @@
             },
             userId(){
                 return this.$store.state.user.id
-            }
+            },
+            notifications_count(){
+                return this.$store.state.notifications_count
+            },
+
         },
         methods:{
-            ...mapActions(['USER_SIGNOUT']),
+            ...mapActions(['USER_SIGNOUT','NOTIFICATIONS_COUNT']),
             logout(){
                  //退出登录
                  this.USER_SIGNOUT()
                  this.$router.push('/')
+            },
+            getNotificationsCount(){
+                 let userId = this.$store.state.user.id
+                 this.NOTIFICATIONS_COUNT(userId)
             }
         }
     }
