@@ -12,13 +12,18 @@ import router from './router'
 import store from './store'
 import VueQuillEditor from 'vue-quill-editor'
 
+import "../static/css/source/bootstrap.min.css"
+import "../static/css/source/font-awesome.min.css"
+import "../static/css/source/semantic.min.css"
+import "../static/css/globals.css"
+import "../static/css/pages.css"
+
 
 
 Vue.use(VueAxios, axios)
 Vue.use(ElementUI)
 Vue.use(Vuelidate)
 Vue.use(VueQuillEditor)
-
 
 
 /* eslint-disable no-new */

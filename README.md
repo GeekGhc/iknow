@@ -3,7 +3,7 @@
 
 ## 工具&技能
 
-`vue`+`vuex`+`vue-router`+`vue-axios`
+`vue`+`vuex`+`vue-router`+`vue-axios`+`vuelidate`+`vue-quill_editor`+`element-ui`
 
 [barryvdh/laravel-cors](https://github.com/barryvdh/laravel-cors) 一个http代理的中间件，进行http请求转发，实现跨域请求
 

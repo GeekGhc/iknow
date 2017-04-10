@@ -199,6 +199,7 @@ export default {
         Vue.axios.get('http://localhost:8000/api/user/'+userId+'/notifications').then(response => {
             if(response.data.status){
                 commit(NOTIFY_MESSAGE_GET,response.data.messages)
+                console.log("messages = "+response.data.messages)
             }
         })
     },

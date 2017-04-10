@@ -7,28 +7,28 @@
                         <div class="panel-header">
                             <span>最新动态</span>
                         </div>
-                        <div class="empty empty-wrapper" style="display:none">
+                        <div class="empty empty-wrapper" v-if="!posts.length">
                             <i>╮(╯∀╰)╭</i>
                             <span class="empty-tips">你还没有发表帖子哦</span>
                         </div>
 
-                        <ul class="collect-list">
-                            <li class="collect-post-item">
-                                <div class="post-avatar">
-                                    <img src="../../assets/images/avatars/default/my-avatar.jpg">
+                        <ul class="collect-list" v-if="posts.length">
+                            <li class="collect-post-item" v-for="(post,index) in posts">
+                                <div class="post-avatar" v-if="post.user">
+                                    <img :src="post.user.avatar">
                                 </div>
                                 <div class="post-content-main">
                                     <router-link
                                             tag="div"
                                             class="post-content"
-                                            :to="{name: 'posts'}"
+                                            :to="{name: 'show',params: { id:post.id }}"
                                     >
-                                        和积分飞往南方new奶粉分那位妇女
+                                        {{ post.body }}
                                     </router-link>
                                 </div>
                                 <div class="post-info">
                                     <div class="coll-from pull-left">来自：PHP 进阶问答 </div>
-                                    <div class="coll-time pull-right">2016/12/8</div>
+                                    <div class="coll-time pull-right">{{post.created_at}}</div>
                                 </div>
                             </li>
                         </ul>
@@ -40,11 +40,26 @@
     </div>
 </template>
 <script>
+    import { mapActions } from 'vuex'
     export default{
         data(){
             return{
 
             }
+        },
+        computed:{
+            posts(){
+               return this.$store.state.userPosts
+            },
+        },
+        mounted(){
+            this.getPosts()
+        },
+        methods:{
+        ...mapActions(['USER_POST_GET']),
+            getPosts(){
+                this.USER_POST_GET()
+            },
         },
         components:{
 
