@@ -83,7 +83,6 @@
             },
             markAsRead(){
                 let userId = this.$store.state.user.id
-                console.log("user id = "+userId)
                 this.MARK_NOTIFY_MESSAGE(userId)
             }
         },
