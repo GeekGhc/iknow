@@ -29,8 +29,8 @@
                                         >
                                         </i>
                                     </em>
-                                    <div class="post-avatar">
-                                        <img :src="userAvatar">
+                                    <div class="post-avatar" v-if="post.user">
+                                        <img :src="post.user.avatar">
                                     </div>
                                     <router-link
                                             tag="div"

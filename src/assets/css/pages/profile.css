@@ -1,0 +1,57 @@
+.profile-form{
+    padding: 3.4rem;
+}
+.profile-form .control-group{
+    min-height: 3rem;
+    margin-bottom: 1.2rem;
+    line-height: 3rem;
+    vertical-align: bottom;
+    padding-left: 2rem;
+    width: 100%;
+    display: flex;
+}
+.profile-form .group-box{
+    margin-bottom: 1.5rem;
+}
+.control-group .control-label{
+    line-height: 2rem;
+    color: #636363;
+    float: left;
+    width: 6rem;
+    padding-right: 1.5rem;
+    text-align: right;
+    font-size: 1rem;
+}
+.control-group .controls input{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ccc!important;
+    width: 20rem;
+    float: left;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-indent: .5rem;
+}
+.control-group .controls .el-textarea{
+    width:20rem;
+    float: left;
+}
+.control-group .controls .help-block{
+    line-height: 2rem;
+    float: left;
+    font-size: 1rem;
+    padding-left: 1.4rem;
+    color: #a4a4a4;
+}
+.profile-form .control-group .avatar{
+    float: left;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    margin-right: 1rem;
+    border-radius: 50%;
+    vertical-align: bottom;
+}
+.profile-save-btn{
+    padding: 11px 2rem !important;
+}

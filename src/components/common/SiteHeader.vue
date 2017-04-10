@@ -87,7 +87,9 @@
             },
             getNotificationsCount(){
                  let userId = this.$store.state.user.id
-                 this.NOTIFICATIONS_COUNT(userId)
+                 if(userId){
+                    this.NOTIFICATIONS_COUNT(userId)
+                 }
             }
         }
     }

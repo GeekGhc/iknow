@@ -1,0 +1,27 @@
+/***************** postList **********************/
+.list-form .col-no-more{
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #aeaeae;
+    font-size: 14px;
+}
+
+.post-page{
+    padding: 20px 20px 2px;
+}
+
+.feed-item-head .feed-item-author{
+    font-size: 16px;
+}
+.feed-item-head .time{
+    font-size: 14px;
+}
+.ui.comments>ul{
+    list-style: none;
+}
+
+.ui.comments .comment .author-reply{
+    margin:0 5px;
+    color: #7a7a7a;
+}

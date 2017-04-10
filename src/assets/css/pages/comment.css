@@ -1,0 +1,83 @@
+
+/**************** comment  ************************/
+.comments-list {
+    margin-top: 0rem;
+    padding: 0 24px;
+    background-color: #fafafa;
+    border: 1px solid #d1d5d8;
+}
+.comments-list .comment-wrapper {
+    width: 100%;
+    padding-top: 12px;
+}
+.comment-wrapper .ui.comments>.reply.form {
+    margin-top:0 !important;
+    margin-bottom: 1em;
+}
+.comment-wrapper .comment-list {
+    position: relative;
+    margin-top: 10px;
+    text-align: -webkit-match-parent;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.ui.comments .comment .avatar img{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+.ui.comments .comment .actions .reply{
+    float: right;
+}
+.ui.comments .comment .metadata {
+    margin-left: 0;
+}
+.ui.comments ul>li:last-child {
+    border-bottom: none !important;
+}
+.ui.comments ul>li{
+    margin-bottom:10px !important;
+    border-bottom: 1px solid #e5e5e5 !important;
+}
+.ui.comments .comment .field{
+    margin-top:4px;
+}
+.ui.comments  .field .el-textarea{
+    width:80%;
+}
+.ui.comments  .field .button.primary{
+    width:15%;
+    margin-top:2px;
+    vertical-align: middle;
+}
+.comment-wrapper .ui.comments .comment .reply.form{
+    margin-top:0 !important;
+}
+.ui.comments .comment:last-child{
+    border-bottom: none;
+}
+.ui.form .field{
+    margin-bottom: 5px;
+}
+.ui.comments .comment .reply.form{
+    margin-bottom: 10px;
+}
+.ui.comments .comment .reply.form .reply-button{
+    text-align: right;
+}
+.ui.comments .comment>.avatar~.content{
+    margin-bottom: 10px;
+}
+.ui.comments .comment>.avatar~.content .actions{
+    margin-bottom: 6px;
+}
+.ui.comments .comment>.avatar~.content:hover{
+    cursor: pointer;
+}
+.ui.comments .comment>.avatar~.content .comment-reply-btn{
+    display: none;
+    font-size: 14px;
+}
+.ui.comments .comment>.avatar~.content:hover .comment-reply-btn{
+    display: block;
+}

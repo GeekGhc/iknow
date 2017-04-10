@@ -1,0 +1,510 @@
+.login-page {
+    padding-top: 38px;
+}
+
+.login-page .el-col {
+    background: #fff !important;
+}
+
+.login-header {
+    padding: 20px 10px 24px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.login-header .login-register {
+    text-align: center;
+}
+
+.login-header a {
+    color: #666;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 12px 8px;
+    margin: 0 16px;
+}
+
+.login-header .login-register a.active {
+    border-bottom: 3px solid #4A90E2;
+    color: #4A90E2;
+}
+
+.login-form {
+    padding: 4rem;
+}
+
+.login-form .control-group {
+    min-height: 3rem;
+    margin-bottom: 0;
+    margin-top: 1.2rem;
+    line-height: 3rem;
+    vertical-align: bottom;
+    padding-left: 2rem;
+    width: 100%;
+    display: flex;
+}
+
+.login-form .control-group .control-label {
+    line-height: 2rem;
+    color: #636363;
+    float: left;
+    width: 8rem;
+    padding-right: 1.6rem;
+    text-align: right;
+    font-size: 1.1rem;
+}
+
+.login-form .login-group {
+    margin-top: 0;
+}
+
+
+.login-remember {
+    margin-left: 7rem;
+    float: left;
+    padding: 0 !important;
+    vertical-align: middle;
+}
+
+.btn-login {
+    letter-spacing: 2px;
+    float: right;
+}
+
+.btn-register {
+    padding: 0 2rem;
+    letter-spacing: 2px;
+}
+
+/*-----------------------------------*/
+/***************** postList **********************/
+.list-form .col-no-more{
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #aeaeae;
+    font-size: 14px;
+}
+
+.post-page{
+    padding: 20px 20px 2px;
+}
+
+.feed-item-head .feed-item-author{
+    font-size: 16px;
+}
+.feed-item-head .time{
+    font-size: 14px;
+}
+.ui.comments>ul{
+    list-style: none;
+}
+
+.ui.comments .comment .author-reply{
+    margin:0 5px;
+    color: #7a7a7a;
+}
+
+/*---------------------------------------------*/
+.account-page .user-banner {
+    width: 100%;
+    /* background: #5C258D;
+     background: -webkit-linear-gradient(to left, #5C258D, #4389A2);
+     background: linear-gradient(to left, #5C258D, #4389A2); */
+    color: #fff;
+    background: url("/static/images/account/pattern.png");
+}
+
+.user-banner-info .user-banner-left img {
+    width: 200px;
+    height: 200px;
+    border: 3px solid #fff;
+    margin-bottom: -60px;
+}
+
+.user-banner .el-row .el-col {
+    background: transparent;
+    border: none;
+    padding-top: 150px !important;
+}
+.user-banner  .user-banner-tags{
+    position: absolute;
+    top:20px;
+    list-style: none;
+}
+.user-banner .user-banner-tags .tag-item{
+    background: rgba(0,0,0,.1);
+    padding: 0 1rem;
+    margin: 0 1rem 1rem 0;
+    float: left;
+    line-height: 1.5rem;
+    border-radius: 3px;
+}
+.user-banner .user-banner-tags .tag-item a{
+    color: #fff;
+    font-size: 1.04rem;
+}
+
+.user-banner-info .user-banner-left {
+    box-sizing: border-box;
+    display: block;
+    width: 204px;
+    float: left;
+}
+
+.user-banner-info .user-banner-right {
+    margin-left: 240px;
+    padding:0px 10px 20px;
+}
+.user-banner-info .user-banner-right .user-account-link a{
+    color: #fff;
+}
+.user-banner-info .user-banner-right .user-account-link a:hover{
+    color: #0366d6;
+}
+.user-banner-info .user-banner-right .user-info-ul {
+    width: 25rem;
+    padding-left: 0;
+    display: flex;
+    float: left;
+}
+
+.user-banner-right .user-info-ul li {
+    float: left;
+    width: 5rem;
+    list-style: none;
+}
+
+.user-banner-right .user-info-ul li a {
+    font-size: .975rem;
+    color: #fff;
+}
+
+.user-banner-right .user-info-ul li span {
+    display: block;
+    line-height: 2rem;
+    font-size: 1.25rem;
+}
+
+.user-banner-info .user-banner-right .modify-profile {
+    float: right;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.user-banner-info .user-banner-right .modify-profile i {
+    margin-right: 5px;
+}
+
+.user-banner-control {
+    width: 100%;
+    padding: 0px 10px;
+    background: #fff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-banner-control .el-row .el-col {
+    background: transparent;
+    border: none;
+    padding: 10px 0 !important;
+}
+
+.user-banner-control .user-level-ul {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 0;
+    float: left;
+    font-size: 1.2rem;
+    margin-right: 3rem;
+    padding: 5px 0;
+}
+
+.user-banner-control .user-level-ul  a {
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #54C8FF;
+}
+
+.user-banner-control .user-banner-button{
+    display: inline-block;
+    list-style: none;
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 0 !important;
+}
+.user-banner-control .user-banner-button li{
+    display: inline-block;
+}
+
+/*------------------------------------*/
+
+/**************** comment  ************************/
+.comments-list {
+    margin-top: 0rem;
+    padding: 0 24px;
+    background-color: #fafafa;
+    border: 1px solid #d1d5d8;
+}
+.comments-list .comment-wrapper {
+    width: 100%;
+    padding-top: 12px;
+}
+.comment-wrapper .ui.comments>.reply.form {
+    margin-top:0 !important;
+    margin-bottom: 1em;
+}
+.comment-wrapper .comment-list {
+    position: relative;
+    margin-top: 10px;
+    text-align: -webkit-match-parent;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.ui.comments .comment .avatar img{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+.ui.comments .comment .actions .reply{
+    float: right;
+}
+.ui.comments .comment .metadata {
+    margin-left: 0;
+}
+.ui.comments ul>li:last-child {
+    border-bottom: none !important;
+}
+.ui.comments ul>li{
+    margin-bottom:10px !important;
+    border-bottom: 1px solid #e5e5e5 !important;
+}
+.ui.comments .comment .field{
+    margin-top:4px;
+}
+.ui.comments  .field .el-textarea{
+    width:80%;
+}
+.ui.comments  .field .button.primary{
+    width:15%;
+    margin-top:2px;
+    vertical-align: middle;
+}
+.comment-wrapper .ui.comments .comment .reply.form{
+    margin-top:0 !important;
+}
+.ui.comments .comment:last-child{
+    border-bottom: none;
+}
+.ui.form .field{
+    margin-bottom: 5px;
+}
+.ui.comments .comment .reply.form{
+    margin-bottom: 10px;
+}
+.ui.comments .comment .reply.form .reply-button{
+    text-align: right;
+}
+.ui.comments .comment>.avatar~.content{
+    margin-bottom: 10px;
+}
+.ui.comments .comment>.avatar~.content .actions{
+    margin-bottom: 6px;
+}
+.ui.comments .comment>.avatar~.content:hover{
+    cursor: pointer;
+}
+.ui.comments .comment>.avatar~.content .comment-reply-btn{
+    display: none;
+    font-size: 14px;
+}
+.ui.comments .comment>.avatar~.content:hover .comment-reply-btn{
+    display: block;
+}
+.profile-form{
+    padding: 3.4rem;
+}
+.profile-form .control-group{
+    min-height: 3rem;
+    margin-bottom: 1.2rem;
+    line-height: 3rem;
+    vertical-align: bottom;
+    padding-left: 2rem;
+    width: 100%;
+    display: flex;
+}
+.profile-form .group-box{
+    margin-bottom: 1.5rem;
+}
+.control-group .control-label{
+    line-height: 2rem;
+    color: #636363;
+    float: left;
+    width: 6rem;
+    padding-right: 1.5rem;
+    text-align: right;
+    font-size: 1rem;
+}
+.control-group .controls input{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ccc!important;
+    width: 20rem;
+    float: left;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-indent: .5rem;
+}
+.control-group .controls .el-textarea{
+    width:20rem;
+    float: left;
+}
+.control-group .controls .help-block{
+    line-height: 2rem;
+    float: left;
+    font-size: 1rem;
+    padding-left: 1.4rem;
+    color: #a4a4a4;
+}
+.profile-form .control-group .avatar{
+    float: left;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    margin-right: 1rem;
+    border-radius: 50%;
+    vertical-align: bottom;
+}
+.profile-save-btn{
+    padding: 11px 2rem !important;
+}
+.empty {
+    width: 100%;
+    min-height: 36rem;
+    position: relative;
+}
+
+.empty-wrapper {
+    padding-top: 5rem;
+    text-align: center;
+}
+
+.empty-wrapper i {
+    color: rgb(204, 204, 204);
+    font-style: normal;
+    font-size: 2.4rem;
+}
+
+.empty-wrapper span {
+    color: rgb(204, 204, 204);
+    margin-top: 1.25rem;
+    font-size: 1.3rem;
+}
+
+.empty-tips {
+    line-height: 3rem;
+    width: 100%;
+    display: block;
+}
+.collect-list{
+    padding: 0rem 1.8rem;
+    position: relative;
+    list-style: none;
+}
+.collect-list .collect-post-item{
+    position: relative;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 12px 10px 0;
+}
+.collect-list .collect-post-item:hover{
+    background: #F5F8FA;
+    cursor: pointer;
+}
+.collect-post-item .post-avatar{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    float: left !important;
+}
+.collect-post-item .post-avatar img{
+    width: 50px;
+    height: 50px;
+}
+.collect-post-item .post-content-main{
+    margin-bottom: 10px;
+    margin-left: 65px;
+    overflow: hidden;
+}
+.collect-post-item .post-content-main .post-content{
+    margin-right: 100px;
+}
+.collect-post-item .post-info{
+    font-size: 14px;
+    color: #aeaeae;
+    margin-top: 10px;
+    margin-left: 65px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.collect-post-item .message-info{
+    font-size: 16px;
+    color: #111;
+    margin-top: 4px;
+    margin-left: 65px;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+.collect-post-item .message-info a{
+    color: #00b1b3;
+    font-weight: 600;
+    margin-right: 5px;
+}
+.collect-post-item .post-trash{
+    position: absolute;
+    right: 20px;
+    background-position: -355px -232px;
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+    display: none;
+}
+.collect-post-item .post-trash i{
+    font-size: 2em;
+    color: #aeaeae;
+}
+.collect-list .collect-post-item:hover .post-trash{
+    display: block;
+}
+.collect-form .col-no-more{
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #aeaeae;
+    font-size: 14px;
+}
+
+.ui.cards > .card > .extra.user-follow-footer {
+    vertical-align: middle;
+}
+
+.ui.cards > .card > .extra.user-follow-footer a {
+    font-size: 16px;
+}
+
+.ui.cards > .card > .extra.user-follow-footer .user-follow-footer-panel {
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+.ui.cards > .card .content img {
+    width: 36px;
+    height: 36px;
+}
+.message-read-btn{
+    position: absolute;
+    top: 25px;
+    background-position: -189px -194px;
+    right: 40px;
+}
