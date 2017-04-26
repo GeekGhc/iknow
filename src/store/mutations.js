@@ -30,18 +30,15 @@ export default {
     [USER_SIGNIN](state, user) {
         state.isLogin = true
         state.user = user
-        console.log("登录成功了... and user login is "+state.isLogin)
     },
     //用户退出登录
     [USER_SIGNOUT](state) {
         state.isLogin = false
-        console.log("退出成功了... and user login is "+state.isLogin)
     },
 
     //用户资料
     [USER_PROFILE](state,profile) {
         state.userProfile = profile
-        console.log("this profile description is "+state.userProfile.name)
     },
     //用户资料修改
     [PROFILE_EDIT](state,user) {
@@ -52,12 +49,10 @@ export default {
     //加载所有帖子
     [POST_GET](state,posts){
         state.posts = posts
-        console.log("posts length = "+state.posts.length)
     },
     //用户发表帖子
     [POST_CREATE](state,post){
         state.posts.push(post)
-        console.log("post data second = "+state.posts.length)
     },
     //用户删除帖子
     [POST_DELETE](state,index){
@@ -93,26 +88,21 @@ export default {
 
     [USER_FOLLOW](state,follow){
         follow.isFollowed = ! follow.isFollowed
-        console.log("mutation follow  = "+follow.isFollowed)
     },
     [FOLLOWERS_GET](state,follow){
         follow.isFollowed = ! follow.isFollowed
-        console.log("mutation follow  = "+follow.isFollowed)
     },
     [FOLLOWING_GET](state,follow){
         follow.isFollowed = ! follow.isFollowed
-        console.log("mutation follow  = "+follow.isFollowed)
     },
 
     //用户粉丝
     [FOLLOWERS_GET](state,followers){
         state.followers = followers
-        console.log("followers = "+followers)
     },
     //用户关注的人
     [FOLLOWING_GET](state,following){
         state.following = following
-        console.log("followers = "+following)
     },
 
     //用户的消息通知

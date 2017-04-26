@@ -59,7 +59,6 @@
             ...mapActions(['POST_CREATE','POST_GET']),
             show(){
                 this.$refs.qeditor.content = ''
-                console.log("content =  "+ this.$store.state.user.id)
             },
             getPosts(){
               this.POST_GET()

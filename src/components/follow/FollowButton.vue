@@ -34,7 +34,6 @@
             followUser(follow){
                 let userId = this.$store.state.user.id
                 let followedId = this.followedId
-                console.log("user id = "+userId+" / "+followedId)
                 this.USER_FOLLOW({userId,followedId,follow})
             },
             //用户是否关注了这个用户

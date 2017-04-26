@@ -125,7 +125,6 @@
                           this.user = response.data.user
                           this.showCount = response.data.showCount
                     }
-                    console.log("this account user name = "+this.user.name)
                 })
             }
         },

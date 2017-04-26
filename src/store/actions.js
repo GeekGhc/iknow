@@ -43,7 +43,6 @@ export default {
     [USER_PROFILE]({commit},userId){
         Vue.axios.get('http://localhost:8000/api/user/profile/'+userId).then(response => {
             if(response.data.status){
-                console.log("response profile = "+response.data.profile)
                 commit(USER_PROFILE,response.data.profile)
             }
         })
@@ -53,7 +52,6 @@ export default {
         Vue.axios.post('http://localhost:8000/api/user/profile',{userId:payload.userId,data:payload.data}).then(response => {
             if(response.data.status){
                 commit(PROFILE_EDIT,response.data.user)
-                console.log("资料更新成功！！！")
             }
         })
     },
@@ -80,7 +78,6 @@ export default {
     },
     //删除帖子
     [POST_DELETE]({commit},payload) {
-        console.log("payload index = "+payload.index+" delete id = "+payload.postId)
         Vue.axios.delete('http://localhost:8000/api/post/'+payload.postId).then(response => {
             if(response.data.status){
                 commit(POST_DELETE,payload.index)
@@ -98,7 +95,6 @@ export default {
     },
     //删除帖子
     [USER_POST_DELETE]({commit},payload) {
-        console.log("payload index = "+payload.index+" delete id = "+payload.postId)
         Vue.axios.delete('http://localhost:8000/api/user/post/'+payload.postId).then(response => {
             if(response.data.status){
                 commit(USER_POST_DELETE,payload.index)
@@ -115,7 +111,6 @@ export default {
         Vue.axios.get('http://localhost:8000/api/post/'+payload.postId+'/comment').then(response => {
             if(response.data.status){
                 payload.comments = response.data.comments
-                console.log("comments = "+payload.comments)
             }
         })
     },
@@ -126,7 +121,6 @@ export default {
         Vue.axios.post('http://localhost:8000/api/comment',{comment:context.state.newComment}).then(response => {
             if(response.data.status){
                 comments.push(response.data.comment)
-                console.log("评论成功")
             }
         })
     },
@@ -136,7 +130,6 @@ export default {
         Vue.axios.post('http://localhost:8000/api/user/follow',{userId:payload.userId,followedId:payload.followedId}).then(response => {
             if(response.data.status){
                 payload.followed = response.data.followed
-                console.log("关注用户成功..."+response.data.followed)
             }
         })
     },
@@ -163,7 +156,6 @@ export default {
         Vue.axios.post('http://localhost:8000/api/user/follow',{userId:payload.userId,followedId:payload.followedId}).then(response => {
             if(response.data.status){
                 commit(USER_FOLLOW,payload.follow)
-                console.log("关注用户成功..."+response.data.followed)
             }
         })
     },
@@ -199,7 +191,6 @@ export default {
         Vue.axios.get('http://localhost:8000/api/user/'+userId+'/notifications').then(response => {
             if(response.data.status){
                 commit(NOTIFY_MESSAGE_GET,response.data.messages)
-                console.log("messages = "+response.data.messages)
             }
         })
     },

@@ -27,13 +27,10 @@
                 this.axios.post('http://localhost:8000/api/user/post/like',{userId:this.$store.state.user.id,postId:this.post.id}).then(response => {
                         if(response.data.status){
                             this.isVoted = response.data.isVoted
-                            console.log("response.data.hasVote  = "+response.data.isVoted)
                             if(response.data.isVoted){
-                                console.log("恭喜你 赞了这篇说说")
                                 this.vote_count++;
                             }else{
                                 this.vote_count--;
-                                console.log("恭喜你 你已经取消了赞")
                             }
                         }
                 })
@@ -43,7 +40,6 @@
                  var postId = this.post.id
                  const response = await fetch(`http://localhost:8000/api/user/${userId}/post/${postId}/like`)
                  this.isVoted = Boolean(await response.json())
-                 console.log("this post vote count = "+this.post.vote_count)
             }
         },
         components:{

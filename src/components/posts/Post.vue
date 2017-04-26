@@ -135,17 +135,15 @@
                  var postId = this.post.id
                  const response = await fetch(`http://localhost:8000/api/user/${userId}/post/${postId}`)
                  this.isCollect = Boolean(await response.json())
-                 console.log("this post collect is "+this.isCollect)
             },
             collect(){
-                console.log("你已经成功收藏了。。。and isCollect is "+this.isCollect)
+
                 if(this.isCollect){
                     this.favoriteWarning()
                 }else{
                     this.axios.post('http://localhost:8000/api/post/collect',{userId:this.$store.state.user.id,postId:this.post.id}).then(response => {
                         if(response.data.status){
                             this.isCollect = response.data.isCollect
-                            console.log("恭喜你 收藏成功了。。。"+this.isCollect)
                         }
                     })
                     this.favoriteSuccess()

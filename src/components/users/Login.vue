@@ -112,7 +112,6 @@
                              this.USER_SIGNIN(response.data.user)
                              this.$router.push('/')
                           }else{
-                             console.log("你出错啦.."+response.data.status)
                              this.openError();
                              this.isError = !response.data.status
                           }
